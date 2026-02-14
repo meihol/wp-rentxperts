@@ -1,0 +1,111 @@
+.a_vtm_slider_wrapper svg {
+    width: 1em;
+    height: 1em;
+}
+.a_vtm_slider_wrapper .swiper-slide {
+    height: auto;
+}
+.a_vtm_slider_wrapper .slide {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.a_vtm_slider_wrapper .wcf-arrow {
+    cursor: pointer;
+}
+
+.a_vtm_slider_wrapper .video-wrap {
+    position: relative;
+    cursor: pointer;
+}
+
+.a_vtm_slider_wrapper .play-video {
+    width: 160px;
+    height: 160px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    color: #fff;
+    fill: #fff;
+    border-radius: 50%;
+    transition: all 0.5s;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.a_vtm_slider_wrapper .image {
+    height: 100%;
+    position: relative;
+}
+.a_vtm_slider_wrapper .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.a_vtm_slider_wrapper .content-wrap {
+    margin-top: auto;
+    padding-bottom: 100px;
+}
+.a_vtm_slider_wrapper .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 16px;
+    left: 20px;
+    bottom: 0;
+    z-index: 1;
+}
+.a_vtm_slider_wrapper .dash {
+    width: 100px;
+    height: 1px;
+    background-color: #000;
+}
+.a_vtm_slider_wrapper .ts-navigation {
+    display: flex;
+    align-items: center;
+    width: 196px;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+}
+.a_vtm_slider_wrapper .name{
+    opacity: 0;
+    transition: all 0.6s;
+    transform: translateY(20px);
+}
+
+.a_vtm_slider_wrapper .designation {
+    opacity: 0;
+    transition: all 0.75s;
+    transform: translateY(30px);
+}
+.a_vtm_slider_wrapper .swiper-slide-active .name,
+.a_vtm_slider_wrapper .swiper-slide-active .designation {
+    opacity: 1;
+    transform: translateY(0);
+}
+.a_vtm_slider_wrapper .pn-wrap {
+    position: relative;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .a_vtm_slider_wrapper .slide {
+        grid-template-columns: 1fr;
+    }
+
+    .a_vtm_slider_wrapper .ts-navigation {
+        bottom: -35px;
+    }
+    .a_vtm_slider_wrapper .swiper-pagination {
+        bottom: -35px;
+    }
+}

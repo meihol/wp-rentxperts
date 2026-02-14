@@ -1,0 +1,1 @@
+!function(n){var o=function(n,o){var i=o(".sassly-notification .close-icon",n),t=o(".sassly-notification",n);i.on("click",(function(){t.hide()}))};n(window).on("elementor/frontend/init",(function(){elementorFrontend.hooks.addAction("frontend/element_ready/sassly--notification.default",o)}))}(jQuery);

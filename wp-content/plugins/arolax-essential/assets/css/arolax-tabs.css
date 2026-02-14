@@ -1,0 +1,68 @@
+.arolax--tabs .tabs-content-wrapper,
+.arolax--tabs .content {
+    flex: 1;
+}
+
+.arolax--tabs .icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background: #ddd;
+    flex-basis: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.arolax--tabs .tab-title.active .icon,
+.arolax--tabs .tab-title:hover .icon {
+    background: #C8F31D;
+}
+
+
+.arolax--tabs p {
+    margin: 0;
+}
+
+.wcf--tabs.arolax--tabs  .tab-title {
+    align-items: flex-start;
+}
+
+.wcf--tabs.arolax--tabs .tab-title  {
+    background-color: transparent;
+    border-left: 1px solid #ddd;
+}
+
+.elementor-widget-arolax--tabs.wcf-tabs-direction-row .tabs-wrapper,
+.elementor-widget-arolax--tabs.wcf-tabs-direction-row-reverse .tabs-wrapper {
+    flex-direction: column
+}
+
+.elementor-widget-arolax--tabs.tabs-alignment-stretch .tab-desktop-title {
+    flex: 1 1 auto
+}
+
+@media (max-width: 1024px) {
+    .elementor-widget-arolax--tabs.wcf-tabs-tablet .tabs-wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .elementor-widget-arolax--tabs.wcf-tabs-mobile .tabs-wrapper {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .elementor-widget-arolax--tabs.wcf-tabs-mobile .tab-mobile-title {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .elementor-widget-arolax--tabs.wcf-tabs-tablet .tab-mobile-title {
+        display: none;
+    }
+}

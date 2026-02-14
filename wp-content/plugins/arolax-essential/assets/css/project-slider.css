@@ -1,0 +1,140 @@
+.project--main-wrapper svg {
+    width: 1em;
+    height: 1em;
+}
+
+.project--main-wrapper .thumb img {
+    object-fit: cover;
+}
+
+.project--main-wrapper p {
+    margin: 0;
+}
+
+.project--main-wrapper .swiper-slide-shadow-right,
+.project--main-wrapper .swiper-slide-shadow-left {
+    background-image: none;
+}
+
+.project--main-wrapper .project-navigation {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+    z-index: 12;
+    position: relative;
+}
+
+.project--main-wrapper .swiper-pagination-bullet {
+    opacity: 1;
+}
+
+.project--main-wrapper .swiper-pagination-progressbar {
+    background: red;
+    position: absolute;
+    top: unset;
+}
+
+/* Style One */
+.arolax--project-slider-1 .thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.arolax--project-slider-1 .content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.5s;
+}
+
+.arolax--project-slider-1 .thumb:hover .content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.arolax--project-slider-1 .desc {
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    padding: 8px;
+
+}
+.arolax--project-slider-1 .title {
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    align-self: flex-start;
+    padding: 8px;
+}
+
+.arolax--project-slider-1 .swiper-slide {
+    width: auto;
+    margin: auto;
+}
+
+/* Style Two */
+.arolax--project-slider-2 .swiper-slide {
+    width: auto;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .arolax--project-slider-1 .content {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+/* Style Three */
+.arolax--project-slider-3 .thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.arolax--project-slider-3 .content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 265px;
+    padding: 15px;
+    background-color: #fff;
+    justify-content: space-between;
+    display: flex;
+    gap: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+
+.arolax--project-slider-3 .thumb:hover .content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.arolax--project-slider-3 .swiper-slide {
+    width: auto;
+    margin: auto;
+}
+
+
+@media (max-width: 1100px) {
+    .arolax--project-slider-3 .content {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}

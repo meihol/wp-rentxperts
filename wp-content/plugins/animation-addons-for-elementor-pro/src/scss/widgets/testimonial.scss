@@ -1,0 +1,142 @@
+.helo_testimonial_wrapper svg {
+    width: 1em;
+    height: 1em;
+    transition: all 0.3s;
+}
+
+.helo_testimonial_wrapper img {
+    object-fit: cover;
+}
+
+.helo_testimonial_wrapper .wcf-arrow {
+    line-height: 0;
+}
+
+.helo_testimonial_wrapper .swiper-pagination-bullets {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.helo_testimonial_wrapper .swiper-pagination-bullet {
+    margin: 0 !important;
+}
+
+.helo_testimonial_wrapper .swiper-pagination-bullet-active {
+    border-radius: 5px;
+}
+
+.helo_testimonial_wrapper .swiper-pagination {
+    position: static;
+    z-index: -1;
+}
+
+.helo_testimonial_wrapper .ts-navigation {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+.helo_testimonial_wrapper .wcf-arrow {
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 1/1;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.helo_testimonial_wrapper .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.helo_testimonial_wrapper .author {
+    display: flex;
+    align-items: center;
+}
+
+.helo_testimonial_wrapper .image {
+    position: relative;
+    margin-right: 15px;
+}
+
+.helo_testimonial_wrapper .image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.helo_testimonial_wrapper .feedback {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.helo_testimonial_wrapper .info {
+    text-align: left;
+    border-left: 1px solid;
+    padding-left: 15px;
+}
+
+.helo_testimonial_wrapper .swiper-slide::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    right: -10px;
+    top: 0;
+    background: #ddd;
+}
+
+.content_top_area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonials_style_5 {
+    position: relative;
+    display: flex;
+}
+
+.content_top_area.five {
+    margin-right: 50px;
+}
+
+.testimonials_style_5 .content-wrap {
+    align-self: end;
+    flex: 1;
+}
+
+.helo__testimonial-6 .rating {
+    margin-top: -37px;
+}
+
+.helo__testimonial-6 .helo_testimonial_slider {
+    padding-top: 37px;
+    padding-bottom: 15px;
+}
+
+.helo__testimonial-6 .swiper-wrapper {
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonials_style_5 {
+        flex-direction: column;
+    }
+
+    .content_top_area.five {
+        margin-right: 0;
+    }
+}

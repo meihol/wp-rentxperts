@@ -1,0 +1,90 @@
+.arolax-case-study-slider svg,
+.arolax-case-study-slider i{
+    width: 1em;
+    height: 1em;
+}
+
+.arolax-case-study-slider .subtitle {
+    display: inline-flex;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 10px 15px;
+    line-height: 1;
+    margin-bottom: auto;
+}
+
+.arolax-case-study-slider .title{
+    margin-top: auto;
+    color: #fff;
+}
+
+.arolax-case-study-slider .icon {
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: calc(((var(--padding, 20px)*2) + var(--font-size, 14px)) * -1); /* this should be height value*/
+    border-radius: 100px;
+    background: rgba(254, 218, 31, 1);
+    transition: 0.5s all;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.arolax-case-study-slider .content:hover .icon{
+    margin-bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.arolax-case-study-slider .content{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0) 38.85%, #121212 100%);
+    overflow: hidden;
+    text-decoration: none !important;
+}
+
+.case-study-slider{
+    height: 425px;
+}
+
+.case-study-slider .swiper-slide{
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all .3s ease;
+    transform: scale(var(--scale-x, 1), var(--scale-y, 1));
+}
+
+.case-study-slider .swiper-slide.swiper-slide-active {
+    transform: scale(1)!important
+}
+
+.arolax-case-study-slider .ts-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.arolax-case-study-slider .wcf-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 25px;
+    border: 1px solid rgba(18, 18, 18, 0.15);
+    border-radius: 100px;
+    transition: 0.3s all;
+}
+
+.arolax-case-study-slider .wcf-arrow:hover {
+    border-color: rgba(254, 218, 31, 1);
+    background: rgba(254, 218, 31, 1);
+}

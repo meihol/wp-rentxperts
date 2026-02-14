@@ -1,0 +1,30 @@
+/* 
+* Theme RTL css load from essential plugin 
+*/
+
+
+html , body {
+    direction: rtl !important;
+}
+
+.rtl .default-search__again-form form button{
+   right: auto;
+}
+
+.rtl .offcanvas__area-2 .mean-container .mean-nav ul li a {
+   padding: 20px 40px !important;
+}
+
+.rtl .mean-container .mean-nav ul li a {
+    float: unset !important;
+}               
+
+.rtl .mean-container .mean-nav ul li a.mean-expand {
+     right: auto !important;
+     left: 0;
+}
+
+body.rtl .offcanvas__left-2 {
+    padding: 100px 50px 0px 20px !important;
+ 
+}

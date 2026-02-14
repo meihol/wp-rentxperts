@@ -1,0 +1,6022 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-07-10 16:51+0600\n"
+"PO-Revision-Date: 2024-07-10 16:52+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: esc_html;esc_html__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+"X-Poedit-SearchPathExcluded-2: languages\n"
+
+#: arolax-essential.php:129 arolax-essential.php:130
+msgid "Arolax Theme"
+msgstr ""
+
+#: arolax-essential.php:236
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#: arolax-essential.php:237 arolax-essential.php:261 arolax-essential.php:285
+msgid "Arolax Essential"
+msgstr ""
+
+#: arolax-essential.php:238 arolax-essential.php:262
+msgid "Elementor"
+msgstr ""
+
+#: arolax-essential.php:260 arolax-essential.php:284
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: arolax-essential.php:286
+msgid "PHP"
+msgstr ""
+
+#: inc/admin.class.php:51
+msgid "Cache post type and taxonomy"
+msgstr ""
+
+#: inc/blog/blog.elementor.php:15 inc/blog/error.elementor.php:16
+#: inc/blog/popup-modal-archive.php:14 inc/blog/popup-modal.php:14
+#: inc/blog/search.elementor.php:16 inc/blog/single.elementor.php:16
+msgid "There is no layout manage From Builder Page"
+msgstr ""
+
+#: inc/blog/blog.elementor.php:44 inc/blog/error.elementor.php:45
+#: inc/blog/search.elementor.php:45 inc/blog/single.elementor.php:45
+msgid "Import From Library"
+msgstr ""
+
+#: inc/blog/popup-modal-archive.php:219
+msgid "Blog Template Layout Import"
+msgstr ""
+
+#: inc/blog/popup-modal-archive.php:229 inc/blog/popup-modal.php:233
+msgid "Activate"
+msgstr ""
+
+#: inc/blog/popup-modal-global.php:802
+msgid "Template Layout Import"
+msgstr ""
+
+#: inc/blog/popup-modal-global.php:812
+msgid "Page:"
+msgstr ""
+
+#: inc/blog/popup-modal.php:223
+msgid "Blog Template Import"
+msgstr ""
+
+#: inc/blog/popup-modal.php:226
+msgid "Elementor Layout"
+msgstr ""
+
+#: inc/configs/elementor/layouts.php:13
+msgid "Blog Templates Import"
+msgstr ""
+
+#: inc/configs/elementor/layouts.php:26
+msgid "Search Templates Import"
+msgstr ""
+
+#: inc/configs/elementor/layouts.php:39
+msgid "404 Templates Import"
+msgstr ""
+
+#: inc/configs/elementor/layouts.php:52
+msgid "Post Templates Import"
+msgstr ""
+
+#: inc/configs/elementor/layouts.php:62
+msgid "Next"
+msgstr ""
+
+#: inc/configs/elementor/layouts.php:63
+msgid "Prev"
+msgstr ""
+
+#: inc/container.elementor.php:21
+msgid "Enable ScrollTo"
+msgstr ""
+
+#: inc/container.elementor.php:23 inc/mega-menu/widget/mega-menu.php:183
+#: inc/mega-menu/widget/mega-menu.php:195
+#: inc/mega-menu/widget/mega-menu.php:586 inc/sticky.elementor.php:35
+#: skin/accordion-two.php:529 skin/accordion-two.php:544 skin/accordion.php:421
+#: skin/accordion.php:436 widgets/arolax-case-study-slider.php:517
+#: widgets/arolax-case-study-slider.php:542
+#: widgets/arolax-case-study-slider.php:559
+#: widgets/arolax-case-study-slider.php:720
+#: widgets/arolax-testimonial-2.php:556 widgets/arolax-testimonial-2.php:581
+#: widgets/arolax-testimonial-2.php:598 widgets/arolax-testimonial.php:984
+#: widgets/arolax-testimonial.php:1009 widgets/arolax-testimonial.php:1026
+#: widgets/arolax-testimonial.php:1040 widgets/arolax-video-slider.php:279
+#: widgets/arolax-video-slider.php:304 widgets/arolax-video-slider.php:321
+#: widgets/arolax-video-slider.php:335 widgets/arolax-video-slider.php:368
+#: widgets/arolax-video-testimonial.php:475
+#: widgets/arolax-video-testimonial.php:500
+#: widgets/arolax-video-testimonial.php:517
+#: widgets/arolax-video-testimonial.php:531 widgets/banner-breadcrumb.php:151
+#: widgets/dropdown.php:87 widgets/footer-menu.php:93
+#: widgets/footer-menu.php:116 widgets/header-menu.php:187
+#: widgets/header-menu.php:591 widgets/header-preset/header-preset.php:322
+#: widgets/header-preset/header-preset.php:440
+#: widgets/header-preset/header-preset.php:1699
+#: widgets/header-preset/header-preset.php:2459 widgets/landing-page.php:443
+#: widgets/landing-page.php:1062 widgets/lottie.php:191 widgets/lottie.php:204
+#: widgets/lottie.php:216 widgets/lottie.php:244 widgets/offcanvas-menu.php:965
+msgid "Yes"
+msgstr ""
+
+#: inc/container.elementor.php:24
+msgid "NO"
+msgstr ""
+
+#: inc/cpt/cpt.php:14
+msgid "Add New "
+msgstr ""
+
+#: inc/cpt/cpt.php:15
+msgid "Edit "
+msgstr ""
+
+#: inc/cpt/cpt.php:16
+msgid "New "
+msgstr ""
+
+#: inc/cpt/cpt.php:17
+msgid "View "
+msgstr ""
+
+#: inc/cpt/cpt.php:18
+msgid "Search "
+msgstr ""
+
+#: inc/cpt/cpt.php:19 inc/cpt/cpt.php:20
+msgid "No "
+msgstr ""
+
+#: inc/cpt/cpt.php:21
+msgid "Parent "
+msgstr ""
+
+#: inc/dynamic-tags/acf-color.php:14 inc/dynamic-tags/acf-file.php:14
+#: inc/dynamic-tags/acf-gallery.php:14 inc/dynamic-tags/acf-image.php:17
+#: inc/dynamic-tags/acf-number.php:14 inc/dynamic-tags/acf-text.php:14
+#: inc/dynamic-tags/acf-url.php:14
+msgid "ACF"
+msgstr ""
+
+#: inc/dynamic-tags/acf-color.php:14
+msgid "Color Picker Field"
+msgstr ""
+
+#: inc/dynamic-tags/acf-file.php:14
+msgid "File Field"
+msgstr ""
+
+#: inc/dynamic-tags/acf-gallery.php:14
+msgid "Gallery Field"
+msgstr ""
+
+#: inc/dynamic-tags/acf-image.php:17
+msgid "Image Field"
+msgstr ""
+
+#: inc/dynamic-tags/acf-image.php:86 inc/dynamic-tags/acf-url.php:94
+msgid "Fallback"
+msgstr ""
+
+#: inc/dynamic-tags/acf-number.php:14 skin/accordion-two.php:595
+#: widgets/arolax-gallery.php:557 widgets/arolax-posts.php:1409
+#: widgets/arolax-service.php:76 widgets/arolax-service.php:193
+msgid "Number"
+msgstr ""
+
+#: inc/dynamic-tags/acf-number.php:14 inc/dynamic-tags/acf-text.php:14
+msgid "Field"
+msgstr ""
+
+#: inc/dynamic-tags/acf-url.php:14
+msgid "URL Field"
+msgstr ""
+
+#: inc/dynamic-tags/init.php:9 plugin.php:374
+msgid "WCF"
+msgstr ""
+
+#: inc/dynamic-tags/logo.php:38
+msgid "WCf TExt"
+msgstr ""
+
+#: inc/dynamic-tags/logo.php:80
+msgid "Fields"
+msgstr ""
+
+#: inc/elementor-shortcode.php:14 inc/options/settings/banner.php:49
+#: inc/options/settings/banner.php:109 inc/options/settings/banner.php:172
+#: inc/options/settings/banner.php:234
+msgid "Shortcode"
+msgstr ""
+
+#: inc/elementor-template/preview.class.php:52
+msgid "WCF Preview"
+msgstr ""
+
+#: inc/helper.php:88 inc/helper.php:120
+msgid "Select a option"
+msgstr ""
+
+#: inc/helper.php:186
+msgid "Facebook"
+msgstr ""
+
+#: inc/helper.php:187
+msgid "twitter"
+msgstr ""
+
+#: inc/helper.php:188
+msgid "linkedin"
+msgstr ""
+
+#: inc/helper.php:189
+msgid "pinterest "
+msgstr ""
+
+#: inc/helper.php:190
+msgid "digg"
+msgstr ""
+
+#: inc/helper.php:191
+msgid "tumblr"
+msgstr ""
+
+#: inc/helper.php:192 inc/helper.php:200
+msgid "blogger"
+msgstr ""
+
+#: inc/helper.php:193
+msgid "reddit"
+msgstr ""
+
+#: inc/helper.php:194
+msgid "delicious"
+msgstr ""
+
+#: inc/helper.php:195 inc/helper.php:202
+msgid "flipboard"
+msgstr ""
+
+#: inc/helper.php:196
+msgid "vkontakte"
+msgstr ""
+
+#: inc/helper.php:197
+msgid "odnoklassniki"
+msgstr ""
+
+#: inc/helper.php:198
+msgid "moimir"
+msgstr ""
+
+#: inc/helper.php:199
+msgid "livejournal"
+msgstr ""
+
+#: inc/helper.php:201
+msgid "evernote"
+msgstr ""
+
+#: inc/helper.php:203
+msgid "mix"
+msgstr ""
+
+#: inc/helper.php:204
+msgid "meneame "
+msgstr ""
+
+#: inc/helper.php:205
+msgid "pocket "
+msgstr ""
+
+#: inc/helper.php:206
+msgid "surfingbird "
+msgstr ""
+
+#: inc/helper.php:207
+msgid "liveinternet "
+msgstr ""
+
+#: inc/helper.php:208
+msgid "buffer "
+msgstr ""
+
+#: inc/helper.php:209
+msgid "instapaper "
+msgstr ""
+
+#: inc/helper.php:210
+msgid "xing "
+msgstr ""
+
+#: inc/helper.php:211
+msgid "wordpres "
+msgstr ""
+
+#: inc/helper.php:212
+msgid "baidu "
+msgstr ""
+
+#: inc/helper.php:213
+msgid "renren "
+msgstr ""
+
+#: inc/helper.php:214
+msgid "weibo "
+msgstr ""
+
+#: inc/helper.php:641 widgets/landing-page.php:805
+msgid "Home"
+msgstr ""
+
+#: inc/helper.php:724 inc/helper.php:730 inc/helper.php:736
+msgid "Blogs for"
+msgstr ""
+
+#: inc/helper.php:742
+msgid "Author Blogs"
+msgstr ""
+
+#: inc/helper.php:747
+msgid "Blogs"
+msgstr ""
+
+#: inc/helper.php:752
+msgid "Search Result"
+msgstr ""
+
+#: inc/helper.php:756 inc/options/settings/banner.php:251
+msgid "404 Error"
+msgstr ""
+
+#: inc/hook.php:173 inc/hook.php:178
+msgid "Update not available"
+msgstr ""
+
+#: inc/icons.php:23
+msgid "Arolax Icons"
+msgstr ""
+
+#: inc/mega-menu/cpt.php:60 inc/mega-menu/menu-settings.php:127
+#: inc/mega-menu/widget/mega-menu.php:781
+msgid "Mega Menu"
+msgstr ""
+
+#: inc/mega-menu/cpt.php:82 inc/mega-menu/cpt.php:98
+#: inc/mega-menu/menu-settings.php:31
+msgid "Add To Menu"
+msgstr ""
+
+#: inc/mega-menu/cpt.php:96
+msgid "Edit With Elementor"
+msgstr ""
+
+#: inc/mega-menu/menu-settings.php:74
+msgid "Mega Menu Templates"
+msgstr ""
+
+#: inc/mega-menu/menu-settings.php:76
+msgid "Post Title"
+msgstr ""
+
+#: inc/mega-menu/menu-settings.php:77
+msgid "Type mega menu section"
+msgstr ""
+
+#: inc/mega-menu/menu-settings.php:78
+msgid "Submit"
+msgstr ""
+
+#: inc/mega-menu/menu-settings.php:122
+msgid " - Settings"
+msgstr ""
+
+#: inc/mega-menu/menu-settings.php:122
+#: inc/packages/codestar-framework/classes/shortcode-options.class.php:210
+#: inc/packages/codestar-framework/fields/group/group.php:23
+msgid "Add New"
+msgstr ""
+
+#: inc/mega-menu/menu-settings.php:132
+msgid "Fullwidth"
+msgstr ""
+
+#: inc/mega-menu/menu-settings.php:134
+msgid "Edit"
+msgstr ""
+
+#: inc/mega-menu/menu-settings.php:150
+msgid "Select template from here"
+msgstr ""
+
+#: inc/mega-menu/nav-walker.php:317
+msgid "No content found"
+msgstr ""
+
+#: inc/mega-menu/nav-walker.php:319
+msgid "Edit Content"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:157 widgets/header-menu.php:162
+msgid "Layout Style"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:161 widgets/header-menu.php:166
+msgid "Athletic"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:162 widgets/header-menu.php:167
+msgid "Fasion"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:170
+#: inc/mega-menu/widget/mega-menu.php:692 widgets/footer-menu.php:129
+#: widgets/header-menu.php:175 widgets/header-menu.php:689
+#: widgets/header-preset/header-preset.php:310
+#: widgets/header-preset/header-preset.php:918 widgets/offcanvas-menu.php:121
+#: widgets/offcanvas-menu.php:270 widgets/offcanvas-menu.php:914
+msgid "Menu"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:181 widgets/header-menu.php:185
+msgid "Show menu in Offcanvas"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:184
+#: inc/mega-menu/widget/mega-menu.php:196
+#: inc/mega-menu/widget/mega-menu.php:587 inc/sticky.elementor.php:36
+#: skin/accordion-two.php:530 skin/accordion-two.php:545 skin/accordion.php:422
+#: skin/accordion.php:437 widgets/arolax-case-study-slider.php:518
+#: widgets/arolax-case-study-slider.php:543
+#: widgets/arolax-case-study-slider.php:560
+#: widgets/arolax-case-study-slider.php:721
+#: widgets/arolax-testimonial-2.php:557 widgets/arolax-testimonial-2.php:582
+#: widgets/arolax-testimonial-2.php:599 widgets/arolax-testimonial.php:985
+#: widgets/arolax-testimonial.php:1010 widgets/arolax-testimonial.php:1027
+#: widgets/arolax-testimonial.php:1041 widgets/arolax-video-slider.php:280
+#: widgets/arolax-video-slider.php:305 widgets/arolax-video-slider.php:322
+#: widgets/arolax-video-slider.php:336 widgets/arolax-video-slider.php:369
+#: widgets/arolax-video-testimonial.php:476
+#: widgets/arolax-video-testimonial.php:501
+#: widgets/arolax-video-testimonial.php:518
+#: widgets/arolax-video-testimonial.php:532 widgets/banner-breadcrumb.php:152
+#: widgets/dropdown.php:88 widgets/footer-menu.php:94
+#: widgets/footer-menu.php:117 widgets/header-menu.php:188
+#: widgets/header-menu.php:592 widgets/header-preset/header-preset.php:323
+#: widgets/header-preset/header-preset.php:441
+#: widgets/header-preset/header-preset.php:1700
+#: widgets/header-preset/header-preset.php:2460 widgets/landing-page.php:444
+#: widgets/lottie.php:192 widgets/lottie.php:205 widgets/lottie.php:217
+#: widgets/lottie.php:245 widgets/offcanvas-menu.php:964
+msgid "No"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:193
+msgid "Disable Megamenu in Mobile"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:205
+#: inc/mega-menu/widget/mega-menu.php:246
+#: inc/mega-menu/widget/mega-menu.php:634
+#: inc/mega-menu/widget/mega-menu.php:1091 inc/options/settings/header.php:404
+#: skin/accordion-two.php:288 skin/accordion.php:339
+#: widgets/arolax-button.php:205 widgets/arolax-case-study-slider.php:810
+#: widgets/arolax-posts.php:1584 widgets/arolax-tabs.php:262
+#: widgets/arolax-testimonial-2.php:213 widgets/arolax-testimonial.php:250
+#: widgets/arolax-testimonial.php:643 widgets/arolax-video-slider.php:908
+#: widgets/banner-breadcrumb.php:101 widgets/banner-breadcrumb.php:214
+#: widgets/blog-post-tags.php:108 widgets/footer-menu.php:267
+#: widgets/footer-menu.php:301 widgets/header-menu.php:197
+#: widgets/header-menu.php:238 widgets/header-menu.php:382
+#: widgets/header-menu.php:1058 widgets/header-preset/header-preset.php:926
+#: widgets/landing-page.php:1383
+msgid "Alignment"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:210
+#: inc/mega-menu/widget/mega-menu.php:251
+#: inc/mega-menu/widget/mega-menu.php:384
+#: inc/mega-menu/widget/mega-menu.php:638
+#: inc/mega-menu/widget/mega-menu.php:1095 inc/options/settings/blog.php:166
+#: inc/options/settings/header.php:407
+#: inc/packages/codestar-framework/fields/typography/typography.php:171
+#: widgets/arolax-button.php:209 widgets/arolax-posts.php:1588
+#: widgets/arolax-tabs.php:291 widgets/arolax-testimonial-2.php:217
+#: widgets/arolax-testimonial-2.php:860 widgets/arolax-testimonial.php:254
+#: widgets/arolax-testimonial.php:647 widgets/arolax-testimonial.php:1339
+#: widgets/arolax-video-slider.php:603 widgets/arolax-video-slider.php:912
+#: widgets/banner-breadcrumb.php:105 widgets/banner-breadcrumb.php:218
+#: widgets/blog-post-tags.php:112 widgets/footer-menu.php:252
+#: widgets/footer-menu.php:274 widgets/footer-menu.php:308
+#: widgets/header-menu.php:202 widgets/header-menu.php:243
+#: widgets/header-menu.php:388 widgets/header-menu.php:1062
+#: widgets/header-preset/header-preset.php:930 widgets/landing-page.php:1076
+#: widgets/landing-page.php:1355 widgets/landing-page.php:1387
+#: widgets/offcanvas-menu.php:580 widgets/wc-cart-count.php:475
+#: widgets/wcf-line.php:173
+msgid "Left"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:214
+#: inc/mega-menu/widget/mega-menu.php:255
+#: inc/mega-menu/widget/mega-menu.php:1099 inc/options/settings/blog.php:167
+#: inc/options/settings/header.php:408
+#: inc/packages/codestar-framework/fields/typography/typography.php:172
+#: widgets/arolax-button.php:213 widgets/arolax-case-study-slider.php:818
+#: widgets/arolax-posts.php:1592 widgets/arolax-tabs.php:266
+#: widgets/arolax-tabs.php:295 widgets/arolax-testimonial-2.php:221
+#: widgets/arolax-testimonial.php:258 widgets/arolax-testimonial.php:651
+#: widgets/arolax-video-slider.php:916 widgets/banner-breadcrumb.php:109
+#: widgets/banner-breadcrumb.php:222 widgets/blog-post-tags.php:116
+#: widgets/footer-menu.php:278 widgets/footer-menu.php:312
+#: widgets/header-menu.php:206 widgets/header-menu.php:247
+#: widgets/header-menu.php:1066 widgets/header-preset/header-preset.php:934
+#: widgets/landing-page.php:1359 widgets/landing-page.php:1391
+msgid "Center"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:218
+#: inc/mega-menu/widget/mega-menu.php:259
+#: inc/mega-menu/widget/mega-menu.php:388
+#: inc/mega-menu/widget/mega-menu.php:642
+#: inc/mega-menu/widget/mega-menu.php:1103 inc/options/settings/blog.php:168
+#: inc/options/settings/header.php:409
+#: inc/packages/codestar-framework/fields/typography/typography.php:173
+#: widgets/arolax-button.php:217 widgets/arolax-posts.php:1596
+#: widgets/arolax-tabs.php:299 widgets/arolax-testimonial-2.php:225
+#: widgets/arolax-testimonial-2.php:922 widgets/arolax-testimonial.php:262
+#: widgets/arolax-testimonial.php:655 widgets/arolax-testimonial.php:1401
+#: widgets/arolax-video-slider.php:665 widgets/arolax-video-slider.php:920
+#: widgets/banner-breadcrumb.php:113 widgets/banner-breadcrumb.php:226
+#: widgets/blog-post-tags.php:120 widgets/footer-menu.php:253
+#: widgets/footer-menu.php:282 widgets/footer-menu.php:316
+#: widgets/header-menu.php:210 widgets/header-menu.php:251
+#: widgets/header-menu.php:392 widgets/header-menu.php:1070
+#: widgets/header-preset/header-preset.php:938
+#: widgets/header-preset/header-preset.php:2261 widgets/landing-page.php:1077
+#: widgets/landing-page.php:1363 widgets/landing-page.php:1367
+#: widgets/landing-page.php:1395 widgets/offcanvas-menu.php:618
+#: widgets/wcf-line.php:217
+msgid "Right"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:222 widgets/header-menu.php:214
+msgid "Around"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:226 widgets/header-menu.php:218
+msgid "between"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:230 widgets/header-menu.php:222
+msgid "evenly"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:276 widgets/header-menu.php:268
+msgid "Menu Gap"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:295
+#: inc/mega-menu/widget/mega-menu.php:906
+#: inc/mega-menu/widget/mega-menu.php:1168
+#: inc/mega-menu/widget/mega-menu.php:1247
+#: inc/mega-menu/widget/mega-menu.php:1298
+#: inc/mega-menu/widget/mega-menu.php:1319 inc/options/posts/page.php:119
+#: inc/options/settings/banner.php:325 inc/options/settings/banner.php:370
+#: inc/options/settings/banner.php:422 inc/options/settings/banner.php:473
+#: inc/sticky.elementor.php:64 skin/accordion-two.php:381
+#: skin/accordion.php:103 widgets/arolax-button.php:347
+#: widgets/arolax-case-study-slider.php:227
+#: widgets/arolax-case-study-slider.php:325
+#: widgets/arolax-case-study-slider.php:388
+#: widgets/arolax-case-study-slider.php:905 widgets/arolax-gallery.php:428
+#: widgets/arolax-gallery.php:645 widgets/arolax-gallery.php:750
+#: widgets/arolax-posts.php:442 widgets/arolax-posts.php:479
+#: widgets/arolax-posts.php:1003 widgets/arolax-posts.php:1156
+#: widgets/arolax-service.php:178 widgets/arolax-service.php:468
+#: widgets/arolax-service.php:647 widgets/arolax-tabs.php:487
+#: widgets/arolax-tabs.php:605 widgets/arolax-tabs.php:684
+#: widgets/arolax-testimonial-2.php:249 widgets/arolax-testimonial-2.php:813
+#: widgets/arolax-testimonial.php:303 widgets/arolax-testimonial.php:800
+#: widgets/arolax-testimonial.php:1292 widgets/arolax-video-slider.php:559
+#: widgets/banner-breadcrumb.php:357 widgets/blog-post-tags.php:272
+#: widgets/dropdown.php:195 widgets/footer-menu.php:577
+#: widgets/footer-menu.php:865 widgets/header-menu.php:287
+#: widgets/header-menu.php:827 widgets/header-menu.php:1134
+#: widgets/header-menu.php:1212 widgets/header-menu.php:1263
+#: widgets/header-menu.php:1284 widgets/header-preset/header-preset.php:723
+#: widgets/header-preset/header-preset.php:794
+#: widgets/header-preset/header-preset.php:823
+#: widgets/header-preset/header-preset.php:1084
+#: widgets/header-preset/header-preset.php:1318
+#: widgets/header-preset/header-preset.php:1404
+#: widgets/header-preset/header-preset.php:1450
+#: widgets/header-preset/header-preset.php:1501
+#: widgets/header-preset/header-preset.php:1522
+#: widgets/header-preset/header-preset.php:1763
+#: widgets/header-preset/header-preset.php:2310 widgets/landing-page.php:294
+#: widgets/offcanvas-menu.php:666 widgets/offcanvas-menu.php:867
+#: widgets/offcanvas-menu.php:1274 widgets/offcanvas-menu.php:1306
+#: widgets/wc-cart-count.php:150 widgets/wc-cart-count.php:433
+msgid "Padding"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:317 widgets/header-menu.php:309
+#: widgets/header-preset/header-preset.php:485
+msgid "Max Width"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:351 widgets/header-menu.php:343
+#: widgets/offcanvas-menu.php:142
+msgid "Bar"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:366 widgets/header-menu.php:358
+#: widgets/header-preset/header-preset.php:252 widgets/offcanvas-menu.php:157
+msgid "Choose Bar Image"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:378
+msgid "Animated Direction"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:400 widgets/header-menu.php:404
+msgid "Offcanvas Content"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:408 widgets/header-menu.php:414
+#: widgets/header-preset/header-preset.php:550
+msgid "Choose Logo"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:416 widgets/arolax-service.php:112
+#: widgets/arolax-service.php:312 widgets/arolax-tabs.php:149
+#: widgets/arolax-tabs.php:619 widgets/header-menu.php:422
+#: widgets/header-preset/header-preset.php:558
+msgid "Description"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:419 widgets/header-menu.php:425
+#: widgets/header-preset/header-preset.php:561
+msgid "Default description"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:420 widgets/header-menu.php:426
+#: widgets/header-preset/header-preset.php:562 widgets/landing-page.php:819
+#: widgets/offcanvas-menu.php:513
+msgid "Type your description here"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:427 widgets/header-menu.php:433
+msgid "Show Gallery"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:429
+#: inc/mega-menu/widget/mega-menu.php:494 widgets/arolax-testimonial.php:408
+#: widgets/arolax-testimonial.php:468 widgets/arolax-testimonial.php:574
+#: widgets/arolax-testimonial.php:692 widgets/banner-breadcrumb.php:139
+#: widgets/header-menu.php:435 widgets/header-menu.php:500
+#: widgets/header-preset/header-preset.php:1724
+#: widgets/header-preset/header-preset.php:1926
+#: widgets/header-preset/header-preset.php:2071
+#: widgets/header-preset/header-preset.php:2211 widgets/landing-page.php:936
+#: widgets/landing-page.php:974 widgets/landing-page.php:1050
+#: widgets/offcanvas-menu.php:234
+msgid "Show"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:430
+#: inc/mega-menu/widget/mega-menu.php:495 widgets/arolax-testimonial.php:407
+#: widgets/arolax-testimonial.php:467 widgets/arolax-testimonial.php:573
+#: widgets/arolax-testimonial.php:691 widgets/banner-breadcrumb.php:140
+#: widgets/header-menu.php:436 widgets/header-menu.php:501
+#: widgets/header-preset/header-preset.php:512
+#: widgets/header-preset/header-preset.php:1725
+#: widgets/header-preset/header-preset.php:1927
+#: widgets/header-preset/header-preset.php:2072
+#: widgets/header-preset/header-preset.php:2212 widgets/landing-page.php:937
+#: widgets/landing-page.php:975 widgets/landing-page.php:1051
+#: widgets/offcanvas-menu.php:235
+msgid "Hide"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:439 widgets/header-menu.php:445
+#: widgets/header-preset/header-preset.php:569
+msgid "Gallery Title"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:441 widgets/header-menu.php:447
+#: widgets/header-preset/header-preset.php:415
+#: widgets/header-preset/header-preset.php:571
+#: widgets/header-preset/header-preset.php:2165
+#: widgets/header-preset/header-preset.php:2199 widgets/wc-cart-count.php:59
+msgid "Cart"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:442 widgets/header-menu.php:448
+#: widgets/header-preset/header-preset.php:572
+#: widgets/header-preset/header-preset.php:2166 widgets/wc-cart-count.php:60
+msgid "Type your cart text here"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:454
+#: inc/mega-menu/widget/mega-menu.php:519 widgets/arolax-button.php:78
+#: widgets/arolax-gallery.php:166 widgets/arolax-gallery.php:306
+#: widgets/arolax-gallery.php:529 widgets/arolax-gallery.php:702
+#: widgets/arolax-posts.php:841 widgets/arolax-service.php:419
+#: widgets/header-menu.php:460 widgets/header-menu.php:525
+#: widgets/header-preset/header-preset.php:581
+#: widgets/header-preset/header-preset.php:628 widgets/wc-cart-count.php:266
+msgid "Text"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:456
+#: inc/mega-menu/widget/mega-menu.php:457
+#: inc/mega-menu/widget/mega-menu.php:521
+#: inc/mega-menu/widget/mega-menu.php:522 widgets/header-menu.php:462
+#: widgets/header-menu.php:463 widgets/header-menu.php:527
+#: widgets/header-menu.php:528 widgets/header-preset/header-preset.php:583
+#: widgets/header-preset/header-preset.php:584
+#: widgets/header-preset/header-preset.php:630
+#: widgets/header-preset/header-preset.php:631
+msgid "List Item"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:468
+#: inc/mega-menu/widget/mega-menu.php:533 widgets/arolax-button.php:88
+#: widgets/arolax-case-study-slider.php:151 widgets/arolax-gallery.php:179
+#: widgets/arolax-gallery.php:319 widgets/header-menu.php:474
+#: widgets/header-menu.php:539 widgets/header-preset/header-preset.php:411
+#: widgets/header-preset/header-preset.php:595
+#: widgets/header-preset/header-preset.php:642
+#: widgets/header-preset/header-preset.php:1672
+#: widgets/header-preset/header-preset.php:2032
+#: widgets/header-preset/header-preset.php:2059
+#: widgets/header-preset/header-preset.php:2187 widgets/landing-page.php:763
+#: widgets/landing-page.php:956 widgets/offcanvas-menu.php:395
+#: widgets/wc-cart-count.php:79
+msgid "Link"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:470
+#: widgets/arolax-case-study-slider.php:156 widgets/header-menu.php:476
+#: widgets/header-preset/header-preset.php:597
+msgid "https://your-link.com"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:479 widgets/header-menu.php:485
+#: widgets/header-preset/header-preset.php:606
+msgid "Gallery Items"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:492 widgets/header-menu.php:498
+msgid "Show Social Icon"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:504 widgets/header-menu.php:510
+#: widgets/header-preset/header-preset.php:616
+msgid "Social Title"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:506 inc/options/settings/header.php:381
+#: inc/options/settings/social.php:5 inc/sidebar-widgets/social.php:203
+#: widgets/header-menu.php:512 widgets/header-preset/header-preset.php:618
+msgid "Social"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:507 widgets/header-menu.php:513
+#: widgets/header-preset/header-preset.php:619
+msgid "Type your social text here"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:549 skin/accordion-two.php:163
+#: skin/accordion.php:214 widgets/arolax-button.php:102
+#: widgets/arolax-button.php:456 widgets/arolax-gallery.php:222
+#: widgets/arolax-gallery.php:362 widgets/arolax-gallery.php:588
+#: widgets/arolax-posts.php:1237 widgets/arolax-tabs.php:121
+#: widgets/arolax-tabs.php:501 widgets/header-menu.php:555
+#: widgets/header-preset/header-preset.php:658
+#: widgets/header-preset/header-preset.php:1688
+#: widgets/header-preset/header-preset.php:1903
+#: widgets/header-preset/header-preset.php:2048
+#: widgets/header-preset/header-preset.php:2174 widgets/landing-page.php:306
+#: widgets/landing-page.php:776 widgets/landing-page.php:984
+#: widgets/offcanvas-menu.php:411 widgets/offcanvas-menu.php:551
+#: widgets/wc-cart-count.php:67 widgets/wc-cart-count.php:193
+msgid "Icon"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:562 widgets/header-menu.php:568
+#: widgets/header-preset/header-preset.php:671
+msgid "Social Items"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:584 widgets/footer-menu.php:91
+#: widgets/header-menu.php:589 widgets/header-preset/header-preset.php:320
+msgid "Custom Direction Icon"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:596 widgets/header-menu.php:601
+#: widgets/header-preset/header-preset.php:332
+msgid "Nav Down Arrow Icon"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:605 widgets/header-menu.php:610
+#: widgets/header-preset/header-preset.php:341
+msgid "Nav Right Arrow Icon"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:614 widgets/arolax-button.php:136
+#: widgets/arolax-tabs.php:340 widgets/header-menu.php:619
+#: widgets/header-menu.php:880 widgets/header-preset/header-preset.php:350
+#: widgets/header-preset/header-preset.php:1136
+msgid "Icon Gap"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:646
+#: widgets/arolax-case-study-slider.php:578
+#: widgets/arolax-case-study-slider.php:826 widgets/arolax-posts.php:1726
+#: widgets/arolax-testimonial-2.php:617 widgets/arolax-testimonial.php:1076
+#: widgets/arolax-video-slider.php:353
+msgid "Space Between"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:661 widgets/header-menu.php:658
+#: widgets/header-preset/header-preset.php:370
+msgid "Down Arrow margin"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:675 widgets/header-menu.php:672
+#: widgets/header-preset/header-preset.php:384
+msgid "Right Arrow margin"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:701
+#: inc/mega-menu/widget/mega-menu.php:931
+#: inc/mega-menu/widget/mega-menu.php:1015
+#: inc/mega-menu/widget/mega-menu.php:1196
+#: inc/packages/codestar-framework/fields/background/background.php:270
+#: inc/packages/codestar-framework/fields/link_color/link_color.php:36
+#: inc/packages/codestar-framework/fields/typography/typography.php:186
+#: widgets/arolax-button.php:364 widgets/arolax-button.php:520
+#: widgets/arolax-case-study-slider.php:921 widgets/arolax-posts.php:601
+#: widgets/arolax-posts.php:917 widgets/arolax-posts.php:1020
+#: widgets/arolax-posts.php:1173 widgets/arolax-posts.php:1299
+#: widgets/arolax-posts.php:1670 widgets/arolax-service.php:488
+#: widgets/arolax-testimonial-2.php:972 widgets/arolax-testimonial.php:1452
+#: widgets/arolax-video-slider.php:715 widgets/arolax-video-testimonial.php:728
+#: widgets/banner-breadcrumb.php:417 widgets/blog-post-tags.php:341
+#: widgets/dropdown.php:129 widgets/footer-menu.php:361
+#: widgets/footer-menu.php:742 widgets/header-menu.php:698
+#: widgets/header-menu.php:852 widgets/header-menu.php:957
+#: widgets/header-menu.php:1162 widgets/header-preset/header-preset.php:956
+#: widgets/header-preset/header-preset.php:1109
+#: widgets/header-preset/header-preset.php:1211
+#: widgets/header-preset/header-preset.php:1346
+#: widgets/header-preset/header-preset.php:1807
+#: widgets/header-preset/header-preset.php:1970
+#: widgets/header-preset/header-preset.php:2114
+#: widgets/header-preset/header-preset.php:2346 widgets/wc-cart-count.php:103
+#: widgets/wc-cart-count.php:202 widgets/wc-cart-count.php:275
+#: widgets/wc-cart-count.php:363
+msgid "Normal"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:708
+#: inc/mega-menu/widget/mega-menu.php:757
+#: inc/mega-menu/widget/mega-menu.php:938
+#: inc/mega-menu/widget/mega-menu.php:979
+#: inc/mega-menu/widget/mega-menu.php:1022
+#: inc/mega-menu/widget/mega-menu.php:1048
+#: inc/mega-menu/widget/mega-menu.php:1397 inc/options/posts/page.php:319
+#: inc/options/posts/post.php:162
+#: inc/packages/codestar-framework/fields/background/background.php:278
+#: inc/packages/importer/framework/includes/option-types/typography-v2/view.php:181
+#: skin/accordion-two.php:107 skin/accordion-two.php:352 skin/accordion.php:158
+#: widgets/arolax-button.php:371 widgets/arolax-button.php:391
+#: widgets/arolax-button.php:527 widgets/arolax-button.php:547
+#: widgets/arolax-case-study-slider.php:928
+#: widgets/arolax-case-study-slider.php:960
+#: widgets/arolax-case-study-slider.php:1029 widgets/arolax-gallery.php:518
+#: widgets/arolax-gallery.php:538 widgets/arolax-gallery.php:566
+#: widgets/arolax-gallery.php:668 widgets/arolax-gallery.php:710
+#: widgets/arolax-posts.php:608 widgets/arolax-posts.php:628
+#: widgets/arolax-posts.php:658 widgets/arolax-posts.php:703
+#: widgets/arolax-posts.php:853 widgets/arolax-posts.php:924
+#: widgets/arolax-posts.php:944 widgets/arolax-posts.php:1027
+#: widgets/arolax-posts.php:1048 widgets/arolax-posts.php:1180
+#: widgets/arolax-posts.php:1200 widgets/arolax-posts.php:1306
+#: widgets/arolax-posts.php:1326 widgets/arolax-posts.php:1377
+#: widgets/arolax-posts.php:1420 widgets/arolax-posts.php:1677
+#: widgets/arolax-posts.php:1697 widgets/arolax-service.php:204
+#: widgets/arolax-service.php:290 widgets/arolax-service.php:320
+#: widgets/arolax-service.php:495 widgets/arolax-service.php:525
+#: widgets/arolax-tabs.php:508 widgets/arolax-tabs.php:586
+#: widgets/arolax-tabs.php:627 widgets/arolax-testimonial-2.php:330
+#: widgets/arolax-testimonial-2.php:486 widgets/arolax-testimonial-2.php:979
+#: widgets/arolax-testimonial-2.php:1014 widgets/arolax-testimonial-2.php:1090
+#: widgets/arolax-testimonial.php:419 widgets/arolax-testimonial.php:1459
+#: widgets/arolax-testimonial.php:1494 widgets/arolax-testimonial.php:1569
+#: widgets/arolax-video-slider.php:722 widgets/arolax-video-slider.php:754
+#: widgets/arolax-video-testimonial.php:380
+#: widgets/arolax-video-testimonial.php:735
+#: widgets/arolax-video-testimonial.php:759
+#: widgets/arolax-video-testimonial.php:790 widgets/arolax-video.php:224
+#: widgets/blog-post-tags.php:348 widgets/blog-post-tags.php:386
+#: widgets/dropdown.php:136 widgets/footer-menu.php:368
+#: widgets/footer-menu.php:599 widgets/footer-menu.php:652
+#: widgets/footer-menu.php:748 widgets/footer-menu.php:883
+#: widgets/header-menu.php:705 widgets/header-menu.php:754
+#: widgets/header-menu.php:859 widgets/header-menu.php:920
+#: widgets/header-menu.php:964 widgets/header-menu.php:1015
+#: widgets/header-menu.php:1362 widgets/header-preset/header-preset.php:963
+#: widgets/header-preset/header-preset.php:1013
+#: widgets/header-preset/header-preset.php:1116
+#: widgets/header-preset/header-preset.php:1175
+#: widgets/header-preset/header-preset.php:1218
+#: widgets/header-preset/header-preset.php:1245
+#: widgets/header-preset/header-preset.php:1600
+#: widgets/header-preset/header-preset.php:1814
+#: widgets/header-preset/header-preset.php:1843
+#: widgets/header-preset/header-preset.php:1977
+#: widgets/header-preset/header-preset.php:2002
+#: widgets/header-preset/header-preset.php:2121
+#: widgets/header-preset/header-preset.php:2141
+#: widgets/header-preset/header-preset.php:2353
+#: widgets/header-preset/header-preset.php:2393 widgets/landing-page.php:606
+#: widgets/offcanvas-menu.php:435 widgets/offcanvas-menu.php:716
+#: widgets/offcanvas-menu.php:758 widgets/offcanvas-menu.php:891
+#: widgets/offcanvas-menu.php:921 widgets/wc-cart-count.php:209
+#: widgets/wc-cart-count.php:249 widgets/wc-cart-count.php:282
+#: widgets/wc-cart-count.php:337 widgets/wc-cart-count.php:370
+#: widgets/wc-cart-count.php:531 widgets/wcf-line.php:273
+msgid "Color"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:728
+#: inc/mega-menu/widget/mega-menu.php:958 widgets/header-menu.php:899
+#: widgets/header-preset/header-preset.php:984
+#: widgets/header-preset/header-preset.php:1155
+msgid "item Padding"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:750
+#: inc/mega-menu/widget/mega-menu.php:972
+#: inc/mega-menu/widget/mega-menu.php:1041
+#: inc/mega-menu/widget/mega-menu.php:1214
+#: inc/packages/codestar-framework/fields/link_color/link_color.php:37
+#: widgets/arolax-button.php:384 widgets/arolax-button.php:540
+#: widgets/arolax-case-study-slider.php:953 widgets/arolax-gallery.php:732
+#: widgets/arolax-posts.php:621 widgets/arolax-posts.php:937
+#: widgets/arolax-posts.php:1041 widgets/arolax-posts.php:1193
+#: widgets/arolax-posts.php:1319 widgets/arolax-posts.php:1690
+#: widgets/arolax-service.php:518 widgets/arolax-service.php:564
+#: widgets/arolax-testimonial-2.php:1007 widgets/arolax-testimonial.php:1487
+#: widgets/arolax-video-slider.php:747 widgets/arolax-video-testimonial.php:752
+#: widgets/blog-post-tags.php:379 widgets/footer-menu.php:592
+#: widgets/footer-menu.php:877 widgets/header-menu.php:747
+#: widgets/header-menu.php:913 widgets/header-menu.php:1008
+#: widgets/header-menu.php:1180 widgets/header-preset/header-preset.php:1006
+#: widgets/header-preset/header-preset.php:1168
+#: widgets/header-preset/header-preset.php:1238
+#: widgets/header-preset/header-preset.php:1364
+#: widgets/header-preset/header-preset.php:1836
+#: widgets/header-preset/header-preset.php:1995
+#: widgets/header-preset/header-preset.php:2134
+#: widgets/header-preset/header-preset.php:2386 widgets/wc-cart-count.php:163
+#: widgets/wc-cart-count.php:242 widgets/wc-cart-count.php:330
+#: widgets/wc-cart-count.php:524
+msgid "Hover"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:789
+msgid "Container layout"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:793
+#: inc/packages/codestar-framework/fields/typography/typography.php:119
+#: inc/packages/codestar-framework/fields/typography/typography.php:132
+#: inc/packages/codestar-framework/fields/typography/typography.php:145
+#: inc/packages/codestar-framework/fields/typography/typography.php:160
+#: inc/packages/codestar-framework/fields/typography/typography.php:176
+#: inc/packages/codestar-framework/fields/typography/typography.php:189
+#: inc/packages/codestar-framework/fields/typography/typography.php:203
+#: inc/packages/codestar-framework/fields/typography/typography.php:221
+#: widgets/arolax-button.php:193 widgets/arolax-testimonial-2.php:829
+#: widgets/arolax-testimonial-2.php:846 widgets/arolax-testimonial-2.php:908
+#: widgets/arolax-testimonial.php:1308 widgets/arolax-testimonial.php:1325
+#: widgets/arolax-testimonial.php:1387 widgets/arolax-video-slider.php:575
+#: widgets/arolax-video-slider.php:589 widgets/arolax-video-slider.php:651
+#: widgets/header-preset/header-preset.php:181
+#: widgets/header-preset/header-preset.php:2227
+#: widgets/header-preset/header-preset.php:2499 widgets/landing-page.php:460
+#: widgets/landing-page.php:1132 widgets/lottie.php:291
+#: widgets/offcanvas-menu.php:306 widgets/offcanvas-menu.php:565
+#: widgets/offcanvas-menu.php:990 widgets/offcanvas-menu.php:1095
+#: widgets/offcanvas-menu.php:1143 widgets/offcanvas-menu.php:1174
+#: widgets/offcanvas-menu.php:1331 widgets/wc-cart-count.php:447
+#: widgets/wc-cart-count.php:462 widgets/wcf-line.php:108
+msgid "Default"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:796 widgets/arolax-button.php:194
+msgid "Full Width"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:811 skin/accordion-two.php:468
+#: widgets/landing-page.php:569
+msgid "Position Top"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:834 skin/accordion-two.php:446
+msgid "Position Left"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:861 widgets/header-menu.php:782
+#: widgets/header-preset/header-preset.php:1039
+msgid "Dropdown Container"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:869
+#: inc/mega-menu/widget/mega-menu.php:1130 widgets/arolax-posts.php:505
+#: widgets/arolax-posts.php:759 widgets/arolax-service.php:237
+#: widgets/arolax-testimonial-2.php:284 widgets/arolax-testimonial-2.php:373
+#: widgets/arolax-testimonial.php:479 widgets/arolax-testimonial.php:585
+#: widgets/arolax-testimonial.php:703 widgets/arolax-video-testimonial.php:213
+#: widgets/arolax-video.php:145 widgets/footer-menu.php:197
+#: widgets/footer-menu.php:511 widgets/footer-menu.php:803
+#: widgets/header-menu.php:790 widgets/header-menu.php:1096
+#: widgets/header-preset/header-preset.php:876
+#: widgets/header-preset/header-preset.php:1047
+#: widgets/header-preset/header-preset.php:1280 widgets/lottie.php:340
+#: widgets/offcanvas-menu.php:1220 widgets/wcf-line.php:123
+msgid "Width"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:922 widgets/header-menu.php:843
+#: widgets/header-preset/header-preset.php:1100
+msgid "Dropdown"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1006
+#: inc/mega-menu/widget/mega-menu.php:1331 widgets/footer-menu.php:702
+#: widgets/header-menu.php:948 widgets/header-menu.php:1296
+#: widgets/header-preset/header-preset.php:1534
+msgid "Arrow Icon"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1073 widgets/header-menu.php:1041
+#: widgets/header-preset/header-preset.php:1387
+msgid "Offcanvas"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1121 widgets/header-menu.php:1088
+#: widgets/header-preset/header-preset.php:215
+#: widgets/header-preset/header-preset.php:506
+#: widgets/header-preset/header-preset.php:1272
+msgid "Hamburger Icon"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1149
+#: inc/packages/codestar-framework/fields/background/background.php:218
+#: widgets/header-menu.php:1115 widgets/header-preset/header-preset.php:1299
+msgid "Background Size"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1180 inc/options/settings/style.php:213
+#: skin/accordion.php:115 widgets/arolax-button.php:276
+#: widgets/arolax-button.php:503 widgets/arolax-case-study-slider.php:239
+#: widgets/arolax-case-study-slider.php:347
+#: widgets/arolax-case-study-slider.php:434
+#: widgets/arolax-case-study-slider.php:893 widgets/arolax-gallery.php:633
+#: widgets/arolax-posts.php:815 widgets/arolax-posts.php:991
+#: widgets/arolax-posts.php:1144 widgets/arolax-posts.php:1282
+#: widgets/arolax-service.php:255 widgets/arolax-service.php:406
+#: widgets/arolax-service.php:453 widgets/arolax-tabs.php:475
+#: widgets/arolax-tabs.php:672 widgets/arolax-testimonial-2.php:419
+#: widgets/arolax-testimonial-2.php:801 widgets/arolax-testimonial.php:337
+#: widgets/arolax-testimonial.php:534 widgets/arolax-testimonial.php:1280
+#: widgets/arolax-video-slider.php:547 widgets/arolax-video-testimonial.php:257
+#: widgets/arolax-video-testimonial.php:436 widgets/arolax-video.php:189
+#: widgets/arolax-video.php:280 widgets/blog-post-tags.php:299
+#: widgets/dropdown.php:172 widgets/footer-menu.php:481
+#: widgets/footer-menu.php:630 widgets/footer-menu.php:683
+#: widgets/footer-menu.php:785 widgets/footer-menu.php:912
+#: widgets/header-menu.php:1146 widgets/header-preset/header-preset.php:1330
+#: widgets/header-preset/header-preset.php:1783
+#: widgets/header-preset/header-preset.php:2330 widgets/landing-page.php:271
+#: widgets/landing-page.php:327 widgets/offcanvas-menu.php:853
+#: widgets/wc-cart-count.php:127 widgets/wc-cart-count.php:389
+#: widgets/wcf-line.php:284
+msgid "Border Radius"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1238 widgets/header-menu.php:1204
+#: widgets/header-preset/header-preset.php:1430
+msgid "Mobile Menu"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1259
+#: widgets/arolax-case-study-slider.php:262
+#: widgets/arolax-case-study-slider.php:305
+#: widgets/arolax-testimonial-2.php:442 widgets/arolax-testimonial.php:772
+#: widgets/arolax-testimonial.php:844 widgets/arolax-testimonial.php:896
+#: widgets/arolax-video-testimonial.php:292
+#: widgets/arolax-video-testimonial.php:336 widgets/banner-breadcrumb.php:256
+#: widgets/banner-breadcrumb.php:379 widgets/blog-post-tags.php:195
+#: widgets/header-menu.php:1224 widgets/header-preset/header-preset.php:1462
+#: widgets/header-preset/header-preset.php:2519 widgets/landing-page.php:224
+#: widgets/landing-page.php:527
+msgid "Text Color"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1278 inc/options/settings/blog.php:273
+#: inc/options/settings/style.php:204 widgets/arolax-button.php:415
+#: widgets/arolax-button.php:568 widgets/arolax-case-study-slider.php:982
+#: widgets/arolax-posts.php:1221 widgets/arolax-posts.php:1347
+#: widgets/arolax-service.php:546 widgets/arolax-tabs.php:727
+#: widgets/arolax-testimonial-2.php:1039 widgets/arolax-testimonial.php:1519
+#: widgets/arolax-video-slider.php:776 widgets/blog-post-tags.php:406
+#: widgets/header-menu.php:1243 widgets/header-preset/header-preset.php:735
+#: widgets/header-preset/header-preset.php:1481
+#: widgets/header-preset/header-preset.php:1863
+#: widgets/header-preset/header-preset.php:2415
+msgid "Border Color"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1289 widgets/header-menu.php:1254
+#: widgets/header-preset/header-preset.php:1492
+msgid "Sub Menu"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1310 widgets/header-menu.php:1275
+#: widgets/header-preset/header-preset.php:1513
+msgid "3rd Step Sub Menu"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1340 widgets/arolax-button.php:117
+#: widgets/arolax-tabs.php:311 widgets/header-menu.php:1305
+#: widgets/header-preset/header-preset.php:1543 widgets/wc-cart-count.php:458
+msgid "Icon Position"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1359 widgets/header-menu.php:1324
+#: widgets/header-preset/header-preset.php:1562
+msgid "2nd Step Icon Position"
+msgstr ""
+
+#: inc/mega-menu/widget/mega-menu.php:1378
+#: inc/packages/importer/framework/includes/option-types/typography-v2/view.php:136
+#: widgets/arolax-button.php:467 widgets/arolax-case-study-slider.php:370
+#: widgets/arolax-case-study-slider.php:851
+#: widgets/arolax-case-study-slider.php:1012 widgets/arolax-posts.php:793
+#: widgets/arolax-posts.php:1246 widgets/arolax-posts.php:1388
+#: widgets/arolax-testimonial-2.php:773 widgets/arolax-testimonial.php:1252
+#: widgets/arolax-testimonial.php:1549 widgets/arolax-video-slider.php:522
+#: widgets/header-menu.php:1343 widgets/header-preset/header-preset.php:1581
+#: widgets/header-preset/header-preset.php:1938
+msgid "Size"
+msgstr ""
+
+#: inc/options/parent-page.php:9 inc/options/parent-page.php:12
+msgid "Theme Settings"
+msgstr ""
+
+#: inc/options/parent-page.php:40
+msgid "Credited by WealCoder"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:16
+#: inc/options/settings/custom-post-type.php:11 widgets/arolax-tabs.php:281
+msgid "Settings"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:27
+msgid "Add Font Variation"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:33
+msgid "Font Weight"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:34
+msgid "Select an Weight"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:52 inc/options/settings/banner.php:278
+#: inc/options/settings/header.php:398 inc/options/settings/page-404.php:67
+#: inc/options/settings/page-search.php:83 inc/options/settings/style.php:6
+#: inc/packages/importer/framework/includes/option-types/typography-v2/view.php:125
+#: widgets/arolax-button.php:62 widgets/arolax-posts.php:62
+#: widgets/arolax-posts.php:1088 widgets/arolax-service.php:62
+#: widgets/blog-post-tags.php:138 widgets/footer-menu.php:75
+#: widgets/landing-page.php:706 widgets/lottie.php:332 widgets/wcf-line.php:104
+msgid "Style"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:65
+msgid "The Web Open Font Format"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:66
+msgid "WOFF FILE"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:72
+msgid "The Web Open Font Format 2 . Used by modern browser"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:73
+msgid "WOFF2 FILE"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:79
+msgid "The TrueType Font Format  . Best used for safari , android ios"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:80
+msgid "TTF FILE"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:86
+msgid "Embeded Open Type   . Best used for IE6-9"
+msgstr ""
+
+#: inc/options/posts/custom-fonts.php:87
+msgid "EOT FILE"
+msgstr ""
+
+#: inc/options/posts/page.php:6
+msgid "Manage From Builder Page"
+msgstr ""
+
+#: inc/options/posts/page.php:25 inc/options/settings/blog.php:13
+#: inc/options/settings/general.php:5 widgets/landing-page.php:372
+#: widgets/landing-page.php:839
+msgid "General"
+msgstr ""
+
+#: inc/options/posts/page.php:31 inc/options/settings/general.php:26
+msgid "FullSite Background Pattern"
+msgstr ""
+
+#: inc/options/posts/page.php:38 inc/options/settings/general.php:33
+msgid "Background Pattern Select"
+msgstr ""
+
+#: inc/options/posts/page.php:50 inc/options/settings/general.php:45
+msgid "Custom Background Pattern"
+msgstr ""
+
+#: inc/options/posts/page.php:63
+msgid "Disable Banner"
+msgstr ""
+
+#: inc/options/posts/page.php:70 inc/options/settings/blog.php:43
+msgid "Content Container size(px)"
+msgstr ""
+
+#: inc/options/posts/page.php:81 inc/options/settings/blog.php:54
+msgid "Blog Content Padding"
+msgstr ""
+
+#: inc/options/posts/page.php:91 inc/options/settings/style.php:57
+msgid "Admin Topbar margin"
+msgstr ""
+
+#: inc/options/posts/page.php:102 inc/options/settings/banner.php:86
+msgid "Page Banner"
+msgstr ""
+
+#: inc/options/posts/page.php:110 inc/options/posts/page.php:311
+#: inc/options/posts/post.php:154 inc/options/settings/banner.php:72
+#: inc/options/settings/banner.php:132 inc/options/settings/banner.php:197
+#: inc/options/settings/banner.php:259 inc/options/settings/header.php:418
+#: inc/options/settings/page-404.php:73 inc/options/settings/page-search.php:89
+msgid "Upload Background"
+msgstr ""
+
+#: inc/options/posts/page.php:111 inc/options/settings/banner.php:73
+#: inc/options/settings/banner.php:133 inc/options/settings/banner.php:198
+#: inc/options/settings/banner.php:260 inc/options/settings/page-404.php:74
+msgid "Upload main Image width 1200px and height 400px."
+msgstr ""
+
+#: inc/options/posts/page.php:127 inc/options/posts/page.php:162
+#: inc/options/settings/banner.php:308 inc/options/settings/banner.php:352
+#: inc/options/settings/banner.php:404 inc/options/settings/banner.php:456
+#: widgets/arolax-service.php:617
+msgid "Overlay Color"
+msgstr ""
+
+#: inc/options/posts/page.php:136 inc/options/settings/banner.php:316
+#: inc/options/settings/banner.php:361 inc/options/settings/banner.php:412
+#: inc/options/settings/banner.php:464
+msgid "Overlay Opacity"
+msgstr ""
+
+#: inc/options/posts/page.php:146 inc/options/settings/banner.php:338
+#: inc/options/settings/banner.php:434
+msgid "Page Title Color"
+msgstr ""
+
+#: inc/options/posts/page.php:154 inc/options/settings/banner.php:344
+#: inc/options/settings/banner.php:388 inc/options/settings/banner.php:440
+msgid "Page Breadcrumb Color"
+msgstr ""
+
+#: inc/options/posts/page.php:180 inc/options/posts/post.php:23
+msgid "Override Header"
+msgstr ""
+
+#: inc/options/posts/page.php:182 inc/options/posts/page.php:358
+#: inc/options/posts/post.php:25 inc/options/posts/post.php:200
+msgid "No option"
+msgstr ""
+
+#: inc/options/posts/page.php:183 inc/options/posts/post.php:26
+msgid "Theme Header"
+msgstr ""
+
+#: inc/options/posts/page.php:191 inc/options/posts/post.php:35
+#: inc/options/settings/header.php:24
+msgid "Header Style"
+msgstr ""
+
+#: inc/options/posts/page.php:192 inc/options/posts/post.php:36
+#: inc/options/settings/header.php:25
+msgid "Select the header style which you want to show on your website."
+msgstr ""
+
+#: inc/options/posts/page.php:203 inc/options/posts/post.php:47
+#: inc/options/settings/header.php:35
+msgid "Transparent Header"
+msgstr ""
+
+#: inc/options/posts/page.php:212 inc/options/posts/page.php:219
+#: inc/options/posts/post.php:55 inc/options/posts/post.php:62
+#: inc/options/settings/header.php:201 inc/options/settings/header.php:207
+msgid "Menu Background"
+msgstr ""
+
+#: inc/options/posts/page.php:220 inc/options/posts/post.php:63
+#: inc/options/settings/header.php:208
+msgid "Set the menu background form here."
+msgstr ""
+
+#: inc/options/posts/page.php:237 inc/options/posts/post.php:80
+#: inc/options/settings/header.php:224 inc/options/settings/header.php:444
+msgid "Menu Padding"
+msgstr ""
+
+#: inc/options/posts/page.php:244 inc/options/posts/page.php:251
+#: inc/options/posts/post.php:87 inc/options/posts/post.php:94
+#: inc/options/settings/header.php:182 inc/options/settings/header.php:230
+#: inc/options/settings/header.php:236 inc/options/settings/header.php:433
+#: inc/sticky.elementor.php:176
+msgid "Menu Color"
+msgstr ""
+
+#: inc/options/posts/page.php:252 inc/options/posts/post.php:95
+#: inc/options/settings/header.php:183 inc/options/settings/header.php:237
+msgid "Set the menu color by color picker"
+msgstr ""
+
+#: inc/options/posts/page.php:260 inc/options/posts/post.php:103
+#: inc/options/settings/header.php:244 inc/sticky.elementor.php:190
+msgid "Menu Hover Color"
+msgstr ""
+
+#: inc/options/posts/page.php:261 inc/options/posts/post.php:104
+#: inc/options/settings/header.php:245
+msgid "Set the menu hover color by color picker"
+msgstr ""
+
+#: inc/options/posts/page.php:270 inc/options/posts/post.php:113
+#: inc/options/settings/header.php:253
+msgid "Menu Dropdown Color & Hover"
+msgstr ""
+
+#: inc/options/posts/page.php:276 inc/options/posts/post.php:119
+#: inc/options/settings/header.php:258
+msgid "Menu Dropdown Color"
+msgstr ""
+
+#: inc/options/posts/page.php:277 inc/options/posts/post.php:120
+#: inc/options/settings/header.php:259
+msgid "Set the menu dropdown color by color picker"
+msgstr ""
+
+#: inc/options/posts/page.php:285 inc/options/posts/post.php:128
+#: inc/options/settings/header.php:266
+msgid "Menu Dropdown Hover Color"
+msgstr ""
+
+#: inc/options/posts/page.php:286 inc/options/posts/page.php:295
+#: inc/options/posts/post.php:129 inc/options/posts/post.php:138
+#: inc/options/settings/header.php:267 inc/options/settings/header.php:275
+msgid "Set the menu dropdown hover color by color picker"
+msgstr ""
+
+#: inc/options/posts/page.php:294 inc/options/posts/post.php:137
+#: inc/options/settings/header.php:274
+msgid "Menu Dropdown bgColor"
+msgstr ""
+
+#: inc/options/posts/page.php:304 inc/options/posts/post.php:147
+msgid "Mobile/ Offcanvas"
+msgstr ""
+
+#: inc/options/posts/page.php:312 inc/options/posts/post.php:155
+#: inc/options/settings/header.php:419
+msgid "Upload main Image width 400px and height 100%."
+msgstr ""
+
+#: inc/options/posts/page.php:335 inc/options/posts/post.php:178
+#: inc/options/settings/header.php:472
+msgid "Menu Border Color"
+msgstr ""
+
+#: inc/options/posts/page.php:350 inc/options/posts/post.php:192
+#: inc/options/settings/footer.php:6
+msgid "Footer"
+msgstr ""
+
+#: inc/options/posts/page.php:356 inc/options/posts/post.php:198
+msgid "Override Footer"
+msgstr ""
+
+#: inc/options/posts/page.php:359 inc/options/posts/post.php:201
+msgid "Theme Footer"
+msgstr ""
+
+#: inc/options/posts/page.php:360 inc/options/posts/page.php:380
+#: inc/options/posts/post.php:202 inc/options/posts/post.php:222
+msgid "Elementor Footer"
+msgstr ""
+
+#: inc/options/posts/page.php:368 inc/options/posts/post.php:210
+#: inc/options/settings/footer.php:25
+msgid "Footer Style"
+msgstr ""
+
+#: inc/options/posts/page.php:369 inc/options/posts/post.php:211
+msgid "Select the footer style which you want to show on your website."
+msgstr ""
+
+#: inc/options/posts/page.php:390 inc/options/posts/page.php:397
+#: inc/options/settings/custom-code.php:5
+#: inc/options/settings/custom-code.php:12
+msgid "Custom Code"
+msgstr ""
+
+#: inc/options/posts/page.php:406 inc/options/settings/custom-code.php:21
+msgid "Desktop Device"
+msgstr ""
+
+#: inc/options/posts/page.php:418 inc/options/settings/custom-code.php:32
+msgid "Tab Device"
+msgstr ""
+
+#: inc/options/posts/page.php:419 inc/options/settings/custom-code.php:33
+msgid "Max width 991"
+msgstr ""
+
+#: inc/options/posts/page.php:431 inc/options/settings/custom-code.php:44
+msgid "Mobile Device"
+msgstr ""
+
+#: inc/options/posts/page.php:447 inc/options/settings/custom-code.php:60
+msgid "Javascript Editor"
+msgstr ""
+
+#: inc/options/posts/page.php:464 inc/options/settings/custom-code.php:77
+msgid "Html will be load in footer"
+msgstr ""
+
+#: inc/options/posts/post.php:231 inc/options/posts/post.php:245
+#: inc/options/settings/post-page.php:43 widgets/arolax-posts.php:358
+#: widgets/header-preset/header-preset.php:685
+msgid "Layout"
+msgstr ""
+
+#: inc/options/posts/post.php:237
+msgid "Override Layout"
+msgstr ""
+
+#: inc/options/posts/post.php:259 inc/options/settings/banner.php:6
+#: inc/options/settings/post-page.php:55
+msgid "Banner"
+msgstr ""
+
+#: inc/options/posts/post.php:267 inc/options/settings/post-page.php:63
+#: skin/accordion-two.php:643 skin/accordion.php:525
+#: widgets/arolax-tabs.php:223
+msgid "View"
+msgstr ""
+
+#: inc/options/posts/post.php:275 inc/options/settings/post-page.php:71
+msgid "Sidebar"
+msgstr ""
+
+#: inc/options/posts/post.php:300 widgets/arolax-gallery.php:115
+#: widgets/arolax-gallery.php:255 widgets/arolax-video-testimonial.php:205
+#: widgets/arolax-video.php:102 widgets/arolax-video.php:137
+msgid "Video"
+msgstr ""
+
+#: inc/options/posts/post.php:305
+msgid "Video Url"
+msgstr ""
+
+#: inc/options/posts/post.php:306
+msgid "Provide Url here From Youtube"
+msgstr ""
+
+#: inc/options/posts/post.php:312
+msgid "Audio"
+msgstr ""
+
+#: inc/options/posts/post.php:317
+msgid "Audio URL"
+msgstr ""
+
+#: inc/options/posts/post.php:318
+msgid "Provide SoundCloud audio url"
+msgstr ""
+
+#: inc/options/settings/backup.php:6
+msgid "Backup Options"
+msgstr ""
+
+#: inc/options/settings/backup.php:12
+msgid "Backup Your All Options"
+msgstr ""
+
+#: inc/options/settings/backup.php:13
+msgid "If you want to take backup your option you can backup here."
+msgstr ""
+
+#: inc/options/settings/banner.php:12
+msgid "Content Settings"
+msgstr ""
+
+#: inc/options/settings/banner.php:21 inc/options/settings/blog.php:6
+#: inc/options/settings/header.php:580
+msgid "Blog"
+msgstr ""
+
+#: inc/options/settings/banner.php:27 inc/options/settings/banner.php:33
+msgid "Blog Banner"
+msgstr ""
+
+#: inc/options/settings/banner.php:40 inc/options/settings/banner.php:100
+#: inc/options/settings/banner.php:163 inc/options/settings/banner.php:225
+msgid "Elementor ShortCode?"
+msgstr ""
+
+#: inc/options/settings/banner.php:56
+msgid "Blog Breadcrumb"
+msgstr ""
+
+#: inc/options/settings/banner.php:64
+msgid "Blog title"
+msgstr ""
+
+#: inc/options/settings/banner.php:81 widgets/arolax-posts.php:1891
+msgid "Page"
+msgstr ""
+
+#: inc/options/settings/banner.php:93
+msgid "Page Banner Show "
+msgstr ""
+
+#: inc/options/settings/banner.php:116 inc/options/settings/banner.php:241
+msgid "Page Breadcrumb"
+msgstr ""
+
+#: inc/options/settings/banner.php:124 inc/options/settings/banner.php:188
+#: inc/options/settings/banner.php:250
+msgid "Page Title"
+msgstr ""
+
+#: inc/options/settings/banner.php:143 inc/options/settings/banner.php:189
+msgid "Search Page"
+msgstr ""
+
+#: inc/options/settings/banner.php:149
+msgid "Search Page Banner"
+msgstr ""
+
+#: inc/options/settings/banner.php:156 inc/options/settings/banner.php:218
+msgid "Show "
+msgstr ""
+
+#: inc/options/settings/banner.php:179 inc/options/settings/general.php:11
+msgid "Breadcrumb"
+msgstr ""
+
+#: inc/options/settings/banner.php:206 inc/options/settings/page-404.php:8
+#: inc/options/settings/page-404.php:26
+msgid "404"
+msgstr ""
+
+#: inc/options/settings/banner.php:211
+msgid "404 Page Banner"
+msgstr ""
+
+#: inc/options/settings/banner.php:287
+msgid "Blog Banner Style"
+msgstr ""
+
+#: inc/options/settings/banner.php:293 inc/options/settings/blog.php:241
+#: inc/options/settings/header.php:461 inc/options/settings/page-404.php:81
+#: inc/options/settings/page-search.php:97 widgets/arolax-service.php:586
+msgid "Title Color"
+msgstr ""
+
+#: inc/options/settings/banner.php:300
+msgid "Breadcrumb Color"
+msgstr ""
+
+#: inc/options/settings/banner.php:332
+msgid "Page Banner Style"
+msgstr ""
+
+#: inc/options/settings/banner.php:376
+msgid "Search Banner Style"
+msgstr ""
+
+#: inc/options/settings/banner.php:382
+msgid "Search Title Color"
+msgstr ""
+
+#: inc/options/settings/banner.php:396 inc/options/settings/banner.php:448
+msgid "Breadcrumb Icon Color"
+msgstr ""
+
+#: inc/options/settings/banner.php:428
+msgid "404 Banner Style"
+msgstr ""
+
+#: inc/options/settings/blog.php:18
+msgid "Blog Layout"
+msgstr ""
+
+#: inc/options/settings/blog.php:21
+msgid "Style 1"
+msgstr ""
+
+#: inc/options/settings/blog.php:22
+msgid "Style 2"
+msgstr ""
+
+#: inc/options/settings/blog.php:31
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/options/settings/blog.php:34
+msgid "No sidebar"
+msgstr ""
+
+#: inc/options/settings/blog.php:35
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/options/settings/blog.php:36
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/options/settings/blog.php:64
+msgid "Blog meta above title"
+msgstr ""
+
+#: inc/options/settings/blog.php:71
+msgid "Blog Thumbnail"
+msgstr ""
+
+#: inc/options/settings/blog.php:78
+msgid "Blog Excerpt"
+msgstr ""
+
+#: inc/options/settings/blog.php:85
+msgid "Blog Author"
+msgstr ""
+
+#: inc/options/settings/blog.php:92
+msgid "Blog Author image"
+msgstr ""
+
+#: inc/options/settings/blog.php:99
+msgid "Blog Date"
+msgstr ""
+
+#: inc/options/settings/blog.php:106
+msgid "Blog Comment"
+msgstr ""
+
+#: inc/options/settings/blog.php:113
+msgid "Blog Category"
+msgstr ""
+
+#: inc/options/settings/blog.php:120
+msgid "Blog Readmore"
+msgstr ""
+
+#: inc/options/settings/blog.php:126
+msgid "Blog Readmore Text"
+msgstr ""
+
+#: inc/options/settings/blog.php:127 widgets/arolax-posts.php:79
+#: widgets/arolax-posts.php:1076
+msgid "Read More"
+msgstr ""
+
+#: inc/options/settings/blog.php:133
+msgid "Readmore Icon"
+msgstr ""
+
+#: inc/options/settings/blog.php:140
+msgid "Blog Navigation"
+msgstr ""
+
+#: inc/options/settings/blog.php:147
+msgid "Next Icon"
+msgstr ""
+
+#: inc/options/settings/blog.php:155
+msgid "Prev Icon"
+msgstr ""
+
+#: inc/options/settings/blog.php:163
+msgid "Navigation Alignment"
+msgstr ""
+
+#: inc/options/settings/blog.php:176
+msgid "Blog & Page Default Options"
+msgstr ""
+
+#: inc/options/settings/blog.php:182
+msgid "Blog Excerpt Word"
+msgstr ""
+
+#: inc/options/settings/blog.php:183
+msgid ""
+"Set the words that how many words you want to show in every blog post item."
+msgstr ""
+
+#: inc/options/settings/blog.php:193
+msgid "Sidebar Style"
+msgstr ""
+
+#: inc/options/settings/blog.php:200
+msgid "Sidebar Background"
+msgstr ""
+
+#: inc/options/settings/blog.php:201 inc/options/settings/footer.php:47
+msgid "Upload a new background image to set the footer background."
+msgstr ""
+
+#: inc/options/settings/blog.php:216
+msgid "Sidebar Padding Top"
+msgstr ""
+
+#: inc/options/settings/blog.php:226
+msgid "Sidebar Padding Bottom"
+msgstr ""
+
+#: inc/options/settings/blog.php:236
+msgid "Text & Link Color"
+msgstr ""
+
+#: inc/options/settings/blog.php:242
+msgid "Set Sideabr widget title color form here."
+msgstr ""
+
+#: inc/options/settings/blog.php:248 inc/options/settings/header.php:484
+#: inc/options/settings/page-404.php:97
+#: inc/options/settings/page-search.php:106
+msgid "Content Color"
+msgstr ""
+
+#: inc/options/settings/blog.php:249 inc/options/settings/footer.php:104
+msgid "Set footer widget content color form here."
+msgstr ""
+
+#: inc/options/settings/blog.php:279
+msgid "Title Margin Top"
+msgstr ""
+
+#: inc/options/settings/blog.php:289
+msgid "Title Margin bottom"
+msgstr ""
+
+#: inc/options/settings/blog.php:300
+msgid "Sideber links color"
+msgstr ""
+
+#: inc/options/settings/blog.php:301
+msgid "Set the Sidebar area link color"
+msgstr ""
+
+#: inc/options/settings/blog.php:308
+msgid "Sidebar links Hover color"
+msgstr ""
+
+#: inc/options/settings/blog.php:309 inc/options/settings/footer.php:156
+msgid "Set the footer area link hover color"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:5
+msgid "CPT & Taxonomy"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:18
+msgid "Custom Post Type"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:24
+msgid "Post Type (Unique)"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:30
+#: inc/options/settings/custom-post-type.php:126
+msgid "Singular Name"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:36
+#: inc/options/settings/custom-post-type.php:132
+msgid "Plural Name"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:42
+#: inc/options/settings/custom-post-type.php:138
+msgid "Front Slug"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:48
+msgid "Select Supports"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:51
+msgid "Select an option"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:66
+msgid "Exclude From Search?"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:73
+msgid "Has Archive?"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:80
+#: inc/options/settings/custom-post-type.php:155
+msgid "Publicly Queryable?"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:87
+#: inc/options/settings/custom-post-type.php:162
+msgid "Show in admin menu?"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:93
+#: inc/options/settings/header.php:335
+msgid "Nav Icon"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:100
+#: inc/options/settings/custom-post-type.php:170
+msgid "Show in nav menus?"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:108
+msgid "Custom Taxonomy"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:114
+msgid "Custom Taxonomy Type"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:120
+msgid "Taxonomy Name (Unique)"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:144
+msgid "Select post types"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:147
+#: inc/options/settings/general.php:57 inc/options/settings/general.php:58
+msgid "Select an post type"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:177
+msgid "Show in ui?"
+msgstr ""
+
+#: inc/options/settings/custom-post-type.php:183
+msgid "Show in Rest?"
+msgstr ""
+
+#: inc/options/settings/footer.php:13
+msgid "Widget & Style"
+msgstr ""
+
+#: inc/options/settings/footer.php:19
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/options/settings/footer.php:26
+msgid "Select the Footer style which you want to show on your website."
+msgstr ""
+
+#: inc/options/settings/footer.php:36
+#: widgets/header-preset/header-preset.php:281
+#: widgets/header-preset/header-preset.php:868
+msgid "Logo"
+msgstr ""
+
+#: inc/options/settings/footer.php:39
+msgid "Add Image"
+msgstr ""
+
+#: inc/options/settings/footer.php:40
+msgid "Remove Image"
+msgstr ""
+
+#: inc/options/settings/footer.php:46
+msgid "Footer Background "
+msgstr ""
+
+#: inc/options/settings/footer.php:62
+msgid "Footer Main Padding Top"
+msgstr ""
+
+#: inc/options/settings/footer.php:72
+msgid "Footer Padding Bottom"
+msgstr ""
+
+#: inc/options/settings/footer.php:82
+msgid "Widget Padding Bottom"
+msgstr ""
+
+#: inc/options/settings/footer.php:91
+msgid "Footer Text & Link Color"
+msgstr ""
+
+#: inc/options/settings/footer.php:96
+msgid "Widget Title Color"
+msgstr ""
+
+#: inc/options/settings/footer.php:97
+msgid "Set footer widget title color form here."
+msgstr ""
+
+#: inc/options/settings/footer.php:103
+msgid "Widget content Color"
+msgstr ""
+
+#: inc/options/settings/footer.php:117
+msgid "Widget Title margin Top"
+msgstr ""
+
+#: inc/options/settings/footer.php:127
+msgid "Widget Title margin bottom"
+msgstr ""
+
+#: inc/options/settings/footer.php:137
+msgid "Widget Content Margin Bottom"
+msgstr ""
+
+#: inc/options/settings/footer.php:147
+msgid "Footer links color"
+msgstr ""
+
+#: inc/options/settings/footer.php:148
+msgid "Set the footer area link color"
+msgstr ""
+
+#: inc/options/settings/footer.php:155
+msgid "Footer links Hover color"
+msgstr ""
+
+#: inc/options/settings/footer.php:168 inc/options/settings/footer.php:186
+#: widgets/landing-page.php:597 widgets/landing-page.php:815
+#: widgets/offcanvas-menu.php:510
+msgid "Copyright"
+msgstr ""
+
+#: inc/options/settings/footer.php:174
+msgid "Footer Copyright"
+msgstr ""
+
+#: inc/options/settings/footer.php:175
+msgid "Set the footer copyright text"
+msgstr ""
+
+#: inc/options/settings/footer.php:192
+msgid "Copyright Padding top"
+msgstr ""
+
+#: inc/options/settings/footer.php:203
+msgid "Copyright Padding Bottom"
+msgstr ""
+
+#: inc/options/settings/footer.php:213
+msgid "Copyright margin top"
+msgstr ""
+
+#: inc/options/settings/footer.php:224
+msgid "Copyright Text Color"
+msgstr ""
+
+#: inc/options/settings/footer.php:225
+msgid "Set footer copyright text color form here."
+msgstr ""
+
+#: inc/options/settings/footer.php:232
+msgid "Copyright Border"
+msgstr ""
+
+#: inc/options/settings/general.php:18
+msgid "Breadcrumb limit"
+msgstr ""
+
+#: inc/options/settings/general.php:19
+msgid "Set the breadcrump text limit"
+msgstr ""
+
+#: inc/options/settings/general.php:51
+msgid "Post Types"
+msgstr ""
+
+#: inc/options/settings/general.php:65 inc/options/settings/general.php:66
+msgid "Select Primary Taxonomy"
+msgstr ""
+
+#: inc/options/settings/general.php:75
+msgid "Activate Theme Demo"
+msgstr ""
+
+#: inc/options/settings/header.php:4
+msgid "Edit From Builder Page"
+msgstr ""
+
+#: inc/options/settings/header.php:9 inc/options/settings/header.php:17
+#: widgets/header-preset/header-preset.php:785
+msgid "Header"
+msgstr ""
+
+#: inc/options/settings/header.php:42
+msgid "Sticky Header"
+msgstr ""
+
+#: inc/options/settings/header.php:50
+msgid "Sticky Header Start From"
+msgstr ""
+
+#: inc/options/settings/header.php:58
+msgid "Enable Cta Button"
+msgstr ""
+
+#: inc/options/settings/header.php:59
+msgid "If you want to enable or disable button you can set ( YES / NO )"
+msgstr ""
+
+#: inc/options/settings/header.php:66
+msgid "Button One lebel"
+msgstr ""
+
+#: inc/options/settings/header.php:67
+msgid "Set the Button text."
+msgstr ""
+
+#: inc/options/settings/header.php:75
+msgid "Button url"
+msgstr ""
+
+#: inc/options/settings/header.php:76
+msgid "Set the Button url."
+msgstr ""
+
+#: inc/options/settings/header.php:83
+msgid "Tel text"
+msgstr ""
+
+#: inc/options/settings/header.php:84
+msgid "Set your phone text."
+msgstr ""
+
+#: inc/options/settings/header.php:91
+msgid "Tel number"
+msgstr ""
+
+#: inc/options/settings/header.php:92
+msgid "Set your phone number."
+msgstr ""
+
+#: inc/options/settings/header.php:93
+msgid "0282541320"
+msgstr ""
+
+#: inc/options/settings/header.php:98
+msgid "Styling"
+msgstr ""
+
+#: inc/options/settings/header.php:104
+msgid "Header Border"
+msgstr ""
+
+#: inc/options/settings/header.php:112
+msgid "Tel Color"
+msgstr ""
+
+#: inc/options/settings/header.php:120
+msgid "Button Content Center"
+msgstr ""
+
+#: inc/options/settings/header.php:127 inc/options/settings/page-404.php:109
+msgid "Button Color"
+msgstr ""
+
+#: inc/options/settings/header.php:136
+msgid "Button Background Color"
+msgstr ""
+
+#: inc/options/settings/header.php:145
+msgid "Button Hover Background Color"
+msgstr ""
+
+#: inc/options/settings/header.php:152
+msgid "Sticky Header Style"
+msgstr ""
+
+#: inc/options/settings/header.php:158
+msgid "Sticky Background"
+msgstr ""
+
+#: inc/options/settings/header.php:172
+msgid "Sticky Header Padding"
+msgstr ""
+
+#: inc/options/settings/header.php:195
+msgid "Main Menu"
+msgstr ""
+
+#: inc/options/settings/header.php:288
+msgid "Mobile Offcanvas"
+msgstr ""
+
+#: inc/options/settings/header.php:295
+msgid "Custom Responsive Menu"
+msgstr ""
+
+#: inc/options/settings/header.php:302
+msgid "Responsive Menu Width"
+msgstr ""
+
+#: inc/options/settings/header.php:314 inc/options/settings/page-404.php:14
+#: inc/options/settings/page-search.php:14
+#: inc/packages/importer/framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:343
+#: skin/accordion-two.php:212 skin/accordion-two.php:626 skin/accordion.php:263
+#: skin/accordion.php:508 widgets/arolax-tabs.php:162
+#: widgets/arolax-tabs.php:186 widgets/arolax-tabs.php:647
+#: widgets/arolax-testimonial-2.php:204 widgets/offcanvas-menu.php:292
+msgid "Content"
+msgstr ""
+
+#: inc/options/settings/header.php:315
+msgid "below logo text."
+msgstr ""
+
+#: inc/options/settings/header.php:323
+msgid "Plus Icon"
+msgstr ""
+
+#: inc/options/settings/header.php:329
+msgid "Minus Icon"
+msgstr ""
+
+#: inc/options/settings/header.php:343 inc/options/settings/header.php:358
+#: widgets/arolax-gallery.php:383
+msgid "Gallery"
+msgstr ""
+
+#: inc/options/settings/header.php:351
+msgid "Gallery Heading"
+msgstr ""
+
+#: inc/options/settings/header.php:365
+msgid "URL"
+msgstr ""
+
+#: inc/options/settings/header.php:372 widgets/arolax-gallery.php:114
+#: widgets/arolax-gallery.php:254 widgets/arolax-posts.php:781
+#: widgets/arolax-service.php:226 widgets/arolax-testimonial-2.php:365
+#: widgets/arolax-testimonial.php:455
+msgid "Image"
+msgstr ""
+
+#: inc/options/settings/header.php:387
+msgid "Please Check Social Tab from left sidebar"
+msgstr ""
+
+#: inc/options/settings/header.php:392
+msgid "Social Heading"
+msgstr ""
+
+#: inc/options/settings/header.php:426 inc/sticky.elementor.php:218
+msgid "Menu Typography"
+msgstr ""
+
+#: inc/options/settings/header.php:495
+msgid "Logo && Content Spacing"
+msgstr ""
+
+#: inc/options/settings/header.php:510
+msgid "Intro Content Spacing"
+msgstr ""
+
+#: inc/options/settings/header.php:525
+msgid "Gallery Spacing"
+msgstr ""
+
+#: inc/options/settings/header.php:540
+msgid "Social Media Icon Hover Color"
+msgstr ""
+
+#: inc/options/settings/header.php:548
+msgid "Social Media Spacing"
+msgstr ""
+
+#: inc/options/settings/header.php:565
+msgid "Main Image Logo"
+msgstr ""
+
+#: inc/options/settings/header.php:571
+msgid "Text Logo"
+msgstr ""
+
+#: inc/options/settings/header.php:578
+msgid "Blog Title"
+msgstr ""
+
+#: inc/options/settings/header.php:579
+msgid "Set global blog title"
+msgstr ""
+
+#: inc/options/settings/header.php:587
+msgid "Upload Main Logo"
+msgstr ""
+
+#: inc/options/settings/header.php:588
+msgid "Upload main logo width 180px and height 65px."
+msgstr ""
+
+#: inc/options/settings/header.php:590 inc/options/settings/header.php:608
+msgid "Note: Please use logo image max width: 250px and max height 100px."
+msgstr ""
+
+#: inc/options/settings/header.php:605
+msgid "Upload Offcanvas Logo"
+msgstr ""
+
+#: inc/options/settings/header.php:606
+msgid "Upload sticky logo width 180px and height 65px."
+msgstr ""
+
+#: inc/options/settings/header.php:612 inc/options/settings/header.php:618
+msgid "Text Logo Color"
+msgstr ""
+
+#: inc/options/settings/header.php:619
+msgid "Set the text logo color by color picker."
+msgstr ""
+
+#: inc/options/settings/page-404.php:18
+msgid "404 Error Page Setting"
+msgstr ""
+
+#: inc/options/settings/page-404.php:24
+msgid "Error title"
+msgstr ""
+
+#: inc/options/settings/page-404.php:25
+msgid "Set your 404 error title."
+msgstr ""
+
+#: inc/options/settings/page-404.php:32
+msgid "Error subtitle"
+msgstr ""
+
+#: inc/options/settings/page-404.php:33 inc/options/settings/page-404.php:41
+#: inc/options/settings/page-search.php:41
+msgid "Set your 404 error subtitle."
+msgstr ""
+
+#: inc/options/settings/page-404.php:34
+msgid "Ops! Page not found"
+msgstr ""
+
+#: inc/options/settings/page-404.php:40 inc/options/settings/page-search.php:40
+msgid "Error content"
+msgstr ""
+
+#: inc/options/settings/page-404.php:42
+msgid ""
+"The page you are looking for was moved, removed, renamed or never existed."
+msgstr ""
+
+#: inc/options/settings/page-404.php:48
+msgid "Enable Search Button"
+msgstr ""
+
+#: inc/options/settings/page-404.php:49 inc/options/settings/social.php:12
+msgid ""
+"If you want to enable or disable 404 page button you can set ( YES / NO )"
+msgstr ""
+
+#: inc/options/settings/page-404.php:56 widgets/arolax-service.php:122
+#: widgets/landing-page.php:946 widgets/offcanvas-menu.php:118
+msgid "Button Text"
+msgstr ""
+
+#: inc/options/settings/page-404.php:57
+msgid "Set your 404 button text."
+msgstr ""
+
+#: inc/options/settings/page-404.php:58
+msgid "Back to Home"
+msgstr ""
+
+#: inc/options/settings/page-404.php:89
+msgid "SubTitle Color"
+msgstr ""
+
+#: inc/options/settings/page-404.php:103 widgets/arolax-button.php:80
+#: widgets/arolax-button.php:236 widgets/arolax-service.php:124
+#: widgets/arolax-service.php:354 widgets/header-preset/header-preset.php:409
+#: widgets/header-preset/header-preset.php:1664
+#: widgets/header-preset/header-preset.php:1712
+msgid "Button"
+msgstr ""
+
+#: inc/options/settings/page-404.php:116
+msgid "Button bgColor"
+msgstr ""
+
+#: inc/options/settings/page-404.php:125
+msgid "Button Border"
+msgstr ""
+
+#: inc/options/settings/page-404.php:132
+msgid "Button Hover Color"
+msgstr ""
+
+#: inc/options/settings/page-404.php:139
+msgid "Button Hover bgColor"
+msgstr ""
+
+#: inc/options/settings/page-404.php:148
+msgid "Button Hover Border"
+msgstr ""
+
+#: inc/options/settings/page-search.php:8
+#: widgets/header-preset/header-preset.php:410
+#: widgets/header-preset/header-preset.php:1914 widgets/landing-page.php:147
+msgid "Search"
+msgstr ""
+
+#: inc/options/settings/page-search.php:18
+msgid "Search Page Setting"
+msgstr ""
+
+#: inc/options/settings/page-search.php:24
+msgid "Enable Sidebar"
+msgstr ""
+
+#: inc/options/settings/page-search.php:25
+msgid "If you want to enable sidebar form you can set ( YES / NO )"
+msgstr ""
+
+#: inc/options/settings/page-search.php:32
+msgid "Search not found title"
+msgstr ""
+
+#: inc/options/settings/page-search.php:33
+msgid "Set your Search title."
+msgstr ""
+
+#: inc/options/settings/page-search.php:34
+msgid "Nothing found!"
+msgstr ""
+
+#: inc/options/settings/page-search.php:42
+msgid "It looks like nothing was found here. Maybe try a search?"
+msgstr ""
+
+#: inc/options/settings/page-search.php:48
+msgid "Found Title"
+msgstr ""
+
+#: inc/options/settings/page-search.php:49
+msgid "Set your search found title."
+msgstr ""
+
+#: inc/options/settings/page-search.php:50
+msgid "Search Results for:"
+msgstr ""
+
+#: inc/options/settings/page-search.php:56
+msgid "Enable Search Form"
+msgstr ""
+
+#: inc/options/settings/page-search.php:57
+msgid "If you want to enable or disable search form you can set ( YES / NO )"
+msgstr ""
+
+#: inc/options/settings/page-search.php:90
+msgid "Upload main Image width 1200px."
+msgstr ""
+
+#: inc/options/settings/page-search.php:112
+msgid "Form"
+msgstr ""
+
+#: inc/options/settings/page-search.php:118
+msgid "Input Color"
+msgstr ""
+
+#: inc/options/settings/page-search.php:125
+msgid "Input Icon Color"
+msgstr ""
+
+#: inc/options/settings/page-search.php:132
+msgid "Input bgColor"
+msgstr ""
+
+#: inc/options/settings/page-search.php:141
+#: inc/options/settings/page-search.php:155
+msgid "Input Border"
+msgstr ""
+
+#: inc/options/settings/page-search.php:148
+msgid "Input Placeholder Color"
+msgstr ""
+
+#: inc/options/settings/post-page.php:7
+msgid "Post & Page"
+msgstr ""
+
+#: inc/options/settings/post-page.php:12
+msgid "Post Setting"
+msgstr ""
+
+#: inc/options/settings/post-page.php:18
+msgid "Enable Post tags"
+msgstr ""
+
+#: inc/options/settings/post-page.php:19
+msgid ""
+"If you want to enable or disable single post tags you can set ( YES / NO )"
+msgstr ""
+
+#: inc/options/settings/post-page.php:26
+msgid "Blog Author About"
+msgstr ""
+
+#: inc/options/settings/post-page.php:33 widgets/offcanvas-menu.php:184
+msgid "Preset"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:4
+msgid "Preloader"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:9
+msgid "Preloader Type"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:14
+msgid "Enable Preloader"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:15
+msgid "When the user is logged out, the preload will be visible."
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:21
+msgid "Enable Spinner"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:22
+msgid "If you want to enable or disable Spinner you can set ( YES / NO )"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:28
+msgid "Custom Preloader Svg"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:46 skin/accordion-two.php:604
+#: skin/accordion.php:487 widgets/arolax-case-study-slider.php:131
+#: widgets/arolax-case-study-slider.php:254 widgets/arolax-gallery.php:60
+#: widgets/arolax-gallery.php:153 widgets/arolax-gallery.php:293
+#: widgets/arolax-gallery.php:660 widgets/arolax-posts.php:309
+#: widgets/arolax-posts.php:566 widgets/arolax-service.php:102
+#: widgets/arolax-service.php:282 widgets/arolax-tabs.php:135
+#: widgets/arolax-tabs.php:578 widgets/dropdown.php:65
+#: widgets/landing-page.php:753 widgets/offcanvas-menu.php:282
+#: widgets/offcanvas-menu.php:352 widgets/offcanvas-menu.php:385
+msgid "Title"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:53
+msgid "Typography"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:60
+msgid "Uppercase Text"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:65
+msgid "Preloader Background & Color"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:71
+msgid "Preloader Background"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:74
+msgid ""
+"Upload a new background image or select color to set the preloader "
+"background."
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:88
+msgid "Preloader Text Color"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:89
+msgid "Set the preloader text color"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:97
+msgid "Spinner Color 1"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:98
+msgid "Set the preloader spinner color"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:105
+msgid "Spinner Color 2"
+msgstr ""
+
+#: inc/options/settings/pre-loader.php:106
+msgid "Set the preloader text color 2"
+msgstr ""
+
+#: inc/options/settings/scroll-top-button.php:5
+msgid "Scroll Top Button"
+msgstr ""
+
+#: inc/options/settings/scroll-top-button.php:11
+msgid "Enable Scroll Top"
+msgstr ""
+
+#: inc/options/settings/scroll-top-button.php:12
+msgid ""
+"If you want to enable or disable scroll to top button you can set ( YES / "
+"NO )"
+msgstr ""
+
+#: inc/options/settings/scroll-top-button.php:19
+#: widgets/arolax-testimonial-2.php:1101
+msgid "Fill Color"
+msgstr ""
+
+#: inc/options/settings/scroll-top-button.php:20
+#: inc/options/settings/scroll-top-button.php:38
+msgid "Set footer Back Button icon color form here."
+msgstr ""
+
+#: inc/options/settings/scroll-top-button.php:28
+msgid "Progress Color"
+msgstr ""
+
+#: inc/options/settings/scroll-top-button.php:29
+msgid "Set footer Back Button progress color form here."
+msgstr ""
+
+#: inc/options/settings/scroll-top-button.php:37
+msgid "Back Button Icon Color"
+msgstr ""
+
+#: inc/options/settings/social.php:11
+msgid "Enable social Share"
+msgstr ""
+
+#: inc/options/settings/social.php:18
+msgid "Add social share"
+msgstr ""
+
+#: inc/options/settings/social.php:19
+msgid "Add new share"
+msgstr ""
+
+#: inc/options/settings/social.php:20
+msgid ""
+"Set the social share icon and link here. Esay to use it just click the add "
+"icon button and search your social icon and set the url for the profile ."
+msgstr ""
+
+#: inc/options/settings/social.php:26 inc/options/settings/social.php:54
+msgid "Social Icon"
+msgstr ""
+
+#: inc/options/settings/social.php:27 inc/options/settings/social.php:55
+msgid ""
+"Set the social profile icon like ( facebook, twitter, linkedin, youtube "
+"ect. )"
+msgstr ""
+
+#: inc/options/settings/social.php:36
+msgid "Select an type"
+msgstr ""
+
+#: inc/options/settings/social.php:46
+msgid "Add Social Link"
+msgstr ""
+
+#: inc/options/settings/social.php:47
+msgid "Add New Link"
+msgstr ""
+
+#: inc/options/settings/social.php:48
+msgid ""
+"Set the social icon and link here. Esay to use it just click the add icon "
+"button and search your social icon and set the url for the profile ."
+msgstr ""
+
+#: inc/options/settings/social.php:62
+msgid "Profile Url"
+msgstr ""
+
+#: inc/options/settings/social.php:63
+msgid ""
+"Type the social profile url lik http://facebook.com/yourpage. also you can "
+"add (facebook, twitter, linkedin, youtube etc.)"
+msgstr ""
+
+#: inc/options/settings/social.php:70
+msgid "New Tab"
+msgstr ""
+
+#: inc/options/settings/social.php:79
+msgid "Footer Social Color"
+msgstr ""
+
+#: inc/options/settings/social.php:80
+msgid "Set the footer social bookmark color from here."
+msgstr ""
+
+#: inc/options/settings/social.php:88
+msgid "Footer Social Hover Color"
+msgstr ""
+
+#: inc/options/settings/social.php:89
+msgid "Set the footer social bookmark hover color from here."
+msgstr ""
+
+#: inc/options/settings/style.php:23
+msgid "Body Background"
+msgstr ""
+
+#: inc/options/settings/style.php:24
+msgid "Set the body background color"
+msgstr ""
+
+#: inc/options/settings/style.php:37
+msgid "Primary Color"
+msgstr ""
+
+#: inc/options/settings/style.php:38
+msgid "Set footer widgetbody content color form here."
+msgstr ""
+
+#: inc/options/settings/style.php:44
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/options/settings/style.php:45
+msgid "Set main primary color for hover and others."
+msgstr ""
+
+#: inc/options/settings/style.php:51
+msgid "Body Font"
+msgstr ""
+
+#: inc/options/settings/style.php:76 widgets/offcanvas-menu.php:1003
+#: widgets/offcanvas-menu.php:1058
+msgid "Heading Color"
+msgstr ""
+
+#: inc/options/settings/style.php:77
+msgid "Set Heading Color."
+msgstr ""
+
+#: inc/options/settings/style.php:90
+msgid "Heading Hover Color"
+msgstr ""
+
+#: inc/options/settings/style.php:91
+msgid "Set Heading Hover Color."
+msgstr ""
+
+#: inc/options/settings/style.php:104
+msgid "Heading H1 Font"
+msgstr ""
+
+#: inc/options/settings/style.php:111
+msgid "Heading H2 Font"
+msgstr ""
+
+#: inc/options/settings/style.php:118
+msgid "Heading H3 Font"
+msgstr ""
+
+#: inc/options/settings/style.php:125
+msgid "Heading H4 Font"
+msgstr ""
+
+#: inc/options/settings/style.php:131
+msgid "Heading H5 Font"
+msgstr ""
+
+#: inc/options/settings/style.php:137
+msgid "Heading H6 Font"
+msgstr ""
+
+#: inc/options/settings/style.php:151 inc/options/settings/style.php:152
+msgid "Select Button Style"
+msgstr ""
+
+#: inc/options/settings/style.php:154
+#: inc/packages/codestar-framework/fields/border/border.php:59
+#: inc/packages/codestar-framework/fields/typography/typography.php:199
+#: inc/packages/codestar-framework/fields/typography/typography.php:213
+#: widgets/arolax-case-study-slider.php:600 widgets/arolax-posts.php:1460
+#: widgets/arolax-tabs.php:358 widgets/arolax-testimonial-2.php:639
+#: widgets/arolax-testimonial.php:1098 widgets/arolax-video-slider.php:388
+#: widgets/arolax-video-testimonial.php:558 widgets/blog-post-tags.php:249
+#: widgets/footer-menu.php:187 widgets/footer-menu.php:254
+#: widgets/footer-menu.php:426 widgets/header-preset/header-preset.php:1645
+#: widgets/header-preset/header-preset.php:2500 widgets/lottie.php:107
+#: widgets/lottie.php:125 widgets/lottie.php:141 widgets/offcanvas-menu.php:991
+#: widgets/offcanvas-menu.php:1096 widgets/offcanvas-menu.php:1144
+#: widgets/offcanvas-menu.php:1175 widgets/offcanvas-menu.php:1332
+msgid "None"
+msgstr ""
+
+#: inc/options/settings/style.php:155 widgets/blog-post-tags.php:250
+#: widgets/header-preset/header-preset.php:1646
+msgid "Divided"
+msgstr ""
+
+#: inc/options/settings/style.php:156 widgets/blog-post-tags.php:251
+#: widgets/header-preset/header-preset.php:1647
+msgid "Cross"
+msgstr ""
+
+#: inc/options/settings/style.php:157 widgets/blog-post-tags.php:252
+#: widgets/header-preset/header-preset.php:1648
+msgid "Cropping"
+msgstr ""
+
+#: inc/options/settings/style.php:158 widgets/blog-post-tags.php:253
+#: widgets/header-preset/header-preset.php:1649
+msgid "Rollover Top"
+msgstr ""
+
+#: inc/options/settings/style.php:159 widgets/blog-post-tags.php:254
+#: widgets/header-preset/header-preset.php:1650
+msgid "Rollover Left"
+msgstr ""
+
+#: inc/options/settings/style.php:160 widgets/blog-post-tags.php:255
+#: widgets/header-preset/header-preset.php:1651
+msgid "Parallel Border"
+msgstr ""
+
+#: inc/options/settings/style.php:161 widgets/blog-post-tags.php:256
+#: widgets/header-preset/header-preset.php:1652
+msgid "Rollover Cross"
+msgstr ""
+
+#: inc/options/settings/style.php:177
+msgid "Hover Text Color"
+msgstr ""
+
+#: inc/options/settings/style.php:186 widgets/arolax-posts.php:468
+#: widgets/arolax-posts.php:1708 widgets/lottie.php:321
+msgid "Background Color"
+msgstr ""
+
+#: inc/options/settings/style.php:195
+msgid "Hover Background Color"
+msgstr ""
+
+#: inc/options/settings/theme-optimize.php:5
+#: inc/options/settings/theme-optimize.php:11
+msgid "Asset Optimize"
+msgstr ""
+
+#: inc/options/settings/theme-optimize.php:12
+msgid "Do enable this option if your site in http2"
+msgstr ""
+
+#: inc/options/settings/theme-optimize.php:19
+msgid "Minify css"
+msgstr ""
+
+#: inc/options/settings/theme-optimize.php:27
+msgid "On Demand Contact form 7"
+msgstr ""
+
+#: inc/options/settings/theme-optimize.php:34
+msgid "Theme JS Defer"
+msgstr ""
+
+#: inc/options/settings/theme-update.php:6
+#: inc/options/settings/theme-update.php:12
+msgid "Theme Update"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:169
+msgid "Error while saving the changes."
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:229
+msgid "Settings successfully imported."
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:241
+#: inc/packages/codestar-framework/classes/admin-options.class.php:257
+msgid "Default settings restored."
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:328
+msgid "Settings saved."
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:509
+msgid "You have unsaved changes, save your changes!"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:511
+msgid "show all settings"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:513
+#: inc/packages/codestar-framework/fields/icon/icon.php:57
+#: inc/packages/codestar-framework/fields/map/map.php:23
+#: widgets/header-preset/header-preset.php:1895
+msgid "Search..."
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:516
+#: inc/packages/codestar-framework/classes/admin-options.class.php:639
+msgid "Save"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:516
+#: inc/packages/codestar-framework/classes/admin-options.class.php:639
+msgid "Saving..."
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:517
+#: inc/packages/codestar-framework/classes/admin-options.class.php:640
+msgid "Reset Section"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:517
+#: inc/packages/codestar-framework/classes/admin-options.class.php:640
+msgid "Are you sure to reset this section options?"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:518
+#: inc/packages/codestar-framework/classes/admin-options.class.php:641
+msgid "Reset All"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:518
+#: inc/packages/codestar-framework/classes/admin-options.class.php:641
+#: inc/packages/codestar-framework/classes/comment-options.class.php:201
+#: inc/packages/codestar-framework/classes/metabox-options.class.php:281
+#: inc/packages/codestar-framework/fields/backup/backup.php:31
+#: inc/packages/importer/framework/includes/option-types/rgba-color-picker/class-fw-option-type-rgba-color-picker.php:48
+msgid "Reset"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:518
+#: inc/packages/codestar-framework/classes/admin-options.class.php:641
+msgid "Are you sure you want to reset all settings to default values?"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/admin-options.class.php:616
+#: inc/packages/codestar-framework/classes/comment-options.class.php:184
+#: inc/packages/codestar-framework/classes/metabox-options.class.php:264
+#: inc/packages/codestar-framework/fields/button_set/button_set.php:56
+#: inc/packages/codestar-framework/fields/checkbox/checkbox.php:82
+#: inc/packages/codestar-framework/fields/radio/radio.php:75
+#: inc/packages/codestar-framework/fields/select/select.php:113
+#: inc/packages/codestar-framework/functions/actions.php:41
+msgid "No data available."
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/comment-options.class.php:202
+#: inc/packages/codestar-framework/classes/metabox-options.class.php:282
+msgid "update post"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/comment-options.class.php:202
+#: inc/packages/codestar-framework/classes/metabox-options.class.php:282
+msgid "Cancel"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/setup.class.php:606
+msgid "Are you sure?"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/setup.class.php:607
+#, php-format
+msgid "Please enter %s or more characters"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/setup.class.php:608
+msgid "Searching..."
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/setup.class.php:609
+msgid "No results found."
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/setup.class.php:710
+msgid "Oops! Not allowed."
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/setup.class.php:778
+#: inc/packages/codestar-framework/classes/setup.class.php:782
+msgid "Field not found!"
+msgstr ""
+
+#: inc/packages/codestar-framework/classes/shortcode-options.class.php:247
+#: inc/packages/codestar-framework/functions/actions.php:16
+#: inc/packages/codestar-framework/functions/actions.php:68
+#: inc/packages/codestar-framework/functions/actions.php:106
+#: inc/packages/codestar-framework/functions/actions.php:141
+#: inc/packages/codestar-framework/functions/actions.php:170
+msgid "Error: Invalid nonce verification."
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:36
+#: inc/packages/codestar-framework/fields/media/media.php:59
+msgid "Not selected"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:72
+#: inc/packages/codestar-framework/fields/date/date.php:31
+#: inc/packages/codestar-framework/fields/datetime/datetime.php:36
+msgid "From"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:90
+#: inc/packages/codestar-framework/fields/date/date.php:32
+#: inc/packages/codestar-framework/fields/datetime/datetime.php:37
+msgid "To"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:108
+#: widgets/arolax-tabs.php:231 widgets/landing-page.php:1351
+msgid "Direction"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:114
+msgid "Gradient Direction"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:115
+msgid "&#8659; top to bottom"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:116
+msgid "&#8658; left to right"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:117
+msgid "&#8664; corner top to right"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:118
+msgid "&#8665; corner top to left"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:161
+msgid "Background Position"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:162
+#: widgets/offcanvas-menu.php:567
+msgid "Left Top"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:163
+msgid "Left Center"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:164
+#: widgets/offcanvas-menu.php:568
+msgid "Left Bottom"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:165
+msgid "Center Top"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:166
+msgid "Center Center"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:167
+msgid "Center Bottom"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:168
+#: widgets/offcanvas-menu.php:566
+msgid "Right Top"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:169
+msgid "Right Center"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:170
+#: widgets/offcanvas-menu.php:569
+msgid "Right Bottom"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:184
+msgid "Background Repeat"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:185
+msgid "Repeat"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:186
+msgid "No Repeat"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:187
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:188
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:202
+msgid "Background Attachment"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:203
+msgid "Scroll"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:204
+msgid "Fixed"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:219
+msgid "Cover"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:220
+msgid "Contain"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:221
+#: widgets/arolax-case-study-slider.php:501
+#: widgets/arolax-testimonial-2.php:540 widgets/arolax-testimonial.php:968
+#: widgets/arolax-video-slider.php:263
+msgid "Auto"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:235
+msgid "Background Origin"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:236
+#: inc/packages/codestar-framework/fields/background/background.php:254
+msgid "Padding Box"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:237
+#: inc/packages/codestar-framework/fields/background/background.php:253
+msgid "Border Box"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:238
+#: inc/packages/codestar-framework/fields/background/background.php:255
+msgid "Content Box"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:252
+msgid "Background Clip"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:269
+msgid "Background Blend Mode"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:271
+msgid "Multiply"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:272
+msgid "Screen"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:273
+msgid "Overlay"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:274
+msgid "Darken"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:275
+msgid "Lighten"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:276
+msgid "Color Dodge"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:277
+msgid "Saturation"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/background/background.php:279
+msgid "Luminosity"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/backup/backup.php:26
+msgid "Import"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/backup/backup.php:29
+msgid "Export & Download"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:25
+#: inc/packages/codestar-framework/fields/spacing/spacing.php:25
+msgid "top"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:26
+#: inc/packages/codestar-framework/fields/spacing/spacing.php:26
+msgid "right"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:27
+#: inc/packages/codestar-framework/fields/spacing/spacing.php:27
+msgid "bottom"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:28
+#: inc/packages/codestar-framework/fields/spacing/spacing.php:28
+msgid "left"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:29
+#: inc/packages/codestar-framework/fields/spacing/spacing.php:29
+msgid "all"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:51
+#: inc/packages/codestar-framework/fields/typography/typography.php:214
+msgid "Solid"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:52
+#: inc/packages/codestar-framework/fields/typography/typography.php:217
+#: widgets/wcf-line.php:109
+msgid "Dashed"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:53
+#: inc/packages/codestar-framework/fields/typography/typography.php:216
+#: widgets/wcf-line.php:110
+msgid "Dotted"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:54
+#: inc/packages/codestar-framework/fields/typography/typography.php:215
+#: widgets/wcf-line.php:111
+msgid "Double"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:55
+msgid "Inset"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:56
+msgid "Outset"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:57
+msgid "Groove"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/border/border.php:58
+msgid "ridge"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/checkbox/checkbox.php:23
+msgid "Check/Uncheck All"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/dimensions/dimensions.php:22
+msgid "width"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/dimensions/dimensions.php:23
+msgid "height"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/gallery/gallery.php:20
+msgid "Add Gallery"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/gallery/gallery.php:21
+msgid "Edit Gallery"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/gallery/gallery.php:22
+msgid "Clear"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/group/group.php:41
+#: inc/packages/codestar-framework/fields/repeater/repeater.php:27
+msgid "Error: Field ID conflict."
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/group/group.php:52
+#: inc/packages/codestar-framework/fields/group/group.php:107
+#: inc/packages/codestar-framework/fields/repeater/repeater.php:48
+#: inc/packages/codestar-framework/fields/repeater/repeater.php:76
+msgid "Are you sure to delete this item?"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/group/group.php:141
+#: inc/packages/codestar-framework/fields/repeater/repeater.php:89
+msgid "You cannot add more."
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/group/group.php:142
+#: inc/packages/codestar-framework/fields/repeater/repeater.php:90
+msgid "You cannot remove more."
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/icon/icon.php:20
+#: inc/packages/codestar-framework/fields/icon/icon.php:53
+msgid "Add Icon"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/icon/icon.php:21
+msgid "Remove Icon"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/link/link.php:20
+msgid "Add Link"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/link/link.php:21
+msgid "Edit Link"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/link/link.php:22
+msgid "Remove Link"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/link_color/link_color.php:38
+#: widgets/footer-menu.php:645
+msgid "Active"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/link_color/link_color.php:39
+msgid "Visited"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/link_color/link_color.php:40
+msgid "Focus"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/map/map.php:24
+msgid "Latitude"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/map/map.php:25
+msgid "Longitude"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/media/media.php:25
+#: inc/packages/codestar-framework/fields/upload/upload.php:24
+msgid "Upload"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/media/media.php:26
+#: inc/packages/codestar-framework/fields/upload/upload.php:25
+msgid "Remove"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/sorter/sorter.php:21
+msgid "Enabled"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/sorter/sorter.php:22
+#: widgets/header-preset/header-preset.php:755
+#: widgets/header-preset/header-preset.php:773
+msgid "Disabled"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/switcher/switcher.php:20
+#: widgets/arolax-posts.php:141 widgets/arolax-posts.php:152
+#: widgets/arolax-posts.php:163 widgets/arolax-posts.php:174
+#: widgets/arolax-posts.php:185 widgets/arolax-posts.php:199
+#: widgets/arolax-posts.php:213 widgets/arolax-posts.php:227
+#: widgets/arolax-posts.php:241 widgets/arolax-posts.php:255
+msgid "On"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/switcher/switcher.php:21
+#: widgets/arolax-posts.php:140 widgets/arolax-posts.php:151
+#: widgets/arolax-posts.php:162 widgets/arolax-posts.php:173
+#: widgets/arolax-posts.php:184 widgets/arolax-posts.php:198
+#: widgets/arolax-posts.php:212 widgets/arolax-posts.php:226
+#: widgets/arolax-posts.php:240 widgets/arolax-posts.php:254
+msgid "Off"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:96
+msgid "Font Family"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:97
+msgid "Select a font"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:105
+msgid "Backup Font Family"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:130
+msgid "Font Style"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:144
+#: inc/packages/codestar-framework/fields/typography/typography.php:145
+msgid "Load Extra Styles"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:158
+msgid "Subset"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:168
+msgid "Text Align"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:170
+#: widgets/footer-menu.php:186 widgets/footer-menu.php:255
+msgid "Inherit"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:174
+#: widgets/footer-menu.php:286
+msgid "Justify"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:175
+#: widgets/footer-menu.php:181 widgets/footer-menu.php:457
+msgid "Initial"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:184
+msgid "Font Variant"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:187
+msgid "Small Caps"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:188
+msgid "All Small Caps"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:197
+msgid "Text Transform"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:200
+msgid "Capitalize"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:201
+msgid "Uppercase"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:202
+msgid "Lowercase"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:211
+msgid "Text Decoration"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:218
+msgid "Wavy"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:219
+msgid "Overline"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:220
+msgid "Line-through"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:233
+msgid "Font Size"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:245
+msgid "Line Height"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:257
+msgid "Letter Spacing"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:269
+msgid "Word Spacing"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:284
+msgid "Font Color"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:295
+msgid "Custom Style"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:362
+msgid "Custom Web Fonts"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:368
+msgid "Safe Web Fonts"
+msgstr ""
+
+#: inc/packages/codestar-framework/fields/typography/typography.php:388
+msgid "Google Web Fonts"
+msgstr ""
+
+#: inc/packages/codestar-framework/functions/actions.php:72
+#: inc/packages/codestar-framework/functions/actions.php:110
+msgid "Error: Invalid key."
+msgstr ""
+
+#: inc/packages/codestar-framework/functions/actions.php:114
+msgid "Error: The response is not a valid JSON response."
+msgstr ""
+
+#: inc/packages/codestar-framework/functions/actions.php:174
+msgid "Error: Invalid term ID."
+msgstr ""
+
+#: inc/packages/codestar-framework/functions/actions.php:180
+msgid "Error: You do not have permission to do that."
+msgstr ""
+
+#: inc/packages/codestar-framework/functions/validate.php:14
+#: inc/packages/codestar-framework/functions/validate.php:86
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: inc/packages/codestar-framework/functions/validate.php:32
+#: inc/packages/codestar-framework/functions/validate.php:106
+msgid "Please enter a valid number."
+msgstr ""
+
+#: inc/packages/codestar-framework/functions/validate.php:50
+#: inc/packages/codestar-framework/functions/validate.php:126
+msgid "This field is required."
+msgstr ""
+
+#: inc/packages/codestar-framework/functions/validate.php:68
+#: inc/packages/codestar-framework/functions/validate.php:146
+msgid "Please enter a valid URL."
+msgstr ""
+
+#: inc/packages/ele-template-library/base/Templates_Lib.php:166
+msgid "Post not found."
+msgstr ""
+
+#: inc/packages/ele-template-library/base/Templates_Lib.php:374
+msgid "Product is not active."
+msgstr ""
+
+#: inc/packages/ele-template-library/base/Templates_Lib.php:380
+msgid "Wrong Server Response"
+msgstr ""
+
+#: inc/packages/importer/demo.class.php:35
+msgid "Branding Agency"
+msgstr ""
+
+#: inc/packages/importer/demo.class.php:42
+msgid "SEO Agency"
+msgstr ""
+
+#: inc/packages/importer/demo.class.php:49
+msgid "Video Production"
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/backend.php:204
+#: inc/packages/importer/framework/core/components/backend.php:208
+#: inc/packages/importer/framework/core/components/backend.php:213
+msgid "New"
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/backend.php:994
+msgid "Info about fw-storage"
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/extensions/manager/class--fw-extensions-manager.php:1223
+#, php-format
+msgid "Downloading the \"%s\" extension..."
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/extensions/manager/class--fw-extensions-manager.php:1263
+#, php-format
+msgid "Installing the \"%s\" extension..."
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/extensions/manager/class--fw-extensions-manager.php:1596
+#, php-format
+msgid "Extension \"%s\" has been deleted."
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/extensions/manager/class--fw-extensions-manager.php:1602
+#, php-format
+msgid "Plugin %s is empty."
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/extensions/manager/class--fw-extensions-manager.php:1653
+#, php-format
+msgid "Deleting the \"%s\" extension..."
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/extensions/manager/class--fw-extensions-manager.php:1668
+#, php-format
+msgid "The %s extension has been successfully deleted."
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/extensions/manager/class--fw-extensions-manager.php:2589
+#, php-format
+msgid "Invalid download source: %s"
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-custom.php:58
+#, php-format
+msgid "Empty zip body for extension: %s"
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/extensions/manager/includes/download-source/types/class-fw-download-source-custom.php:130
+#, php-format
+msgid "Empty version for extension: %s"
+msgstr ""
+
+#: inc/packages/importer/framework/core/components/theme.php:221
+msgid "Try Brizy: A Fast & Easy Way of Creating Pages Visually"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/class-fw-extension-backups.php:197
+#, php-format
+msgid ""
+"Your website is hosted using the LiteSpeed web server. Please consult this "
+"%sarticle%s if you have problems backing up."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/class-fw-extension-backups.php:382
+msgid "Filesystem access required"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/class-fw-extension-backups.php:404
+#: inc/packages/importer/framework/extensions/backups/class-fw-extension-backups.php:409
+msgid "Invalid filesystem credentials"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:128
+#, php-format
+msgid "Theme Demo Content Install works only in %s."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php:130
+msgid "Staging"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/extensions/backups-demo/views/page.php:15
+msgid ""
+"IMPORTANT: Installing this demo content will delete the content you "
+"currently have on your website. However, we create a backup of your current "
+"content in (Tools > Backup). You can restore the backup from there at any "
+"time in the future."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/extensions/backups-demo/views/page.php:22
+msgid "Demo Content Install"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/extensions/backups-demo/views/page.php:75
+msgid "Live Preview"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/extensions/backups-demo/views/page.php:84
+msgid "Install"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/extensions/backups-demo/views/status.php:16
+msgid "Installing"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/extensions/backups-demo/views/status.php:18
+msgid "We are currently installing your content."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/extensions/backups-demo/views/status.php:47
+msgid "Pending"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/extensions/backups-demo/views/status.php:52
+#: inc/packages/importer/framework/extensions/backups/views/tasks-status.php:38
+msgid "Abort"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/helpers.php:25
+#, php-format
+msgid "Response code: %d"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:80
+msgid "Download"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:93
+msgid "Delete"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:144
+msgid "No archives found"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:153
+msgid ""
+"Warning! \n"
+"The restore will replace all of your content."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/list-table/class--fw-ext-backups-list-table.php:154
+msgid "Restore Backup"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/log/view.php:9
+msgid "View Activity Log"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/log/view.php:10
+msgid "Hide Activity Log"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/log/view.php:25
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:342
+msgid "Full"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:352
+msgid "Monthly"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:353
+msgid "Weekly"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:354
+msgid "Daily"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:365
+msgid "Backup Schedule Active"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:366
+msgid "Next backup on"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/includes/module/schedule/class--fw-ext-backups-module-schedule.php:373
+msgid "No backup schedule created yet! We advise you to do it asap!"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/views/page.php:11
+msgid "Backup"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/views/page.php:34
+msgid "Here you can create a backup schedule for your website."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/views/page.php:39
+msgid "Full Backup"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/views/page.php:40
+msgid "will save your themes, plugins, uploads and full database."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/views/page.php:46
+msgid "Content Backup"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/views/page.php:47
+msgid ""
+"will save your uploads and database without private data like users, admin "
+"email, etc."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/views/page.php:57
+msgid "Edit Backup Schedule"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/views/page.php:61
+msgid "Create Full Backup Now"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/views/page.php:65
+msgid "Create Content Backup Now"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/views/tasks-status.php:29
+msgid "Unknown task"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/backups/views/tasks-status.php:33
+msgid "Nothing running in background"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/class-fw-extension-update.php:67
+msgid "Unyson updates"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/class-fw-extension-update.php:123
+msgid "Available extensions updates."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/class-fw-extension-update.php:1006
+#, php-format
+msgid "New %s available. %s"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/class-fw-extension-update.php:1011
+msgid "Go to Updates page"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:134
+#: inc/packages/importer/framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:138
+#, php-format
+msgid "Empty zip body for item: %s"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:146
+#: inc/packages/importer/framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:150
+#, php-format
+msgid "Cannot save %s zip."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:157
+#: inc/packages/importer/framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:161
+#, php-format
+msgid "Cannot remove %s zip."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:163
+#: inc/packages/importer/framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:167
+msgid "Cannot access the unzipped directory files."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:176
+#: inc/packages/importer/framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:180
+#, php-format
+msgid "The unzipped %s directory not found."
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:207
+#: inc/packages/importer/framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:211
+#: widgets/header-menu.php:373 widgets/header-preset/header-preset.php:528
+msgid "Theme"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/extensions/bitbucket-update/class-fw-extension-bitbucket-update.php:228
+#: inc/packages/importer/framework/extensions/update/extensions/custom-update/class-fw-extension-custom-update.php:236
+#, php-format
+msgid "%s extension"
+msgstr ""
+
+#: inc/packages/importer/framework/extensions/update/views/updates-list.php:99
+msgid "Update Extensions"
+msgstr ""
+
+#: inc/packages/importer/framework/helpers/class-fw-form.php:465
+msgid "Your session expired. Please refresh page and try again."
+msgstr ""
+
+#: inc/packages/importer/framework/helpers/class-fw-settings-form.php:205
+msgid "No options to display."
+msgstr ""
+
+#: inc/packages/importer/framework/helpers/class-fw-wp-filesystem.php:327
+msgid "Error writing to file: "
+msgstr ""
+
+#: inc/packages/importer/framework/helpers/class-fw-wp-filesystem.php:348
+msgid "Error to get content from file: "
+msgstr ""
+
+#: inc/packages/importer/framework/includes/option-types/icon-v2/views/templates.php:206
+msgid "Delete item"
+msgstr ""
+
+#: inc/packages/importer/framework/includes/option-types/multi-select/class-fw-option-type-multi-select.php:126
+msgid "No title"
+msgstr ""
+
+#: inc/packages/importer/framework/includes/option-types/typography-v2/view.php:147
+msgid "Line height"
+msgstr ""
+
+#: inc/packages/importer/framework/includes/option-types/typography-v2/view.php:158
+#: skin/accordion-two.php:89 skin/accordion-two.php:320 skin/accordion.php:140
+#: skin/accordion.php:371 widgets/arolax-posts.php:551
+#: widgets/arolax-posts.php:585 widgets/arolax-posts.php:677
+#: widgets/arolax-posts.php:733 widgets/arolax-posts.php:878
+#: widgets/arolax-posts.php:1613
+msgid "Spacing"
+msgstr ""
+
+#: inc/packages/importer/framework/views/about.php:156
+msgid "Thanks for giving Brizy a Try!"
+msgstr ""
+
+#: inc/packages/importer/wp-import.class.php:184
+msgid "Crowdytheme Page Templates"
+msgstr ""
+
+#: inc/sidebar-widgets/cta-banner.php:7
+msgid "CTA Banner"
+msgstr ""
+
+#: inc/sidebar-widgets/cta-banner.php:10
+msgid "Arolax Cta Banner"
+msgstr ""
+
+#: inc/sidebar-widgets/cta-banner.php:94
+#: inc/sidebar-widgets/recent-post.php:160 inc/sidebar-widgets/social.php:285
+msgid "Title:"
+msgstr ""
+
+#: inc/sidebar-widgets/cta-banner.php:98
+msgid "SubTitle:"
+msgstr ""
+
+#: inc/sidebar-widgets/cta-banner.php:102
+msgid "Query Text:"
+msgstr ""
+
+#: inc/sidebar-widgets/cta-banner.php:106
+msgid "Button Label:"
+msgstr ""
+
+#: inc/sidebar-widgets/cta-banner.php:110
+msgid "Button Link:"
+msgstr ""
+
+#: inc/sidebar-widgets/recent-post.php:11
+msgid "Info Recent post with thumbnail"
+msgstr ""
+
+#: inc/sidebar-widgets/recent-post.php:14
+msgid "Arolax recent post"
+msgstr ""
+
+#: inc/sidebar-widgets/recent-post.php:129
+msgid "Recent posts"
+msgstr ""
+
+#: inc/sidebar-widgets/recent-post.php:169
+msgid "Recent post"
+msgstr ""
+
+#: inc/sidebar-widgets/recent-post.php:174
+msgid "Populer post"
+msgstr ""
+
+#: inc/sidebar-widgets/recent-post.php:179
+msgid "Number of posts:"
+msgstr ""
+
+#: inc/sidebar-widgets/recent-post.php:183
+msgid "Title limit:"
+msgstr ""
+
+#: inc/sidebar-widgets/recent-post.php:187
+msgid "Content limit:"
+msgstr ""
+
+#: inc/sidebar-widgets/recent-post.php:191
+msgid "Date Format:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:10
+msgid "Info Social"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:13
+msgid "Arolax Social"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:289
+msgid "Facebook:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:295
+msgid "Twitter:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:301
+msgid "Dribble Plus:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:307
+msgid "Pinterest:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:313
+msgid "Instagram:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:319
+msgid "Linkedin:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:325
+msgid "behance:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:331
+msgid "flickr:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:337
+msgid "github:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:343
+msgid "soundcloud:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:349
+msgid "skype:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:356
+msgid "stumbleupon:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:362
+msgid "tumblr:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:368
+msgid "vimeo:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:374
+msgid "vine:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:380
+msgid "vk:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:386
+msgid "xing:"
+msgstr ""
+
+#: inc/sidebar-widgets/social.php:392
+msgid "yelp:"
+msgstr ""
+
+#: inc/sticky.elementor.php:26
+msgid "WCF Sticky"
+msgstr ""
+
+#: inc/sticky.elementor.php:33
+msgid "Sticky"
+msgstr ""
+
+#: inc/sticky.elementor.php:45
+msgid "Sticky Type"
+msgstr ""
+
+#: inc/sticky.elementor.php:50 widgets/header-preset/header-preset.php:193
+#: widgets/header-preset/header-preset.php:2239 widgets/offcanvas-menu.php:599
+#: widgets/wc-cart-count.php:498 widgets/wcf-line.php:195
+msgid "Top"
+msgstr ""
+
+#: inc/sticky.elementor.php:51
+msgid "none"
+msgstr ""
+
+#: inc/sticky.elementor.php:76
+msgid "Space Bottom"
+msgstr ""
+
+#: inc/sticky.elementor.php:99
+msgid "Space Top"
+msgstr ""
+
+#: inc/sticky.elementor.php:123
+msgid "Sticky Offset"
+msgstr ""
+
+#: inc/sticky.elementor.php:140
+msgid "Z-index"
+msgstr ""
+
+#: inc/sticky.elementor.php:167
+msgid "Header Navigation"
+msgstr ""
+
+#: inc/sticky.elementor.php:204
+msgid "Svg Icon Color"
+msgstr ""
+
+#: plugin.php:382
+msgid "WCF Single"
+msgstr ""
+
+#: plugin.php:390
+msgid "WCF Blog Search"
+msgstr ""
+
+#: skin/accordion-two.php:78 skin/accordion-two.php:618 skin/accordion.php:129
+#: skin/accordion.php:500
+msgid "Title Icon"
+msgstr ""
+
+#: skin/accordion-two.php:120 skin/accordion.php:171
+#: widgets/offcanvas-menu.php:447 widgets/offcanvas-menu.php:935
+msgid "Hover Color"
+msgstr ""
+
+#: skin/accordion-two.php:147 skin/accordion.php:198
+msgid "Inner Content"
+msgstr ""
+
+#: skin/accordion-two.php:170 skin/accordion.php:221
+#: widgets/arolax-case-study-slider.php:446 widgets/arolax-gallery.php:596
+#: widgets/arolax-tabs.php:706 widgets/landing-page.php:315
+msgid "Icon Color"
+msgstr ""
+
+#: skin/accordion-two.php:191 skin/accordion.php:242
+msgid "Icon Spacing"
+msgstr ""
+
+#: skin/accordion-two.php:219 skin/accordion.php:270
+#: widgets/arolax-testimonial.php:349 widgets/arolax-video-testimonial.php:190
+msgid "Content Padding"
+msgstr ""
+
+#: skin/accordion-two.php:240 skin/accordion.php:291
+#: widgets/arolax-button.php:433 widgets/arolax-gallery.php:607
+#: widgets/arolax-service.php:380 widgets/arolax-tabs.php:519
+#: widgets/arolax-video-testimonial.php:392 widgets/arolax-video.php:236
+#: widgets/header-preset/header-preset.php:1744
+#: widgets/header-preset/header-preset.php:2091
+#: widgets/header-preset/header-preset.php:2291 widgets/landing-page.php:179
+msgid "Icon Size"
+msgstr ""
+
+#: skin/accordion-two.php:263 skin/accordion-two.php:393 skin/accordion.php:314
+#: widgets/arolax-case-study-slider.php:282 widgets/arolax-gallery.php:687
+#: widgets/arolax-service.php:267 widgets/arolax-service.php:339
+#: widgets/arolax-testimonial-2.php:261 widgets/arolax-testimonial-2.php:307
+#: widgets/arolax-testimonial-2.php:350 widgets/arolax-testimonial-2.php:462
+#: widgets/arolax-testimonial.php:439 widgets/arolax-testimonial.php:546
+#: widgets/arolax-testimonial.php:631 widgets/arolax-testimonial.php:749
+#: widgets/arolax-testimonial.php:813 widgets/arolax-testimonial.php:872
+#: widgets/arolax-testimonial.php:924 widgets/arolax-video-testimonial.php:269
+#: widgets/arolax-video-testimonial.php:312
+#: widgets/arolax-video-testimonial.php:356
+#: widgets/arolax-video-testimonial.php:700 widgets/arolax-video.php:201
+#: widgets/footer-menu.php:331 widgets/footer-menu.php:565
+#: widgets/footer-menu.php:853 widgets/wc-cart-count.php:228
+#: widgets/wc-cart-count.php:317 widgets/wc-cart-count.php:421
+msgid "Margin"
+msgstr ""
+
+#: skin/accordion-two.php:276 skin/accordion-two.php:312 skin/accordion.php:327
+#: skin/accordion.php:363 widgets/footer-menu.php:472
+#: widgets/footer-menu.php:622 widgets/footer-menu.php:675
+#: widgets/footer-menu.php:777 widgets/footer-menu.php:904
+msgid "Border"
+msgstr ""
+
+#: skin/accordion-two.php:292 skin/accordion-two.php:561 skin/accordion.php:343
+#: skin/accordion.php:453 widgets/arolax-case-study-slider.php:814
+#: widgets/arolax-tabs.php:265
+msgid "Start"
+msgstr ""
+
+#: skin/accordion-two.php:296 skin/accordion-two.php:565 skin/accordion.php:347
+#: skin/accordion.php:457 widgets/arolax-case-study-slider.php:822
+#: widgets/arolax-tabs.php:267
+msgid "End"
+msgstr ""
+
+#: skin/accordion-two.php:341
+msgid "Number & Line"
+msgstr ""
+
+#: skin/accordion-two.php:405 widgets/wcf-line.php:97 widgets/wcf-line.php:265
+msgid "Line"
+msgstr ""
+
+#: skin/accordion-two.php:413
+msgid "Line Color"
+msgstr ""
+
+#: skin/accordion-two.php:424 widgets/arolax-case-study-slider.php:730
+#: widgets/arolax-posts.php:528 widgets/arolax-testimonial-2.php:396
+#: widgets/arolax-testimonial-2.php:1073 widgets/arolax-testimonial.php:502
+#: widgets/arolax-testimonial.php:608 widgets/arolax-testimonial.php:726
+#: widgets/arolax-video-slider.php:148 widgets/arolax-video-testimonial.php:235
+#: widgets/arolax-video.php:167 widgets/footer-menu.php:223
+#: widgets/footer-menu.php:539 widgets/footer-menu.php:829
+#: widgets/header-preset/header-preset.php:895 widgets/lottie.php:363
+#: widgets/offcanvas-menu.php:1243 widgets/wcf-line.php:141
+msgid "Height"
+msgstr ""
+
+#: skin/accordion-two.php:490 widgets/arolax-video-slider.php:185
+msgid "Active Height"
+msgstr ""
+
+#: skin/accordion-two.php:517 skin/accordion.php:409
+msgid "WCF General"
+msgstr ""
+
+#: skin/accordion-two.php:527 skin/accordion.php:419
+msgid "Default Active"
+msgstr ""
+
+#: skin/accordion-two.php:542 skin/accordion.php:434
+msgid "Title Icon After Title"
+msgstr ""
+
+#: skin/accordion-two.php:557 skin/accordion.php:449
+msgid "Content Alignment"
+msgstr ""
+
+#: skin/accordion-two.php:597 widgets/arolax-service.php:78
+msgid "01"
+msgstr ""
+
+#: skin/accordion-two.php:606 skin/accordion.php:489
+msgid "Accordion Title"
+msgstr ""
+
+#: skin/accordion-two.php:628 skin/accordion.php:510
+msgid "Accordion Content"
+msgstr ""
+
+#: skin/accordion-two.php:635 skin/accordion.php:517
+msgid "Content Icon"
+msgstr ""
+
+#: templates/single/athlete.php:126
+#: templates/single/template-parts/health-top-header.php:81
+msgid "by"
+msgstr ""
+
+#: templates/single/athlete.php:134 templates/single/health-one.php:113
+msgid "Views"
+msgstr ""
+
+#: templates/single/athlete.php:148 templates/single/health-one.php:121
+msgid "Shares"
+msgstr ""
+
+#: templates/single/content-single.php:5
+msgid "Continue reading &rarr;"
+msgstr ""
+
+#: templates/single/template-parts/health-top-header.php:87
+#: widgets/arolax-posts.php:1966 widgets/arolax-posts.php:2061
+#: widgets/arolax-posts.php:2154
+#, php-format
+msgid "%s comments"
+msgstr ""
+
+#: templates/single/template-parts/health-top-header.php:87
+#: widgets/arolax-posts.php:1966 widgets/arolax-posts.php:2061
+#: widgets/arolax-posts.php:2154
+#, php-format
+msgid "%s comment"
+msgstr ""
+
+#: widgets/arolax-button.php:34
+msgid "Arolax Button"
+msgstr ""
+
+#: widgets/arolax-button.php:66 widgets/arolax-posts.php:370
+#: widgets/arolax-posts.php:1092 widgets/arolax-service.php:67
+msgid "1"
+msgstr ""
+
+#: widgets/arolax-button.php:67 widgets/arolax-posts.php:371
+#: widgets/arolax-posts.php:1093 widgets/arolax-service.php:68
+msgid "2"
+msgstr ""
+
+#: widgets/arolax-button.php:68 widgets/arolax-posts.php:372
+msgid "3"
+msgstr ""
+
+#: widgets/arolax-button.php:69 widgets/arolax-posts.php:373
+msgid "4"
+msgstr ""
+
+#: widgets/arolax-button.php:81 widgets/arolax-posts.php:80
+#: widgets/arolax-posts.php:110
+msgid "Type your text here"
+msgstr ""
+
+#: widgets/arolax-button.php:121 widgets/arolax-tabs.php:243
+#: widgets/arolax-tabs.php:323
+msgid "After"
+msgstr ""
+
+#: widgets/arolax-button.php:122 widgets/arolax-tabs.php:247
+#: widgets/arolax-tabs.php:327
+msgid "Before"
+msgstr ""
+
+#: widgets/arolax-button.php:157 widgets/arolax-posts.php:1101
+#: widgets/offcanvas-menu.php:796
+msgid "Icon Width"
+msgstr ""
+
+#: widgets/arolax-button.php:177
+msgid "Choose Shape"
+msgstr ""
+
+#: widgets/arolax-button.php:188
+msgid "Button Width"
+msgstr ""
+
+#: widgets/arolax-button.php:291
+msgid "Border Color One"
+msgstr ""
+
+#: widgets/arolax-button.php:305
+msgid "Border Color Two"
+msgstr ""
+
+#: widgets/arolax-button.php:319
+msgid "Border Color Three"
+msgstr ""
+
+#: widgets/arolax-button.php:333
+msgid "Border Color Four"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:52
+msgid "Arolax Case Study"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:108
+#: widgets/arolax-case-study-slider.php:163
+msgid "Case Study"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:117 widgets/arolax-gallery.php:123
+#: widgets/arolax-gallery.php:263 widgets/arolax-service.php:88
+msgid "Choose Image"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:133
+msgid "Unique SEO strategy approach"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:134
+msgid "Type your title"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:141
+msgid "Sub Title"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:143
+msgid "SEO marketing"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:144
+msgid "Type your sub title"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:173 widgets/arolax-gallery.php:205
+#: widgets/arolax-gallery.php:345
+msgid "Title HTML Tag"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:190
+#: widgets/arolax-case-study-slider.php:362 widgets/arolax-posts.php:120
+#: widgets/arolax-posts.php:1365
+msgid "Link Icon"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:210
+#: widgets/arolax-testimonial-2.php:196 widgets/arolax-testimonial.php:286
+#: widgets/arolax-testimonial.php:1053 widgets/arolax-video-testimonial.php:182
+msgid "Slide"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:297
+msgid "Subtitle"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:413
+msgid "Rotate"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:486
+#: widgets/arolax-testimonial-2.php:525 widgets/arolax-testimonial.php:953
+#: widgets/arolax-video-slider.php:248 widgets/arolax-video-testimonial.php:464
+msgid "Slider Options"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:496
+#: widgets/arolax-testimonial-2.php:535 widgets/arolax-testimonial.php:963
+#: widgets/arolax-video-slider.php:258
+msgid "Slides to Show"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:513
+#: widgets/arolax-testimonial-2.php:552 widgets/arolax-testimonial.php:980
+#: widgets/arolax-video-slider.php:275 widgets/arolax-video-testimonial.php:471
+msgid "Autoplay"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:526
+#: widgets/arolax-testimonial-2.php:565 widgets/arolax-testimonial.php:993
+#: widgets/arolax-video-slider.php:288 widgets/arolax-video-testimonial.php:484
+msgid "Autoplay delay"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:538
+#: widgets/arolax-testimonial-2.php:577 widgets/arolax-testimonial.php:1005
+#: widgets/arolax-video-slider.php:300 widgets/arolax-video-testimonial.php:496
+msgid "Autoplay Interaction"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:555
+#: widgets/arolax-testimonial-2.php:594 widgets/arolax-testimonial.php:1036
+#: widgets/arolax-video-slider.php:331 widgets/arolax-video-testimonial.php:527
+msgid "Loop"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:569
+#: widgets/arolax-testimonial-2.php:608 widgets/arolax-testimonial.php:1067
+#: widgets/arolax-video-slider.php:344 widgets/arolax-video-testimonial.php:540
+msgid "Animation Speed"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:592
+#: widgets/arolax-case-study-slider.php:799
+#: widgets/arolax-testimonial-2.php:631 widgets/arolax-testimonial-2.php:762
+#: widgets/arolax-testimonial.php:1090 widgets/arolax-testimonial.php:1229
+#: widgets/arolax-video-slider.php:380 widgets/arolax-video-slider.php:511
+#: widgets/arolax-video-testimonial.php:550
+#: widgets/arolax-video-testimonial.php:689
+msgid "Navigation"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:597
+#: widgets/arolax-testimonial-2.php:636
+msgid "Arrows and Pagination"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:598
+#: widgets/arolax-testimonial-2.php:637 widgets/arolax-testimonial.php:1096
+#: widgets/arolax-testimonial.php:1240 widgets/arolax-video-slider.php:386
+#: widgets/arolax-video-testimonial.php:556
+#: widgets/arolax-video-testimonial.php:712
+msgid "Arrows"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:599
+#: widgets/arolax-case-study-slider.php:1001 widgets/arolax-posts.php:1449
+#: widgets/arolax-posts.php:1456 widgets/arolax-posts.php:1640
+#: widgets/arolax-testimonial-2.php:638 widgets/arolax-testimonial-2.php:1062
+#: widgets/arolax-testimonial.php:1537 widgets/arolax-video-slider.php:796
+#: widgets/arolax-video-testimonial.php:778
+msgid "Pagination"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:608 widgets/arolax-posts.php:1492
+#: widgets/arolax-testimonial-2.php:647 widgets/arolax-testimonial.php:1106
+#: widgets/arolax-video-slider.php:396 widgets/arolax-video-testimonial.php:566
+msgid "Previous Arrow Icon"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:663 widgets/arolax-posts.php:1538
+#: widgets/arolax-testimonial-2.php:702 widgets/arolax-testimonial.php:1161
+#: widgets/arolax-video-slider.php:451 widgets/arolax-video-testimonial.php:621
+msgid "Next Arrow Icon"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:718 widgets/arolax-video-slider.php:366
+msgid "Center Slide"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:749
+msgid "slide Scale"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:759
+msgid "Slide Scale X"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:776
+msgid "Slide Scale Y"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:839
+msgid "Wrapper Margin"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:868
+#: widgets/header-preset/header-preset.php:702
+msgid "Gap"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:1041
+#: widgets/arolax-testimonial.php:1584 widgets/arolax-video-slider.php:870
+#: widgets/banner-breadcrumb.php:267
+msgid "Active Color"
+msgstr ""
+
+#: widgets/arolax-case-study-slider.php:1053
+#: widgets/arolax-testimonial.php:1644 widgets/arolax-video-slider.php:882
+msgid "Spacing Bottom"
+msgstr ""
+
+#: widgets/arolax-gallery.php:25
+msgid "Arolax Gallery"
+msgstr ""
+
+#: widgets/arolax-gallery.php:73 widgets/banner-breadcrumb.php:177
+#: widgets/landing-page.php:1032
+msgid "HTML Tag"
+msgstr ""
+
+#: widgets/arolax-gallery.php:110 widgets/arolax-gallery.php:250
+msgid "Type"
+msgstr ""
+
+#: widgets/arolax-gallery.php:137 widgets/arolax-gallery.php:277
+#: widgets/arolax-video-slider.php:112 widgets/arolax-video-testimonial.php:130
+#: widgets/arolax-video.php:109
+msgid "Video Link"
+msgstr ""
+
+#: widgets/arolax-gallery.php:194 widgets/arolax-gallery.php:334
+msgid "Gallery Slider Items"
+msgstr ""
+
+#: widgets/arolax-gallery.php:391 widgets/arolax-posts.php:384
+#: widgets/blog-post-tags.php:146
+msgid "Column Gap"
+msgstr ""
+
+#: widgets/arolax-gallery.php:409 widgets/arolax-posts.php:402
+#: widgets/blog-post-tags.php:167
+msgid "Row Gap"
+msgstr ""
+
+#: widgets/arolax-gallery.php:440
+msgid "Image/Video Height"
+msgstr ""
+
+#: widgets/arolax-gallery.php:462 widgets/footer-menu.php:428
+msgid "Circle"
+msgstr ""
+
+#: widgets/arolax-gallery.php:470 widgets/arolax-tabs.php:543
+msgid "Circle Size"
+msgstr ""
+
+#: widgets/arolax-gallery.php:488 widgets/footer-menu.php:381
+#: widgets/footer-menu.php:612 widgets/footer-menu.php:665
+#: widgets/footer-menu.php:761 widgets/footer-menu.php:895
+msgid "Background"
+msgstr ""
+
+#: widgets/arolax-gallery.php:500
+msgid "Progress Size"
+msgstr ""
+
+#: widgets/arolax-posts.php:32
+msgid "Arolax Posts"
+msgstr ""
+
+#: widgets/arolax-posts.php:67 widgets/arolax-testimonial.php:119
+#: widgets/landing-page.php:710 widgets/offcanvas-menu.php:198
+msgid "One"
+msgstr ""
+
+#: widgets/arolax-posts.php:68 widgets/arolax-testimonial.php:120
+#: widgets/landing-page.php:711 widgets/offcanvas-menu.php:199
+msgid "Two"
+msgstr ""
+
+#: widgets/arolax-posts.php:69 widgets/arolax-testimonial.php:121
+#: widgets/offcanvas-menu.php:200
+msgid "Three"
+msgstr ""
+
+#: widgets/arolax-posts.php:77
+msgid "Read More Text"
+msgstr ""
+
+#: widgets/arolax-posts.php:90
+msgid "Read More Icon"
+msgstr ""
+
+#: widgets/arolax-posts.php:107
+msgid "Date Text"
+msgstr ""
+
+#: widgets/arolax-posts.php:109
+msgid "Written by"
+msgstr ""
+
+#: widgets/arolax-posts.php:137
+msgid "Show Title"
+msgstr ""
+
+#: widgets/arolax-posts.php:148
+msgid "Show Excerpt"
+msgstr ""
+
+#: widgets/arolax-posts.php:159
+msgid "Show Thumbnail"
+msgstr ""
+
+#: widgets/arolax-posts.php:170
+msgid "Show Meta"
+msgstr ""
+
+#: widgets/arolax-posts.php:181
+msgid "Show Author"
+msgstr ""
+
+#: widgets/arolax-posts.php:195
+msgid "Show Date"
+msgstr ""
+
+#: widgets/arolax-posts.php:209
+msgid "Show Category"
+msgstr ""
+
+#: widgets/arolax-posts.php:223
+msgid "Show Comment"
+msgstr ""
+
+#: widgets/arolax-posts.php:237
+msgid "Show Read More"
+msgstr ""
+
+#: widgets/arolax-posts.php:251
+msgid "Show Link Icon"
+msgstr ""
+
+#: widgets/arolax-posts.php:276
+msgid "Query Type"
+msgstr ""
+
+#: widgets/arolax-posts.php:280
+msgid "Posts"
+msgstr ""
+
+#: widgets/arolax-posts.php:281
+msgid "Archive"
+msgstr ""
+
+#: widgets/arolax-posts.php:282
+msgid "related"
+msgstr ""
+
+#: widgets/arolax-posts.php:290
+msgid "Include Posts"
+msgstr ""
+
+#: widgets/arolax-posts.php:304
+msgid "Order By"
+msgstr ""
+
+#: widgets/arolax-posts.php:308
+msgid "Date"
+msgstr ""
+
+#: widgets/arolax-posts.php:310
+msgid "Menu Order"
+msgstr ""
+
+#: widgets/arolax-posts.php:311
+msgid "Last Modified"
+msgstr ""
+
+#: widgets/arolax-posts.php:312
+msgid "Comment Count"
+msgstr ""
+
+#: widgets/arolax-posts.php:313
+msgid "Random"
+msgstr ""
+
+#: widgets/arolax-posts.php:324
+msgid "Order"
+msgstr ""
+
+#: widgets/arolax-posts.php:328
+msgid "ASC"
+msgstr ""
+
+#: widgets/arolax-posts.php:329
+msgid "DESC"
+msgstr ""
+
+#: widgets/arolax-posts.php:340
+msgid "Posts Per Page"
+msgstr ""
+
+#: widgets/arolax-posts.php:366
+msgid "Columns"
+msgstr ""
+
+#: widgets/arolax-posts.php:428
+msgid "Border Hover Color"
+msgstr ""
+
+#: widgets/arolax-posts.php:457
+msgid "Item"
+msgstr ""
+
+#: widgets/arolax-posts.php:494
+msgid "Thumbnail"
+msgstr ""
+
+#: widgets/arolax-posts.php:647
+msgid "Excerpt"
+msgstr ""
+
+#: widgets/arolax-posts.php:692
+msgid "Meta"
+msgstr ""
+
+#: widgets/arolax-posts.php:722 widgets/arolax-testimonial.php:315
+msgid "Separator Color"
+msgstr ""
+
+#: widgets/arolax-posts.php:748
+msgid "Author"
+msgstr ""
+
+#: widgets/arolax-posts.php:893 widgets/arolax-testimonial-2.php:154
+#: widgets/arolax-testimonial-2.php:434 widgets/arolax-testimonial.php:196
+#: widgets/arolax-testimonial.php:836 widgets/arolax-video-testimonial.php:140
+#: widgets/arolax-video-testimonial.php:284
+msgid "Name"
+msgstr ""
+
+#: widgets/arolax-posts.php:962
+msgid "Category"
+msgstr ""
+
+#: widgets/arolax-posts.php:1461
+msgid "Numbers"
+msgstr ""
+
+#: widgets/arolax-posts.php:1461
+msgid "Previous/Next"
+msgstr ""
+
+#: widgets/arolax-posts.php:1469
+msgid "Page Limit"
+msgstr ""
+
+#: widgets/arolax-posts.php:1480
+msgid "Shorten"
+msgstr ""
+
+#: widgets/arolax-posts.php:1659
+msgid "Colors"
+msgstr ""
+
+#: widgets/arolax-posts.php:1942
+msgid "0"
+msgstr ""
+
+#: widgets/arolax-service.php:34
+msgid "Arolax Service"
+msgstr ""
+
+#: widgets/arolax-service.php:104
+msgid "Service Title"
+msgstr ""
+
+#: widgets/arolax-service.php:115
+msgid ""
+"we approach each project with meticulous attention to detail and best "
+"quality."
+msgstr ""
+
+#: widgets/arolax-service.php:134
+msgid "Button Icon"
+msgstr ""
+
+#: widgets/arolax-service.php:149
+msgid "Button Link"
+msgstr ""
+
+#: widgets/arolax-service.php:170
+msgid "Service"
+msgstr ""
+
+#: widgets/arolax-service.php:362
+msgid "Circle Width"
+msgstr ""
+
+#: widgets/arolax-service.php:572
+msgid "Number Color"
+msgstr ""
+
+#: widgets/arolax-service.php:597
+msgid "Desc Color"
+msgstr ""
+
+#: widgets/arolax-service.php:628
+msgid "Opacity"
+msgstr ""
+
+#: widgets/arolax-tabs.php:51
+msgid "Arolax Tabs"
+msgstr ""
+
+#: widgets/arolax-tabs.php:112 widgets/arolax-tabs.php:399
+msgid "Tabs"
+msgstr ""
+
+#: widgets/arolax-tabs.php:137 widgets/arolax-tabs.php:138
+msgid "Tab Title"
+msgstr ""
+
+#: widgets/arolax-tabs.php:152
+msgid ""
+"Add the best talent on the market, an agile skilled management & "
+"seamlessinvolvement"
+msgstr ""
+
+#: widgets/arolax-tabs.php:159 widgets/offcanvas-menu.php:302
+msgid "Content Type"
+msgstr ""
+
+#: widgets/arolax-tabs.php:163
+msgid "Saved Templates"
+msgstr ""
+
+#: widgets/arolax-tabs.php:172
+msgid "Save Template"
+msgstr ""
+
+#: widgets/arolax-tabs.php:187 widgets/arolax-tabs.php:188
+msgid "Tab Content"
+msgstr ""
+
+#: widgets/arolax-tabs.php:199
+msgid "Tabs Items"
+msgstr ""
+
+#: widgets/arolax-tabs.php:204
+msgid "Tab Title 1"
+msgstr ""
+
+#: widgets/arolax-tabs.php:205 widgets/arolax-tabs.php:209
+#: widgets/arolax-tabs.php:213 widgets/arolax-testimonial-2.php:133
+#: widgets/arolax-testimonial.php:147
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, "
+"luctus nec ullamcorper mattis, pulvinar dapibus leo."
+msgstr ""
+
+#: widgets/arolax-tabs.php:208
+msgid "Tab Title 2"
+msgstr ""
+
+#: widgets/arolax-tabs.php:212
+msgid "Tab Title 3"
+msgstr ""
+
+#: widgets/arolax-tabs.php:235 widgets/arolax-tabs.php:315
+msgid "Above"
+msgstr ""
+
+#: widgets/arolax-tabs.php:239 widgets/arolax-tabs.php:319
+msgid "Below"
+msgstr ""
+
+#: widgets/arolax-tabs.php:268
+msgid "Stretch"
+msgstr ""
+
+#: widgets/arolax-tabs.php:287
+msgid "Title Alignment"
+msgstr ""
+
+#: widgets/arolax-tabs.php:374
+#, php-format
+msgid "%1$s (%2$s %3$dpx)"
+msgstr ""
+
+#: widgets/arolax-tabs.php:384
+msgid "Breakpoint"
+msgstr ""
+
+#: widgets/arolax-tabs.php:386
+msgid ""
+"Note: Choose at which breakpoint tabs will automatically switch to a "
+"vertical (“accordion”) layout."
+msgstr ""
+
+#: widgets/arolax-tabs.php:407
+msgid "Navigation Width"
+msgstr ""
+
+#: widgets/arolax-tabs.php:429
+msgid "Gap between tabs"
+msgstr ""
+
+#: widgets/arolax-tabs.php:447
+msgid "Distance from content"
+msgstr ""
+
+#: widgets/arolax-tabs.php:698
+msgid "Hover/Active"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:50
+msgid "Arolax Testimonial 2"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:106 widgets/arolax-testimonial.php:108
+msgid "Testimonial"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:115 widgets/arolax-testimonial-2.php:276
+#: widgets/arolax-testimonial.php:561
+msgid "Quote"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:127 widgets/arolax-testimonial-2.php:322
+#: widgets/arolax-testimonial.php:141 widgets/arolax-testimonial.php:764
+msgid "Feedback"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:140 widgets/arolax-testimonial.php:154
+msgid "Client Image"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:167 widgets/arolax-testimonial-2.php:478
+#: widgets/arolax-testimonial.php:209 widgets/arolax-testimonial.php:888
+#: widgets/arolax-video-testimonial.php:153
+#: widgets/arolax-video-testimonial.php:328
+msgid "Designation"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:180 widgets/arolax-testimonial.php:231
+#: widgets/arolax-video-testimonial.php:166
+msgid "Testimonials"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:240
+msgid "Client"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:825 widgets/arolax-testimonial.php:1304
+#: widgets/arolax-video-slider.php:571
+msgid "Arrows Position Type"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:830 widgets/arolax-testimonial.php:1309
+#: widgets/arolax-video-slider.php:576
+#: widgets/header-preset/header-preset.php:182
+#: widgets/header-preset/header-preset.php:2228 widgets/wc-cart-count.php:463
+msgid "Absolute"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:845 widgets/arolax-testimonial.php:1324
+#: widgets/arolax-video-slider.php:588
+msgid "Arrow Prev"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:847 widgets/arolax-testimonial-2.php:909
+#: widgets/arolax-testimonial.php:1326 widgets/arolax-testimonial.php:1388
+#: widgets/arolax-video-slider.php:590 widgets/arolax-video-slider.php:652
+#: widgets/header-menu.php:374 widgets/header-preset/header-preset.php:529
+#: widgets/wc-cart-count.php:448
+msgid "Custom"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:882 widgets/arolax-testimonial-2.php:944
+#: widgets/arolax-testimonial.php:1361 widgets/arolax-testimonial.php:1423
+#: widgets/arolax-video-slider.php:625 widgets/arolax-video-slider.php:687
+#: widgets/offcanvas-menu.php:637 widgets/wcf-line.php:239
+msgid "Bottom"
+msgstr ""
+
+#: widgets/arolax-testimonial-2.php:907 widgets/arolax-testimonial.php:1386
+#: widgets/arolax-video-slider.php:650
+msgid "Arrow Next"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:52
+msgid "Arolax Testimonial"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:115
+msgid "Testimonial Style"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:122 widgets/offcanvas-menu.php:201
+msgid "Four"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:132 widgets/arolax-testimonial.php:395
+msgid "Top Text"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:134
+msgid "Default Text "
+msgstr ""
+
+#: widgets/arolax-testimonial.php:168
+msgid "Choose Quote"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:182
+msgid "Logo/Rating Image"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:365
+msgid "Client Padding"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:403
+msgid "Top Text Show"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:463
+msgid "Image Show"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:569 widgets/arolax-testimonial.php:687
+msgid "Quote Show"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:676
+msgid "Logo/Rating"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1021 widgets/arolax-video-slider.php:316
+#: widgets/arolax-video-testimonial.php:512
+msgid "Allow Touch Move"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1049
+msgid "Effect"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1054
+msgid "Cards"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1055
+msgid "Flip"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1056
+msgid "Fade"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1057
+msgid "Cube"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1058
+msgid "CoderFlow"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1059
+msgid "Creative"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1095 widgets/arolax-video-slider.php:385
+#: widgets/arolax-video-testimonial.php:555
+msgid "Arrows and Dots"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1097 widgets/arolax-video-slider.php:387
+#: widgets/arolax-video-testimonial.php:557
+msgid "Dots"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1599
+msgid "Active Size"
+msgstr ""
+
+#: widgets/arolax-testimonial.php:1619
+msgid "Spacing Left"
+msgstr ""
+
+#: widgets/arolax-video-slider.php:52
+msgid "Arolax Video Slider"
+msgstr ""
+
+#: widgets/arolax-video-slider.php:103
+msgid "Videos"
+msgstr ""
+
+#: widgets/arolax-video-slider.php:114
+msgid ""
+"https://crowdytheme.com/assets/wp-content/uploads/2024/05/insurance-video.mp4"
+msgstr ""
+
+#: widgets/arolax-video-slider.php:115
+msgid "Enter your link here"
+msgstr ""
+
+#: widgets/arolax-video-slider.php:123 widgets/arolax-video-slider.php:140
+msgid "Video Slider"
+msgstr ""
+
+#: widgets/arolax-video-slider.php:166
+msgid "Video Height"
+msgstr ""
+
+#: widgets/arolax-video-slider.php:206
+msgid "Active Video Height"
+msgstr ""
+
+#: widgets/arolax-video-slider.php:807
+msgid "Dots Size"
+msgstr ""
+
+#: widgets/arolax-video-slider.php:824
+msgid "Dots Color"
+msgstr ""
+
+#: widgets/arolax-video-slider.php:836
+msgid "Outline width"
+msgstr ""
+
+#: widgets/arolax-video-slider.php:853
+msgid "Outline Offset"
+msgstr ""
+
+#: widgets/arolax-video-testimonial.php:52
+msgid "Arolax Video Testimonial"
+msgstr ""
+
+#: widgets/arolax-video-testimonial.php:107
+msgid "Video Testimonial"
+msgstr ""
+
+#: widgets/arolax-video-testimonial.php:114
+msgid "Video Play Icon"
+msgstr ""
+
+#: widgets/arolax-video-testimonial.php:372 widgets/arolax-video.php:119
+#: widgets/arolax-video.php:216
+msgid "Play Icon"
+msgstr ""
+
+#: widgets/arolax-video-testimonial.php:410 widgets/arolax-video.php:254
+msgid "Wrapper Size"
+msgstr ""
+
+#: widgets/arolax-video.php:52
+msgid "Arolax Video"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:59
+msgid "Separetor Icon"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:71
+msgid "Author Heading"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:81
+msgid "404 Heading"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:91
+msgid "Search Heading"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:137
+msgid "Show Heading"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:149
+msgid "Dynamic"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:161
+msgid "Heading Text"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:198
+msgid "CSS Classes"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:230
+msgid "Justified"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:278
+msgid "Link Hover Color"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:297
+msgid "Icon Options"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:306
+msgid "Separetor Color"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:326
+msgid "Icon Padding"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:339
+msgid "Wrapper"
+msgstr ""
+
+#: widgets/banner-breadcrumb.php:414
+msgid "Blend Mode"
+msgstr ""
+
+#: widgets/blog-post-tags.php:65
+msgid "Prefix"
+msgstr ""
+
+#: widgets/blog-post-tags.php:76
+msgid "Suffix"
+msgstr ""
+
+#: widgets/blog-post-tags.php:87 widgets/blog-post-tags.php:186
+msgid "Separator"
+msgstr ""
+
+#: widgets/blog-post-tags.php:89
+msgid ","
+msgstr ""
+
+#: widgets/blog-post-tags.php:90
+msgid "Enter separator"
+msgstr ""
+
+#: widgets/blog-post-tags.php:97
+msgid "Limit"
+msgstr ""
+
+#: widgets/blog-post-tags.php:206
+msgid "Position Horizontal"
+msgstr ""
+
+#: widgets/blog-post-tags.php:225
+msgid "Position Vertical"
+msgstr ""
+
+#: widgets/blog-post-tags.php:245 widgets/header-preset/header-preset.php:1641
+msgid "Hover Style"
+msgstr ""
+
+#: widgets/blog-post-tags.php:318
+msgid "Transition"
+msgstr ""
+
+#: widgets/dropdown.php:67 widgets/landing-page.php:755
+#: widgets/offcanvas-menu.php:284 widgets/offcanvas-menu.php:354
+#: widgets/offcanvas-menu.php:387
+msgid "List Title"
+msgstr ""
+
+#: widgets/dropdown.php:75
+msgid "Url"
+msgstr ""
+
+#: widgets/dropdown.php:85
+msgid "PolyLang Swicher?"
+msgstr ""
+
+#: widgets/dropdown.php:97
+msgid "Dropdown Options"
+msgstr ""
+
+#: widgets/dropdown.php:102
+msgid "Title #1"
+msgstr ""
+
+#: widgets/dropdown.php:120
+msgid "Select"
+msgstr ""
+
+#: widgets/footer-menu.php:69
+msgid "Select Navigation & Style"
+msgstr ""
+
+#: widgets/footer-menu.php:79
+msgid "Style One"
+msgstr ""
+
+#: widgets/footer-menu.php:80
+msgid "Style Two"
+msgstr ""
+
+#: widgets/footer-menu.php:81
+msgid "Style Three"
+msgstr ""
+
+#: widgets/footer-menu.php:105
+msgid "Nav Arrow Icon"
+msgstr ""
+
+#: widgets/footer-menu.php:114
+msgid "Icon Left ?"
+msgstr ""
+
+#: widgets/footer-menu.php:134
+#, php-format
+msgid ""
+"Go to the <a href=\"%s\" target=\"_blank\">Menus Option</a> to manage your "
+"menus."
+msgstr ""
+
+#: widgets/footer-menu.php:143
+#, php-format
+msgid ""
+"<strong>There are no menus in your site.</strong><br>Go to the <a "
+"href=\"%s\" target=\"_blank\">Menus Option</a> to create one."
+msgstr ""
+
+#: widgets/footer-menu.php:151
+msgid "Menu Depth"
+msgstr ""
+
+#: widgets/footer-menu.php:170
+msgid "Menu Items"
+msgstr ""
+
+#: widgets/footer-menu.php:177 widgets/footer-menu.php:398
+#: widgets/offcanvas-menu.php:986 widgets/offcanvas-menu.php:1327
+msgid "Display"
+msgstr ""
+
+#: widgets/footer-menu.php:182 widgets/footer-menu.php:403
+msgid "Block"
+msgstr ""
+
+#: widgets/footer-menu.php:183 widgets/footer-menu.php:404
+msgid "Inline Block"
+msgstr ""
+
+#: widgets/footer-menu.php:184 widgets/footer-menu.php:405
+msgid "Flex"
+msgstr ""
+
+#: widgets/footer-menu.php:185 widgets/footer-menu.php:406
+msgid "Inline Flex"
+msgstr ""
+
+#: widgets/footer-menu.php:248
+msgid "Float"
+msgstr ""
+
+#: widgets/footer-menu.php:351
+msgid "Single Menu Item"
+msgstr ""
+
+#: widgets/footer-menu.php:402
+msgid "list-item"
+msgstr ""
+
+#: widgets/footer-menu.php:419
+msgid "List Style"
+msgstr ""
+
+#: widgets/footer-menu.php:427
+msgid "Disc"
+msgstr ""
+
+#: widgets/footer-menu.php:429
+msgid "Square"
+msgstr ""
+
+#: widgets/footer-menu.php:430
+msgid "Decimal"
+msgstr ""
+
+#: widgets/footer-menu.php:431
+msgid "Decimal-leading-zero"
+msgstr ""
+
+#: widgets/footer-menu.php:432
+msgid "bengali"
+msgstr ""
+
+#: widgets/footer-menu.php:433
+msgid "Lower Roman"
+msgstr ""
+
+#: widgets/footer-menu.php:434
+msgid "Upper Roman"
+msgstr ""
+
+#: widgets/footer-menu.php:435
+msgid "Lower Greek"
+msgstr ""
+
+#: widgets/footer-menu.php:436
+msgid "Lower Latin"
+msgstr ""
+
+#: widgets/footer-menu.php:437
+msgid "Upper Latin"
+msgstr ""
+
+#: widgets/footer-menu.php:438
+msgid "Armenian"
+msgstr ""
+
+#: widgets/footer-menu.php:439
+msgid "Georgian"
+msgstr ""
+
+#: widgets/footer-menu.php:440
+msgid "Lower Alpha"
+msgstr ""
+
+#: widgets/footer-menu.php:441
+msgid "Upper Alpha"
+msgstr ""
+
+#: widgets/footer-menu.php:453 widgets/offcanvas-menu.php:561
+#: widgets/wc-cart-count.php:445 widgets/wcf-line.php:164
+msgid "Position"
+msgstr ""
+
+#: widgets/footer-menu.php:458 widgets/wc-cart-count.php:464
+msgid "Relative"
+msgstr ""
+
+#: widgets/footer-menu.php:459
+msgid "Static"
+msgstr ""
+
+#: widgets/footer-menu.php:493
+msgid "Box Shadow"
+msgstr ""
+
+#: widgets/footer-menu.php:503 widgets/offcanvas-menu.php:737
+msgid "Text Shadow"
+msgstr ""
+
+#: widgets/footer-menu.php:712
+msgid "Arrow margin"
+msgstr ""
+
+#: widgets/footer-menu.php:730
+msgid "Badge"
+msgstr ""
+
+#: widgets/header-menu.php:369 widgets/header-preset/header-preset.php:524
+#: widgets/offcanvas-menu.php:179
+msgid "Content Source"
+msgstr ""
+
+#: widgets/header-menu.php:639 widgets/offcanvas-menu.php:820
+msgid "Icon Height"
+msgstr ""
+
+#: widgets/header-menu.php:725
+msgid "Item Padding"
+msgstr ""
+
+#: widgets/header-menu.php:985
+msgid "Svg Width"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:165
+msgid "Preset Layout"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:177
+msgid "Header Type"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:237
+msgid "Prest Icon"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:263
+msgid "Sticky Header Bar"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:292
+msgid "Sticky Header Logo"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:402
+#: widgets/header-preset/header-preset.php:451
+msgid "More Actions"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:421
+msgid "Action Type"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:438
+msgid "Separator?"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:465
+#: widgets/header-preset/header-preset.php:2448
+#: widgets/header-preset/header-preset.php:2457
+#: widgets/header-preset/header-preset.php:2487
+msgid "Language"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:511
+msgid "Always Show"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:540 widgets/offcanvas-menu.php:224
+msgid "Custom Content"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:750
+msgid "Right Border"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:754
+#: widgets/header-preset/header-preset.php:772
+msgid "Enable"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:768
+msgid "Left Border"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:814
+msgid "Header Container"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:843
+msgid "More Actions Gap"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:1202
+msgid "Menu Arrow Icon"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:1417
+msgid "Close Icon Color"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:1438
+msgid "Container Margin"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:1661
+#: widgets/header-preset/header-preset.php:2022
+#: widgets/header-preset/header-preset.php:2163
+msgid "Label"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:1663
+#: widgets/header-preset/header-preset.php:2024
+msgid "Type your label"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:1697
+msgid "Icon Before?"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:1720
+#: widgets/header-preset/header-preset.php:1922
+#: widgets/header-preset/header-preset.php:2067
+#: widgets/header-preset/header-preset.php:2207
+#: widgets/header-preset/header-preset.php:2495
+msgid "Show/Hide"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:1893
+msgid "Placeholder Text"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:2223
+msgid "Cart Type"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:2364
+#: widgets/header-preset/header-preset.php:2404
+msgid "Count Color"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:2468
+msgid "Language Options"
+msgstr ""
+
+#: widgets/header-preset/header-preset.php:2473
+msgid "English"
+msgstr ""
+
+#: widgets/landing-page.php:113 widgets/offcanvas-menu.php:658
+msgid "Main Container"
+msgstr ""
+
+#: widgets/landing-page.php:130 widgets/landing-page.php:202
+#: widgets/landing-page.php:638
+msgid "Main Padding"
+msgstr ""
+
+#: widgets/landing-page.php:155 widgets/offcanvas-menu.php:1156
+msgid "Search Input Color"
+msgstr ""
+
+#: widgets/landing-page.php:215
+msgid "CTA Button"
+msgstr ""
+
+#: widgets/landing-page.php:235
+msgid "Text Hover Color"
+msgstr ""
+
+#: widgets/landing-page.php:360
+msgid "Mobile Interface"
+msgstr ""
+
+#: widgets/landing-page.php:439
+msgid "Transparent Menu ?"
+msgstr ""
+
+#: widgets/landing-page.php:456
+msgid "Bar Direction"
+msgstr ""
+
+#: widgets/landing-page.php:461
+msgid "Row"
+msgstr ""
+
+#: widgets/landing-page.php:462
+msgid "Row Reverse"
+msgstr ""
+
+#: widgets/landing-page.php:463
+msgid "Column"
+msgstr ""
+
+#: widgets/landing-page.php:464
+msgid "Column Reverse"
+msgstr ""
+
+#: widgets/landing-page.php:498
+msgid "Mobile Padding"
+msgstr ""
+
+#: widgets/landing-page.php:520 widgets/landing-page.php:902
+#: widgets/offcanvas-menu.php:522
+msgid "Close Button"
+msgstr ""
+
+#: widgets/landing-page.php:546
+msgid "Position Right"
+msgstr ""
+
+#: widgets/landing-page.php:618
+msgid "Link Color"
+msgstr ""
+
+#: widgets/landing-page.php:800
+msgid "Menu List"
+msgstr ""
+
+#: widgets/landing-page.php:873
+msgid "Mobile Bar"
+msgstr ""
+
+#: widgets/landing-page.php:888
+msgid "Choose mobile Bar Image"
+msgstr ""
+
+#: widgets/landing-page.php:909
+msgid "Close Icon"
+msgstr ""
+
+#: widgets/landing-page.php:934
+msgid "Cta Button"
+msgstr ""
+
+#: widgets/landing-page.php:948 widgets/landing-page.php:949
+msgid "Get Started Now"
+msgstr ""
+
+#: widgets/landing-page.php:972
+msgid "Cta Cta Icon"
+msgstr ""
+
+#: widgets/landing-page.php:1048
+msgid "Search Form"
+msgstr ""
+
+#: widgets/landing-page.php:1060
+msgid "Enable Url Attribute"
+msgstr ""
+
+#: widgets/landing-page.php:1063
+msgid "no"
+msgstr ""
+
+#: widgets/landing-page.php:1072
+msgid "Mobile Content Direction"
+msgstr ""
+
+#: widgets/landing-page.php:1086
+msgid "Search Icon"
+msgstr ""
+
+#: widgets/landing-page.php:1115
+msgid "Container Padding"
+msgstr ""
+
+#: widgets/landing-page.php:1127
+msgid "Aspect Ratio"
+msgstr ""
+
+#: widgets/landing-page.php:1133
+msgid "100/100"
+msgstr ""
+
+#: widgets/landing-pages/content-one.php:10
+#: widgets/landing-pages/content-two.php:10
+msgid "custom bar"
+msgstr ""
+
+#: widgets/lottie.php:62
+msgid "Source"
+msgstr ""
+
+#: widgets/lottie.php:66
+msgid "Media File"
+msgstr ""
+
+#: widgets/lottie.php:67 widgets/lottie.php:76
+msgid "External URL"
+msgstr ""
+
+#: widgets/lottie.php:84
+msgid "Enter your URL"
+msgstr ""
+
+#: widgets/lottie.php:91
+msgid "Upload JSON File"
+msgstr ""
+
+#: widgets/lottie.php:103
+msgid "Trigger"
+msgstr ""
+
+#: widgets/lottie.php:108
+msgid "On Scroll"
+msgstr ""
+
+#: widgets/lottie.php:109 widgets/lottie.php:142
+msgid "On Hover"
+msgstr ""
+
+#: widgets/lottie.php:110
+msgid "Mouse Cursor"
+msgstr ""
+
+#: widgets/lottie.php:111 widgets/lottie.php:127 widgets/lottie.php:143
+msgid "On Click"
+msgstr ""
+
+#: widgets/lottie.php:112 widgets/lottie.php:144
+msgid "Viewport"
+msgstr ""
+
+#: widgets/lottie.php:120
+msgid "Pause"
+msgstr ""
+
+#: widgets/lottie.php:126
+msgid "On Mouseleave"
+msgstr ""
+
+#: widgets/lottie.php:136
+msgid "Replay"
+msgstr ""
+
+#: widgets/lottie.php:152
+msgid "Start Point"
+msgstr ""
+
+#: widgets/lottie.php:170
+msgid "End Point"
+msgstr ""
+
+#: widgets/lottie.php:189
+msgid "Autoplay?"
+msgstr ""
+
+#: widgets/lottie.php:202
+msgid "Controls?"
+msgstr ""
+
+#: widgets/lottie.php:214
+msgid "Loop?"
+msgstr ""
+
+#: widgets/lottie.php:227
+msgid "Times"
+msgstr ""
+
+#: widgets/lottie.php:242
+msgid "Backward Direction?"
+msgstr ""
+
+#: widgets/lottie.php:248
+msgid "Play it backward."
+msgstr ""
+
+#: widgets/lottie.php:258
+msgid "Speed"
+msgstr ""
+
+#: widgets/lottie.php:278
+msgid "Additiuonal Properties"
+msgstr ""
+
+#: widgets/lottie.php:287
+msgid "Renderer"
+msgstr ""
+
+#: widgets/lottie.php:292
+msgid "Svg"
+msgstr ""
+
+#: widgets/lottie.php:294
+msgid "Canvas"
+msgstr ""
+
+#: widgets/lottie.php:302
+msgid "Intermission"
+msgstr ""
+
+#: widgets/lottie.php:306
+msgid ""
+"Duration (in milliseconds) to pause before playing each cycle in a looped "
+"animation. Set this parameter to 0 (no pause) or any positive number. "
+msgstr ""
+
+#: widgets/offcanvas-menu.php:185
+msgid "Custom Shortcode"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:194
+msgid "Preset Style"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:202
+msgid "Five"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:212
+msgid "Elementor Template ShortCode"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:215
+msgid "[WCF_ELEMENTOR_TPL id=\"1951\"]"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:232
+msgid "Show Logo / Custom Image"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:294 widgets/offcanvas-menu.php:307
+msgid "Email"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:308
+msgid "Phone"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:309
+msgid "Address"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:317 widgets/offcanvas-menu.php:362
+msgid "Link Value"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:328
+msgid "Contact Heading"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:340
+msgid "Contact Info"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:372
+msgid "Language Info"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:489
+msgid "Follow Heading"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:491
+msgid "Follow Me"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:500
+msgid "Follow Info"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:540
+msgid "Close Text"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:543
+msgid "close text"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:708
+msgid "Open Text Button"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:750
+msgid "Close Icon Button"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:772
+msgid "Dropshadow Color"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:788
+msgid "Icon Background"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:883
+msgid "Close Text Button"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:960
+msgid "Height Auto"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:978
+msgid "Contact"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:1024
+msgid "Body Color"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:1050
+msgid "Social / Follow"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:1082
+msgid "Copyright , Search , Lang"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:1091
+msgid "Copyright Display"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:1108
+msgid "Copyright Color"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:1119
+msgid "Copyright Link Color"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:1139
+msgid "Search Display"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:1170
+msgid "Lang Display"
+msgstr ""
+
+#: widgets/offcanvas-menu.php:1188
+msgid "Language Color"
+msgstr ""
+
+#: widgets/offcanvas-preset/content-elementor.php:20
+#: widgets/offcanvas-preset/content-four.php:20
+msgid "Close"
+msgstr ""
+
+#: widgets/wc-cart-count.php:57
+msgid "Cart Content"
+msgstr ""
+
+#: widgets/wc-cart-count.php:94
+msgid "Container"
+msgstr ""
+
+#: widgets/wc-cart-count.php:354
+msgid "Cart Count"
+msgstr ""
+
+#: widgets/wcf-line.php:52
+msgid "WCF Line"
+msgstr ""

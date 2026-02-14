@@ -1,0 +1,15 @@
+
+.brand-title {
+    position: relative;
+}
+.brand-title::before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    border-radius: 50px;
+    background-color: #555555;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+}

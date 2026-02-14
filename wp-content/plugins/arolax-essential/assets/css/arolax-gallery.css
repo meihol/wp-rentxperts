@@ -1,0 +1,189 @@
+.gallery--slider {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery--slider svg {
+    width: 1em;
+    height: 1em;
+}
+
+.g-slider--title {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background-color: #C8F31D;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.g-slider--title .g-title {
+    text-align: center;
+}
+
+.g-slider--one,
+.g-slider--two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150%;
+}
+
+.g-slider--one {
+    margin-bottom: 10px;
+}
+
+.gallery--slider .item {
+    flex: 1;
+    max-width: 100%;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.gallery--slider .content-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    transition: all 0.3s;
+}
+
+.gallery--slider .content {
+    text-align: left;
+}
+
+.gallery--slider .icon-wrap {
+    text-align: right;
+}
+
+.gallery--slider .icon {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+}
+
+.gallery--slider .title {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    transform: translateY(30px);
+}
+
+.gallery--slider p {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    transform: translateY(20px);
+}
+
+.gallery--slider .source {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery--slider .source img,
+.gallery--slider .source video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery--slider .item:hover .content-wrap {
+    background-color: #FFFFFFE5;
+}
+
+.gallery--slider .item:hover p,
+.gallery--slider .item:hover .icon,
+.gallery--slider .item:hover .title {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/*progress bar*/
+.g-slider--title .progress-circle @keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+}
+
+.g-slider--title .progress-circle {
+    --fg: #b0d02e;
+    --bg: transparent;
+    --bg-color: #C8F31D;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(closest-side, var(--bg-color) 98%, transparent 0 99.9%, transparent 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.g-slider--title .progress-circle::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+
+@media (min-width: 768px) {
+    .g-slider--title{
+        display: flex;
+    }
+    .g-slider--one,
+    .g-slider--two {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1199px) {
+    .gallery--slider .item p,
+    .gallery--slider .item .icon,
+    .gallery--slider .item .title {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .gallery--slider .item .content-wrap {
+        background-color: #FFFFFFE5;
+    }
+}
+
+@media (max-width: 991px) {
+    .g-slider--one,
+    .g-slider--two {
+        width: 200%;
+    }
+}
+
+@media (max-width: 767px) {
+    .g-slider--one,
+    .g-slider--two {
+        width: 100%;
+    }
+}

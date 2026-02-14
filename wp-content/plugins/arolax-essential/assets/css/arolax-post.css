@@ -1,0 +1,187 @@
+.arolax--post svg {
+    width: 1em;
+    height: 1em;
+}
+
+.arolax--post img {
+    object-fit: cover;
+}
+
+.arolax--post {
+    display: grid;
+    row-gap: 30px;
+    transition: all 0.3s;
+}
+
+
+/* Style One */
+.arolax--post.post-style-1 .wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.arolax--post.post-style-1 .number {
+    flex-basis: 30px;
+}
+.arolax--post.post-style-1 .link-wrap {
+    margin-left: auto;
+}
+
+.arolax--post.post-style-1 .post-meta span {
+    width: 20px;
+    height: 1px;
+    display: inline-block;
+    background: #121212;
+    margin: 0 5px;
+    position: relative;
+    top: -5px;
+}
+
+.arolax--post.post-style-1 .link {
+    min-width: 12px;
+    display: inline-block;
+    transition: all 0.3s;
+    transform: translate(-20px, 20px);
+    opacity: 0;
+}
+
+.arolax--post.post-style-1 .item:hover .link {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+@media (max-width: 1200px) {
+    .arolax--post.post-style-1 .link {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+/* Style Two  */
+.arolax--post.post-style-2 .wrapper {
+    display: flex;
+}
+
+.arolax--post.post-style-2 .author-wrap {
+    flex-basis: 300px;
+}
+
+.arolax--post.post-style-2 .content {
+    flex: 1;
+}
+
+.arolax--post.post-style-2 .author {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.arolax--post.post-style-2 .name {
+    display: inline-block;
+}
+
+@media (max-width: 767px) {
+    .arolax--post.post-style-2 .wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+/* Style Three */
+.arolax--post.post-style-3 .item {
+    position: relative;
+    overflow: hidden;
+}
+
+.arolax--post.post-style-3 .thumb img {
+    width: 100%;
+}
+
+.arolax--post.post-style-3 .item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #12121222;
+}
+
+.arolax--post.post-style-3 .wrapper * {
+    color: white;
+    fill: white;
+}
+
+.arolax--post.post-style-3 .wrapper {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.arolax--post.post-style-3 .item:hover .wrapper {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Style Four */
+.arolax--post.post-style-4 .item {
+    gap: 15px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.arolax--post.post-style-4 .wc-btn-group > *:nth-child(1) {
+    justify-content: flex-start;
+}
+
+.arolax--post.post-style-4 .wc-btn-group > *:nth-child(3) {
+    justify-content: flex-end;
+}
+
+.arolax--post.post-style-4 .post-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+@media (max-width: 767px) {
+    .arolax--post.post-style-4 .item {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Style Five */
+.arolax--post.post-style-5 .post-meta span {
+    width: 20px;
+    height: 1px;
+    display: inline-block;
+    background: #121212;
+    margin: 0 5px;
+    position: relative;
+    top: -5px;
+}
+
+.arolax--post.post-style-5 .item {
+    position: relative;
+    overflow: hidden;
+}
+
+.arolax--post.post-style-5 .wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    background: #fff;
+}

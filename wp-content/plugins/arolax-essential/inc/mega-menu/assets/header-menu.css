@@ -1,0 +1,71 @@
+.main-menu .dp-menu li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.mega_menu.wcf-mg-megamenu-section.fullwidth {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    
+}
+.wcf-mg-has-megamenu:hover{
+    position: static;
+}
+.wcf-mg-has-megamenu:hover .mega_menu.wcf-mg-megamenu-section {
+    opacity: 1;
+    visibility: visible;
+}
+.mean-nav .wcf-mg-has-megamenu:hover .mega_menu.wcf-mg-megamenu-section {
+   position: fixed;
+   left: auto;
+}
+.mega_menu.wcf-mg-megamenu-section {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;    
+    left:0;
+    z-index: 99;
+   
+}
+.wcf--mega-menu-empty-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 50px;
+    color: #fff;
+    background: #e59809;
+}
+
+.wcf--editemptybutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 2px;
+    height: 40px;
+    width: max-content;
+    border: none;
+    background: #008ce162;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .wcf--editemptybutton .editemptylable {
+    line-height: 22px;
+    font-size: 19px;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .wcf--editemptybutton:hover {
+    background: #a549da62;
+  }
+  
+
+.offcanvas__menu-wrapper.mean-container .mean-nav ul li a { 
+    justify-content: space-between;
+}

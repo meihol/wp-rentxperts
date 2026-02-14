@@ -1,0 +1,139 @@
+/* Popup Overlay */
+.career-popup-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+.mobile-menu-active .wcf-nav-item .menu-text {
+	width: 100%;
+}
+/* Popup Box */
+.career-popup-box {
+  background: #fff;
+  padding: 30px 20px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease-in-out;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  max-height: 500px;
+}
+.elementor-widget-container .gallery--slider .content-wrap {
+	display: none;
+}
+/* Close Button */
+.popup-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Title */
+.popup-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.list-li-ul-main ul li {
+	list-style: disc;
+}
+.list-li-ul-main ul {
+	margin-block-start: 20px;
+}
+.wpcf7-form-control.wpcf7-text,.wpcf7-form-control.wpcf7-textarea,.wpcf7-form-control.wpcf7-select {
+	height: 50px;
+	background-color: #02010100;
+	color: #121212;
+	border-radius: 0px 0px 0px 0px;
+	margin: 0px 0px 25px 0px;
+	font-family: "Kanit", Sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 23.5px;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #C2C2C2;
+	width: 100%;
+}
+.rentexperts-text-slider .wcf__slider-wrapper .wcf--image-box .thumb {
+	display: none;
+}
+.rentexperts-text-slider .wcf__slider-wrapper .ts-navigation {
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.wcf__slider .wcf--image-box.style-1 {
+	padding-block: 15px 0;
+}
+.wcf__slider-wrapper .ts-pagination {
+	margin-block-start: 30px;
+}
+.rentexperts-text-slider .ts-navigation .wcf-arrow.wcf-arrow-prev {right: 70px;}
+.rentexperts-text-slider .ts-navigation .wcf-arrow.wcf-arrow-next {left: 70px;}
+.arolax-contact-submit > p {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-block-start: 23px;
+	flex-direction: column;
+	text-align: center;
+}
+.wpcf7-form-control.wpcf7-submit {
+	padding: 12px 32px;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #fff;
+	background-color: #000;
+	transition: .3s linear;
+	overflow: hidden;
+	border-radius: 30px;
+	border: 0;
+}
+.wpcf7-not-valid-tip {
+	margin-block: 0 15px;
+}
+/* @media only screen and (max-width: 600px) {
+  .career-popup-box {
+    overflow: auto;
+    max-height: 500px;
+  }
+} */
+@media (max-width: 1199px) {
+  .gallery--slider .item .content-wrap {
+    height: 120px;
+    bottom: 0px;
+    top: auto;
+  }
+  .rentexperts-text-slider .ts-navigation .wcf-arrow.wcf-arrow-prev {right: 0px;}
+  .rentexperts-text-slider .ts-navigation .wcf-arrow.wcf-arrow-next {left: 0px;}
+}
+@media only screen and (max-width: 767px) {
+  .gallery--slider .g-slider--title {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    /* left: 50%;
+    top: 50%; */
+    display: flex;
+    z-index: 999;
+  }
+}

@@ -1,0 +1,44 @@
+.arolax_progressbar {
+    --barWidth: 0;
+}
+.arolax_progressbar .bar {
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    position: relative;
+}
+.arolax_progressbar .bar::after {
+    position: absolute;
+    content: "";
+    width: var(--barWidth);
+    height: 5px;
+    left: 0;
+    top: 0;
+    background: #FFCD4C;
+    /*transition: all 1s;*/
+}
+.arolax_progressbar .percentage {
+    background: #121212;
+    display: flex;
+    color: #fff;
+    padding: 6px 12px;
+    line-height: 1;
+    position: absolute;
+    bottom: 11px;
+    left: var(--barWidth);
+    /*transition: all 1s;*/
+    border-radius: 3px;
+    transform: translateX(-50%);
+}
+.arolax_progressbar .percentage::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 6px;
+    bottom: -6px;
+    left: 50%;
+    background-color: #121212;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    transform: translateX(-50%);
+}
+

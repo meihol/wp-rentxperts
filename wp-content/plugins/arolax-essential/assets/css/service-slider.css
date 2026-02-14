@@ -1,0 +1,227 @@
+@keyframes ServiceSliderContent {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ServiceSliderImage {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.axs_slider_wrapper svg {
+    width: 1em;
+    height: 1em;
+}
+
+.axs_slider_wrapper .slide {
+    gap: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.axs_slider_wrapper .sec-title {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.axs_slider_wrapper .title {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.axs_slider_wrapper .text {
+    padding-bottom: 20px;
+}
+
+.axs_slider_wrapper .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.axs_slider_wrapper .swiper-pagination {
+    gap: 2px;
+    display: flex;
+}
+
+.axs_slider_wrapper .swiper-pagination-current {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.axs_slider_wrapper .swiper-pagination {
+    position: unset;
+}
+
+.axs_slider_wrapper .ts-navigation {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 3;
+}
+
+.axs_slider_wrapper .wcf-arrow {
+    transition: all 0.3s;
+}
+
+.axs_slider_wrapper .ts-pagination {
+    position: relative;
+}
+
+.axs_slider_wrapper .ts-pagination::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    left: 0;
+    background: #FE5B2C;
+}
+
+.axs_slider_wrapper .swiper-slide {
+    height: auto;
+}
+
+.axs_slider_wrapper .image,
+.axs_slider_wrapper .slide {
+    height: 100%;
+}
+
+.axs_slider_wrapper .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.axs_slider_wrapper .swiper-slide-active .content {
+    animation: ServiceSliderContent 2s;
+}
+
+
+/* Button */
+.wc-btn-wrapper {
+    display: inline-block;
+}
+
+.wc-btn-wrapper svg {
+    width: 1em;
+    height: 1em;
+}
+
+/* Button 1 and 2 */
+.wc-btn-group {
+    display: flex;
+    width: fit-content;
+}
+
+.wc-btn-group .wc-btn-primary {
+    padding: 21px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+    background-color: #0A1A3D;
+    text-transform: capitalize;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+    gap: 30px;
+    white-space: nowrap;
+    border-radius: 30px;
+}
+
+.wc-btn-group .wc-btn-play {
+    color: #fff;
+    fill: #fff;
+    border-radius: 50px;
+    background-color: #0A1A3D;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.wc-btn-group > *:nth-child(2) {
+    transform: scale3d(1, 1, 1);
+}
+
+.wc-btn-group:hover > *:nth-child(2) {
+    transform: scale3d(1, 1, 1);
+}
+
+/* Style 1 */
+.style-1 .wc-btn-group > *:nth-child(1) {
+    transform: scale3d(0.5, 0.5, 1);
+    margin-right: calc( var(--icon-width, 60px) * -1);
+    opacity: 0;
+}
+
+.style-1 .wc-btn-group > *:nth-child(3) {
+    transform: scale3d(1, 1, 1);
+    margin-left: 0;
+    opacity: 1;
+}
+
+.style-1 .wc-btn-group:hover > *:nth-child(1) {
+    transform: scale3d(1, 1, 1);
+    margin-right: 0;
+    opacity: 1;
+}
+
+.style-1 .wc-btn-group:hover > *:nth-child(3) {
+    transform: scale3d(0.5, 0.5, 1);
+    margin-left: calc( var(--icon-width, 60px) * -1);
+    opacity: 0;
+}
+
+/* Style 2 */
+.style-2 .wc-btn-group > *:nth-child(1) {
+    transform: scale3d(1, 1, 1);
+    margin-right: 0;
+    opacity: 1;
+}
+
+.style-2 .wc-btn-group > *:nth-child(3) {
+    transform: scale3d(0.5, 0.5, 1);
+    margin-left: calc( var(--icon-width, 60px) * -1);
+    opacity: 0;
+}
+
+.style-2 .wc-btn-group:hover > *:nth-child(1) {
+    transform: scale3d(0.5, 0.5, 1);
+    margin-right: calc( var(--icon-width, 60px) * -1);
+    opacity: 0;
+}
+
+.style-2 .wc-btn-group:hover > *:nth-child(3) {
+    transform: scale3d(1, 1, 1);
+    margin-left: 0;
+    opacity: 1;
+}
+
+
+@media (max-width: 767px) {
+    .axs_slider_wrapper .slide {
+        grid-template-columns: 1fr;
+    }
+}

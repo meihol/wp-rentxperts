@@ -1,0 +1,34 @@
+<wpml-config>
+  <admin-texts>
+    <key name="arolax_settings">
+      <key name="general_full_site_background"/>
+      <key name="general_fullsite_background_preset"/>
+      <key name="general_full_site_custom_background">
+        <key name="url"/>
+        <key name="id"/>
+        <key name="width"/>
+        <key name="height"/>
+        <key name="thumbnail"/>
+        <key name="alt"/>
+        <key name="title"/>
+        <key name="description"/>
+      </key>
+      <key name="theme_demo_activate"/>
+      <key name="hide_unwanted_warning"/>
+      <key name="wcf_enable_rtl"/>
+      <key name="opt-tabbed-code">
+        <key name="custom_css"/>
+        <key name="custom_css_tab"/>
+        <key name="custom_css_mobile"/>
+        <key name="opt_code_editor_js"/>
+      </key>
+      <key name="cpt_options"/>
+      <key name="cpt_taxonomy_options"/>
+      <key name="backup_options"/>
+      <key name="optimize_asset_enable"/>
+      <key name="optimize_minify_css"/>
+      <key name="ondemand_contact_form_7"/>
+      <key name="defer_js_and_css"/>
+    </key>
+  </admin-texts>
+</wpml-config>
