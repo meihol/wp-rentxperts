@@ -11,7 +11,7 @@
 .mobile-menu-active .wcf-nav-item .menu-text {
 	width: 100%;
 }
-.description {
+.rent-box-slider-main .description {
 	position: relative;
 	overflow: hidden;
 	transition: max-height .35s ease;
