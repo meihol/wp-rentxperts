@@ -169,7 +169,6 @@ jQuery(document).ready(function($) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-alert("Hello");
     document.querySelectorAll(".description").forEach(function(desc){
 
         const lineHeight = parseFloat(getComputedStyle(desc).lineHeight);
