@@ -167,3 +167,42 @@ jQuery(document).ready(function($) {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+alert("Hello");
+    document.querySelectorAll(".description").forEach(function(desc){
+
+        const lineHeight = parseFloat(getComputedStyle(desc).lineHeight);
+        const collapsedHeight = lineHeight * 4;
+
+        if(desc.scrollHeight <= collapsedHeight + 2){
+            return;
+        }
+
+        desc.style.maxHeight = collapsedHeight + "px";
+
+        const btn = document.createElement("a");
+        btn.href = "javascript:void(0)";
+        btn.className = "read-more-btn";
+        btn.innerHTML = "Read More";
+
+        desc.insertAdjacentElement("afterend", btn);
+
+        btn.addEventListener("click", function(){
+
+            if(desc.classList.contains("expanded")){
+
+                desc.classList.remove("expanded");
+                desc.style.maxHeight = collapsedHeight + "px";
+                btn.innerHTML = "Read More";
+
+            }else{
+
+                desc.classList.add("expanded");
+                desc.style.maxHeight = desc.scrollHeight + "px";
+                btn.innerHTML = "Read Less";
+
+            }
+        });
+    });
+});

@@ -11,6 +11,29 @@
 .mobile-menu-active .wcf-nav-item .menu-text {
 	width: 100%;
 }
+.description{
+    position: relative;
+    overflow: hidden;
+    transition: max-height .35s ease;
+    line-height: 1.8;
+}
+
+.description.expanded{
+    overflow: visible;
+}
+
+.read-more-btn{
+    display:inline-block;
+    margin-top:10px;
+    color:#000;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.read-more-btn:hover{
+    color:#d09a00;
+}
 /* Popup Box */
 .career-popup-box {
   background: #fff;
