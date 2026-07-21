@@ -157,7 +157,7 @@
   .rentexperts-text-slider .ts-navigation .wcf-arrow.wcf-arrow-next {left: 0px;}
 }
 @media only screen and (max-width: 767px) {
-  .blt-8ac671e4-tabs-list {
+  .blt-8ac671e4-tabs-container .blt-8ac671e4-tabs-list {
     overflow: auto;
     justify-content: flex-start;
   }
