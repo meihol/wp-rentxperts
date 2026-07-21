@@ -25,7 +25,10 @@
 .description.expanded{
     overflow: visible;
 }
-
+#blt-8ac671e4-834a773 .blt-8ac671e4-header-container {
+	justify-content: space-between;
+	margin-block-end: 15px;
+}
 .read-more-btn{
     display:inline-block;
     margin-top:10px;
