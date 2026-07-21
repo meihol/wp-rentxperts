@@ -22,9 +22,6 @@
 .re-logo.elementor-widget-image a,.re-logo .elementor-widget-image a {
 	display: block;
 }
-.description.expanded{
-    overflow: visible;
-}
 #blt-8ac671e4-834a773 .blt-8ac671e4-header-container {
 	justify-content: space-between;
 	margin-block-end: 15px;
@@ -160,6 +157,10 @@
   .rentexperts-text-slider .ts-navigation .wcf-arrow.wcf-arrow-next {left: 0px;}
 }
 @media only screen and (max-width: 767px) {
+  .blt-8ac671e4-tabs-list {
+    overflow: auto;
+    justify-content: flex-start;
+  }
   .gallery--slider .g-slider--title {
     position: absolute;
     width: 190px;
