@@ -29,6 +29,9 @@
 	justify-content: space-between;
 	margin-block-end: 15px;
 }
+.blt-8ac671e4-tabs-list {
+	overflow: auto;
+}
 .read-more-btn{
     display:inline-block;
     margin-top:10px;
