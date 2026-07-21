@@ -11,11 +11,13 @@
 .mobile-menu-active .wcf-nav-item .menu-text {
 	width: 100%;
 }
-.description{
-    position: relative;
-    overflow: hidden;
-    transition: max-height .35s ease;
-    line-height: 1.8;
+.description {
+	position: relative;
+	overflow: hidden;
+	transition: max-height .35s ease;
+	line-height: 1.8;
+	text-align: justify;
+	letter-spacing: 0;
 }
 
 .description.expanded{
