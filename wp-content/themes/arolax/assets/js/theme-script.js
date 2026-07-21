@@ -169,39 +169,67 @@ jQuery(document).ready(function($) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".description").forEach(function(desc){
 
-        const lineHeight = parseFloat(getComputedStyle(desc).lineHeight);
-        const collapsedHeight = lineHeight * 4;
+    function initReadMore() {
 
-        if(desc.scrollHeight <= collapsedHeight + 2){
-            return;
-        }
+        document.querySelectorAll(".description").forEach(function(desc){
 
-        desc.style.maxHeight = collapsedHeight + "px";
+            if(desc.dataset.readmore === "true") return;
 
-        const btn = document.createElement("a");
-        btn.href = "javascript:void(0)";
-        btn.className = "read-more-btn";
-        btn.innerHTML = "Read More";
+            const lineHeight = parseFloat(getComputedStyle(desc).lineHeight);
+            const collapsedHeight = lineHeight * 4;
 
-        desc.insertAdjacentElement("afterend", btn);
+            if(desc.scrollHeight <= collapsedHeight + 2){
+                return;
+            }
 
-        btn.addEventListener("click", function(){
+            desc.dataset.readmore = "true";
 
+            desc.style.maxHeight = collapsedHeight + "px";
+            desc.style.overflow = "hidden";
+            desc.style.transition = "max-height 0.4s ease";
+
+            const btn = document.createElement("a");
+            btn.href = "#";
+            btn.className = "read-more-btn";
+            btn.innerHTML = "Read More";
+
+            desc.insertAdjacentElement("afterend", btn);
+
+        });
+    }
+
+
+    initReadMore();
+
+
+    // Swiper clone slides ke liye
+    setTimeout(function(){
+        initReadMore();
+    },1000);
+
+
+
+    // Click Event (original + duplicate dono ke liye)
+    document.addEventListener("click", function(e){
+
+        if(e.target.classList.contains("read-more-btn")){
+
+            e.preventDefault();
+            const desc = e.target.previousElementSibling;
             if(desc.classList.contains("expanded")){
 
                 desc.classList.remove("expanded");
-                desc.style.maxHeight = collapsedHeight + "px";
-                btn.innerHTML = "Read More";
+                desc.style.maxHeight = (parseFloat(getComputedStyle(desc).lineHeight) * 4) + "px";
+                e.target.innerHTML = "Read More";
 
             }else{
 
                 desc.classList.add("expanded");
                 desc.style.maxHeight = desc.scrollHeight + "px";
-                btn.innerHTML = "Read Less";
+                e.target.innerHTML = "Read Less";
 
             }
-        });
+        }
     });
 });
