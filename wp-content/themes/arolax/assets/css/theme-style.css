@@ -19,7 +19,7 @@
 	text-align: justify;
 	letter-spacing: 0;
 }
-.re-logo.elementor-widget-image a {
+.re-logo.elementor-widget-image a,.re-logo .elementor-widget-image a {
 	display: block;
 }
 .description.expanded{
