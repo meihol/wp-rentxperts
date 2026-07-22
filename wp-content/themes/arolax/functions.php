@@ -119,3 +119,44 @@ function rentexpert_popup(){ ?>
 	</div>
 <?php }
 add_action('wp_footer','rentexpert_popup');
+
+function wp_convert_to_webp_on_upload($file) {
+
+    $file_path = $file['file'];
+    
+    // $file_type = mime_content_type($file_path);
+    
+    $finfo = finfo_open(FILEINFO_MIME_TYPE);
+    $file_type = finfo_file($finfo,$file_path);
+    finfo_close($finfo);
+
+    if (in_array($file_type, ['image/jpeg', 'image/png'])) {
+
+        $image = null;
+
+        if ($file_type == 'image/jpeg') {
+            $image = imagecreatefromjpeg($file_path);
+        } elseif ($file_type == 'image/png') {
+            $image = imagecreatefrompng($file_path);
+        }
+
+        if ($image) {
+            $webp_path = preg_replace('/\.(jpg|jpeg|png)$/i', '.webp', $file_path);
+
+            // Quality (0-100)
+            imagewebp($image, $webp_path, 98);
+
+            imagedestroy($image);
+
+            // Replace original file
+            unlink($file_path);
+
+            $file['file'] = $webp_path;
+            $file['url'] = preg_replace('/\.(jpg|jpeg|png)$/i', '.webp', $file['url']);
+            $file['type'] = 'image/webp';
+        }
+    }
+
+    return $file;
+}
+add_filter('wp_handle_upload', 'wp_convert_to_webp_on_upload');
