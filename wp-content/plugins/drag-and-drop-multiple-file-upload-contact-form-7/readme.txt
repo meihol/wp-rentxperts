@@ -3,8 +3,8 @@ Contributors: glenwpcoder, yordansoares
 Donate link : http://codedropz.com/donation
 Tags: drag and drop, contact form 7, ajax uploader, multiple file, upload
 Requires at least: 3.0.1
-Tested up to: 6.9
-Stable tag: 1.3.9.3
+Tested up to: 7.0
+Stable tag: 1.3.9.8
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -47,7 +47,7 @@ To **adjust** or **disable** the auto-deletion feature, we suggest upgrading to 
 
 ### ⭐ Premium Features ⭐
 
-Check out the available features in the **PRO version**.
+Check out the available features in the [**PRO version**](https://www.codedropz.com/drag-drop-multiple-file-upload-for-contact-form-7/#shop).
 
 1. **Upload Large File** - Supports uploading large files.
 2. **Image Preview** - Displays thumbnails for images.
@@ -85,13 +85,16 @@ Check out the available features in the **PRO version**.
 * Database for Contact Form 7- Ninja
 * Advanced Contact form 7 DB – Vsourz Digital
 
-You can get [PRO Version here](https://www.codedropz.com/purchase-plugin/)!
+You can get [PRO Version here](https://www.codedropz.com/drag-drop-multiple-file-upload-for-contact-form-7/#shop)!
 
 **PRO VERSION - PLUGIN OVERVIEW**
 
 [youtube https://youtu.be/PoQA4KmIETA?si=udM-70n6l4lsQAfp]
 
 ### Other Plugins You May Like
+
+* [Order Files for WooCommerce](https://www.codedropz.com/woo-order-files/)
+An extension that attach files to existing **WooCommerce orders**, allowing both customers and admins to upload and manage files easily.
 
 * [Easy File Upload & Approval](https://wordpress.org/plugins/easy-file-upload-approval/)
 **Easy File Upload & Approval** - A simple file management plugin that lets users effortlessly upload and submit files for review through a clean and simple drag-and-drop interface.
@@ -182,6 +185,32 @@ To install this plugin see below:
 
 == Changelog ==
 
+= 1.3.9.8 =
+- Bug Fix - Js error disabled button after upload when "enable jquery" option is used.
+- Security Fix - Cross Site Scripting (XSS) (via patchstack)
+- Security Fix - Fixed Unauthenticated Arbitrary File Upload (Thanks to "Nguyen Dinh Hung (Mitchell)")
+- JS Fix - Fixed file counter when file upload has an error or when deleting file.
+- Vulnerability - Fixed Authenticated (Administrator+) Stored Cross-Site Scripting via admin fields Settings. (via "Wordfence")
+- Improved - Added sanitization for admin settings/options and escaped localized script data for better security and data handling.
+
+= 1.3.9.7 =
+- Improved : Change htacess generated file to support apache 2.2 & 2.4
+- Security Fix : Unauthenticated Arbitrary File Upload via Non-ASCII Filename Blacklist (Thanks to Leonid Semenenko via WordFence)
+- Security Fix : Unauthenticated Limited Arbitrary File Read via mfile Field (Thanks to Osvaldo Noe Gonzalez Del Rio via WordFence)
+- Security Vulnerability : Fix Unauthenticated Arbitrary File Deletion (Thanks to Bao Nguyen)
+
+= 1.3.9.6 =
+- New : Replaced cookies with localStorage for unique upload folder generation.
+- Security :  Unauthenticated Arbitrary File Upload (Reported by Thomas Sanzey via WordFence) - user able to upload "php5 - php8" for non ascii filename by bypassing extensions present in the blacklists.
+
+= 1.3.9.5 =
+- Hot Fix: Minor spelling mistakes.
+
+= 1.3.9.4 =
+- Fixes: Change shutdown hook to cron events in order to fix this issue. [Support Link](https://wordpress.org/support/topic/commands-out-of-sync-mysql-error-during-shutdown-hook-v1-3-9-3-2/)
+- Fixes: Move the js cookie generation from wp_footer hook to wp_add_inline_script. [Support Link](https://wordpress.org/support/topic/enqueueing-of-javascript-is-not-complaint-csp-conflict/)
+- Improvement: Minor fixes and improvement.
+
 = 1.3.9.3 =
 - Security: Fixed vulnerability issues reported by WordFence (reported by shark3y) - unauthorized modification of data due to a missing ownership check in the dnd_codedropz_upload_delete() function.
 - Security: Fixed an unauthenticated limited arbitrary file upload issue allowing .phar and .svg files when using blacklist mode with file types set to *. (by WordFence via andrea bocchetti)
@@ -262,7 +291,3 @@ Added some useful features.
 
 = 1.2.4 =
 Added new features and fixes.
-
-== Donations ==
-
-Would you like to support the advancement of this plugin? [Donate](http://codedropz.com/donation)

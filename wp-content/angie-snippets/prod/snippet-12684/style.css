@@ -1,0 +1,123 @@
+.blt-8ac671e4-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.blt-8ac671e4-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.blt-8ac671e4-title {
+    margin: 0;
+    font-weight: 700;
+}
+
+.blt-8ac671e4-see-all {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blt-8ac671e4-see-all-arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.blt-8ac671e4-see-all:hover .blt-8ac671e4-see-all-arrow {
+    transform: translateX(4px);
+}
+
+.blt-8ac671e4-divider {
+    border-bottom: 1px solid #e2e8f0;
+    width: 100%;
+}
+
+.blt-8ac671e4-tabs-container {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.blt-8ac671e4-tabs-list {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e2e8f0;
+    width: 100%;
+}
+
+.blt-8ac671e4-tab {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Logo Grid Styling */
+.blt-8ac671e4-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 15px;
+    row-gap: 20px;
+}
+
+.blt-8ac671e4-logo-card {
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blt-8ac671e4-logo-card img {
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+/* Animations classes for Tab filters */
+.blt-8ac671e4-logo-card.blt-hide {
+    display: none !important;
+}
+
+/* Wrapper animations settings */
+.blt-8ac671e4-wrapper[data-animation="fade"] .blt-8ac671e4-logo-card {
+    animation: bltFadeIn 0.4s ease forwards;
+}
+
+.blt-8ac671e4-wrapper[data-animation="zoom"] .blt-8ac671e4-logo-card {
+    animation: bltZoomIn 0.4s ease forwards;
+}
+
+.blt-8ac671e4-wrapper[data-animation="slide-up"] .blt-8ac671e4-logo-card {
+    animation: bltSlideUp 0.4s ease forwards;
+}
+
+.blt-8ac671e4-wrapper[data-animation="scale"] .blt-8ac671e4-logo-card {
+    animation: bltScaleIn 0.4s ease forwards;
+}
+
+@keyframes bltFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bltZoomIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bltSlideUp {
+    from { opacity: 0; transform: translateY(15px); }\n    to { opacity: 1; transform: translateY(0); }\n}\n\n@keyframes bltScaleIn {\n    from { opacity: 0; transform: scale(0.9); }\n    to { opacity: 1; transform: scale(1); }\n}\n\n/* Mobile responsive horizontal scroll for tabs */\n@media screen and (max-width: 767px) {\n    .blt-8ac671e4-tabs-container {\n        overflow-x: auto;\n        -webkit-overflow-scrolling: touch;\n        scrollbar-width: none; /* Firefox */\n    }\n    \n    .blt-8ac671e4-tabs-container::-webkit-scrollbar {\n        display: none; /* Safari and Chrome */\n    }\n    \n    .blt-8ac671e4-tabs-list {\n        justify-content: flex-start;\n        width: max-content;\n        min-width: 100%;\n        padding-bottom: 2px;\n    }\n}\n"

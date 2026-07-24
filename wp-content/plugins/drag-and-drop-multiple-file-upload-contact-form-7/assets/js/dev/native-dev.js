@@ -2,7 +2,7 @@
  * CodeDropz Uploader
  * Copyright 2018 Glen Mongaya
  * CodeDrop Drag&Drop Uploader
- * @version 1.3.8.7
+ * @version 1.3.9.8
  * @author CodeDropz, Glen Don L. Mongaya
  * @license The MIT License (MIT)
  */
@@ -26,19 +26,12 @@
 
 		// Generate random string
 		const generateRandomFolder = function( length = 20 ) {
-			const characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-			const charactersLength = characters.length;
-			let randomString = '';
-
-			// Generate a random string
-			for (let i = 0; i < length; i++) {
-				const randomIndex = Math.floor(Math.random() * charactersLength);
-				randomString += characters[randomIndex];
-			}
-
-			// Append the current timestamp (in seconds)
-			const timestamp = Math.floor(Date.now() / 1000); // Get Unix timestamp in seconds
-			return randomString + timestamp;
+			const bytes = new Uint8Array(16);
+			crypto.getRandomValues(bytes);
+			bytes[6] = (bytes[6] & 0x0f) | 0x40; // version 4
+			bytes[8] = (bytes[8] & 0x3f) | 0x80; // variant 10
+			const hex = Array.from(bytes, b => b.toString(16).padStart(2, '0')).join('');
+			return hex.replace(/^(.{8})(.{4})(.{4})(.{4})(.{12})$/, '$1-$2-$3-$4-$5');
 		}
 
         // Parent input file type
@@ -50,7 +43,7 @@
             color: '#000',
             background: '',
             server_max_error: 'Uploaded file exceeds the maximum upload size of your server.',
-            max_file: input.dataset.max ? input.dataset.max : 10, // default 10
+            max_file: input.dataset.max ? parseInt( input.dataset.max ) : 10, // default 10
             max_upload_size: input.dataset.limit ? input.dataset.limit : '10485760', // should be a bytes it's (5MB)
             supported_type: input.dataset.type ? input.dataset.type : 'jpg|jpeg|JPG|png|gif|pdf|doc|docx|ppt|pptx|odt|avi|ogg|m4a|mov|mp3|mp4|mpg|wav|wmv|xls',
             text: 'Drag & Drop Files Here',
@@ -67,6 +60,18 @@
 
         // File Counter
         localStorage.setItem( dataStorageName, 1);
+
+		// Get unique id from local storage.
+		var sessionID = dnd_upload_cf7_unique_id();
+		var folderToken = sessionID ? localStorage.getItem( 'dnd_cf7_token_' + sessionID ) : null;
+
+		// Unique upload session_id & token
+		if ( ! sessionID || ! folderToken ) {
+			sessionID   = generateRandomFolder();
+			folderToken = generateRandomFolder(); // Generate folder token if not exists.
+			localStorage.setItem( 'dnd_wpcf7_session_id', JSON.stringify({ value: sessionID, savedAt: Date.now() }) );
+			localStorage.setItem( 'dnd_cf7_token_' + sessionID, folderToken );
+		}
 
         // Template Container
         const cdropz_template = `
@@ -152,9 +157,6 @@
             input.removeAttribute('accept');
         }
 
-		// Add unique ID or random string
-		input.setAttribute( 'data-random-id', generateRandomFolder() );
-
         // Setup Uploader
         var DND_Setup_Uploader = function( files, action ) {
 
@@ -166,7 +168,6 @@
 
             // Append file
             //formData.append('supported_type', options.supported_type ); @note : removed due Vulnerability
-            //formData.append('size_limit', options.max_upload_size );
             formData.append('action', 'dnd_codedropz_upload' );
             formData.append('type', action );
             formData.append('security', dnd_cf7_uploader.ajax_nonce );
@@ -174,7 +175,8 @@
             // CF7 - upload field name & cf7 id
             formData.append('form_id', input.dataset.id);
             formData.append('upload_name', input.dataset.name);
-			formData.append('upload_folder', input.getAttribute('data-random-id') );
+			formData.append('upload_folder', sessionID );
+			formData.append('token', folderToken ); // append folder token.
 
             // black list file types
             /*if( input.hasAttribute('data-black-list') ){
@@ -210,7 +212,6 @@
                     return false;
                 }
 
-
                 // Create progress bar
                 const progressBarID = CodeDropz_Object.createProgressBar( file );
                 var has_error = false;
@@ -244,11 +245,11 @@
                     // Process ajax upload
                     var xhr = new XMLHttpRequest();
 
-                    // Get progress bar element
-                    const progressBar = document.getElementById( progressBarID );
-                    const progressElement = progressBar.querySelector('.dnd-progress-bar');
-                    const detailsElement = progressBar.querySelector('.dnd-upload-details');
-                    const submitButton = form_handler.querySelector('input[type="submit"], button[type="submit"]');
+                    // Get progress bar element [changes 2026]
+                    let progressBar = document.getElementById( progressBarID );
+                    let progressElement = progressBar.querySelector('.dnd-progress-bar');
+                    let detailsElement = progressBar.querySelector('.dnd-upload-details');
+                    let submitButton = form_handler.querySelector('input[type="submit"], button[type="submit"]');
 
                     xhr.open(form_handler.getAttribute('method'), options.ajax_url);
                     xhr.onreadystatechange = function() {
@@ -266,19 +267,25 @@
                                     }
 
                                 } else {
+									const filesCounter   = ( Number( localStorage.getItem(dataStorageName) ) - 1 );
+									const counterElement = input.closest('.codedropz-upload-wrapper').querySelector('.dnd-upload-counter span');
+
                                     progressElement.remove();
                                     detailsElement.insertAdjacentHTML('beforeend', '<span class="has-error">'+ response.data +'</span>');
                                     if( submitButton ){
-                                        submitButton.classList.remove('disabled');
+                                        //submitButton.classList.remove('disabled'); @remove since 1.3.9.8
                                         submitButton.removeAttribute('disabled');
                                     }
                                     progressBar.classList.remove('in-progress');
+
+									// Update counter
+									counterElement.textContent = filesCounter;
                                 }
                             } else {
                                 progressElement.remove();
                                 detailsElement.insertAdjacentHTML('beforeend', '<span class="has-error">'+ options.server_max_error +'</span>');
                                 if( submitButton ){
-                                    submitButton.classList.remove('disabled');
+                                    //submitButton.classList.remove('disabled'); @remove since 1.3.9.8
                                     submitButton.removeAttribute('disabled');
                                 }
                                 progressBar.classList.remove('in-progress');
@@ -391,7 +398,7 @@
             // Disable button
             disableBtn : function( BtnOJB ) {
                 if( BtnOJB  ) {
-                    BtnOJB.classList.add('disabled');
+                    //BtnOJB.classList.add('disabled'); @remove since 1.3.9.8
                     BtnOJB.disabled = true;
                 }
             }
@@ -404,16 +411,18 @@
         if( !e.target.classList.contains("dnd-icon-remove") ) return;
 
 		e.preventDefault();
-        var _self = e.target,
-            _dnd_status = _self.closest(".dnd-upload-status"),
-            _parent_wrap = _self.closest(".codedropz-upload-wrapper"),
+        var _self             = e.target,
+            _dnd_status       = _self.closest(".dnd-upload-status"),
+            _parent_wrap      = _self.closest(".codedropz-upload-wrapper"),
             removeStorageData = _self.parentElement.getAttribute("data-storage"),
-            storageCount = Number(localStorage.getItem(removeStorageData));
+            storageCount      = Number(localStorage.getItem(removeStorageData)),
+			sessionId         = dnd_upload_cf7_unique_id();
 
         // Direct remove the file if there's any error.
         if (_dnd_status.classList.contains("in-progress") || _dnd_status.querySelector(".has-error")) {
             _dnd_status.remove();
             localStorage.setItem(removeStorageData, storageCount - 1);
+			_parent_wrap.querySelector(".dnd-upload-counter span").textContent = Number(localStorage.getItem(removeStorageData)) - 1;
             return false;
         }
 
@@ -458,7 +467,9 @@
         xhr.send(
             "path=" + _dnd_status.querySelector('input[type="hidden"]').value +
             "&action=dnd_codedropz_upload_delete" +
-            "&security=" + dnd_cf7_uploader.ajax_nonce
+            "&security=" + dnd_cf7_uploader.ajax_nonce +
+			"&upload_folder=" + sessionId +
+			"&token=" + localStorage.getItem( 'dnd_cf7_token_' + sessionId ),
         );
 
         document.querySelectorAll(".has-error-msg").forEach(function(el) {
@@ -481,6 +492,26 @@ var dnd_upload_cf7_event = function(target, name, data) {
 		detail: data
 	});
 	target.dispatchEvent(event);
+}
+
+// Get unique id. (reset after 24hours)
+function dnd_upload_cf7_unique_id() {
+	const item = localStorage.getItem('dnd_wpcf7_session_id');
+	if ( ! item ) {
+		return null;
+	}
+
+	// Parse item
+	const data = JSON.parse( item );
+
+	// Expired? then remove value from localstorage.
+	if ( Date.now() - data.savedAt > ( 24 * 60 * 60 * 1000 ) ) {
+		localStorage.removeItem('dnd_cf7_token_' + data.value ); // delete token
+		localStorage.removeItem('dnd_wpcf7_session_id');         // delete session id
+		return null;
+	}
+
+	return data.value;
 }
 
 // BEGIN: initialize upload
@@ -556,10 +587,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     // If it's complete remove disabled attribute in button
                     if ( ( span && span.classList.contains('optional') ) || ! span || checkboxInput.checked || form.classList.contains('wpcf7-acceptance-as-validation')) {
-                        setTimeout(function(){
+						setTimeout(function(){
                             const submitButton = form.querySelector('button[type=submit], input[type=submit]');
                             if( submitButton ){
-								submitButton.classList.remove('disabled');
+								//submitButton.classList.remove('disabled'); @remove since 1.3.9.8
                                 submitButton.removeAttribute('disabled');
                             }
                         }, 1);
