@@ -76,7 +76,15 @@
   margin-bottom: 15px;
   text-align: center;
 }
-
+.rx-floating-btn-wrap-bd4ab031 {
+	right: 0;
+	top: 0;
+	bottom: auto;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
 /* Fade animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
@@ -157,6 +165,7 @@
   .rentexperts-text-slider .ts-navigation .wcf-arrow.wcf-arrow-next {left: 0px;}
 }
 @media only screen and (max-width: 767px) {
+  .rx-floating-btn-wrap-bd4ab031 {right: 10px;}
   .blt-8ac671e4-tabs-container .blt-8ac671e4-tabs-list {
     overflow: auto;
     justify-content: flex-start;
