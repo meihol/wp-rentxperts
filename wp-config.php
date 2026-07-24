@@ -93,9 +93,9 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 	define( 'WP_DEBUG', false );
 }
 
-// define( 'DISABLE_WP_CRON' , true );
-// define( 'DISALLOW_FILE_EDIT', true );
-// define( 'DISALLOW_FILE_MODS', true );
+define( 'DISABLE_WP_CRON' , true );
+define( 'DISALLOW_FILE_EDIT', true );
+define( 'DISALLOW_FILE_MODS', true );
 define('ALLOW_UNFILTERED_UPLOADS', true);
 
 define( 'FS_METHOD', 'direct' );
