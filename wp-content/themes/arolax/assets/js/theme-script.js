@@ -214,35 +214,40 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("click", function(e){
 
         if (e.target.classList.contains("read-more-btn")) {
-          e.preventDefault();
 
-          const desc = e.target.previousElementSibling;
-          if (desc.classList.contains("expanded")) {
-              // Read Less
-              desc.classList.remove("expanded");
-              desc.style.maxHeight =
-                  (parseFloat(getComputedStyle(desc).lineHeight) * 4) + "px";
-              e.target.innerHTML = "Read More";
+    e.preventDefault();
 
-              // Autoplay Resume
-              if (swiper && swiper.autoplay) {
-                  swiper.autoplay.start();
-              }
+    const desc = e.target.previousElementSibling;
 
-          } else {
+    if (desc.classList.contains("expanded")) {
 
-              // Read More / Expand
-              desc.classList.add("expanded");
-              desc.style.maxHeight = desc.scrollHeight + "px";
+          // Read Less
+          desc.classList.remove("expanded");
 
-              e.target.innerHTML = "Read Less";
+          desc.style.maxHeight =
+              (parseFloat(getComputedStyle(desc).lineHeight) * 4) + "px";
 
-              // Autoplay Stop
-              if (swiper && swiper.autoplay) {
-                  swiper.autoplay.stop();
-              }
+          e.target.innerHTML = "Read More";
+
+          // Autoplay START
+          if (typeof mySwiper !== "undefined" && mySwiper.autoplay) {
+              mySwiper.autoplay.start();
           }
-        }
+
+      } else {
+
+          // Read More
+          desc.classList.add("expanded");
+          desc.style.maxHeight = desc.scrollHeight + "px";
+
+          e.target.innerHTML = "Read Less";
+
+          // Autoplay STOP
+          if (typeof mySwiper !== "undefined" && mySwiper.autoplay) {
+              mySwiper.autoplay.stop();
+          }
+      }
+  }
 
         const searchInput =
             document.getElementById("custom-blog-search");
