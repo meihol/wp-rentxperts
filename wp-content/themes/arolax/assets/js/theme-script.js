@@ -213,41 +213,24 @@ document.addEventListener("DOMContentLoaded", function () {
     // Click Event (original + duplicate dono ke liye)
     document.addEventListener("click", function(e){
 
-        if (e.target.classList.contains("read-more-btn")) {
+        if(e.target.classList.contains("read-more-btn")){
 
-    e.preventDefault();
+            e.preventDefault();
+            const desc = e.target.previousElementSibling;
+            if(desc.classList.contains("expanded")){
 
-    const desc = e.target.previousElementSibling;
+                desc.classList.remove("expanded");
+                desc.style.maxHeight = (parseFloat(getComputedStyle(desc).lineHeight) * 4) + "px";
+                e.target.innerHTML = "Read More";
 
-    if (desc.classList.contains("expanded")) {
+            }else{
 
-          // Read Less
-          desc.classList.remove("expanded");
+                desc.classList.add("expanded");
+                desc.style.maxHeight = desc.scrollHeight + "px";
+                e.target.innerHTML = "Read Less";
 
-          desc.style.maxHeight =
-              (parseFloat(getComputedStyle(desc).lineHeight) * 4) + "px";
-
-          e.target.innerHTML = "Read More";
-
-          // Autoplay START
-          if (typeof mySwiper !== "undefined" && mySwiper.autoplay) {
-              mySwiper.autoplay.start();
-          }
-
-      } else {
-
-          // Read More
-          desc.classList.add("expanded");
-          desc.style.maxHeight = desc.scrollHeight + "px";
-
-          e.target.innerHTML = "Read Less";
-
-          // Autoplay STOP
-          if (typeof mySwiper !== "undefined" && mySwiper.autoplay) {
-              mySwiper.autoplay.stop();
-          }
-      }
-  }
+            }
+        }
 
         const searchInput =
             document.getElementById("custom-blog-search");
