@@ -41,13 +41,13 @@ function render_floating_button_bd4ab031() {
 	?>
 	<!-- Floating Inquiry Button Trigger -->
 	<div class="rx-floating-btn-wrap-bd4ab031">
-		<button class="rx-floating-trigger-bd4ab031" aria-label="<?php esc_attr_e( 'Inquiry Form', 'angie-snippets' ); ?>">
+		<button class="rx-floating-trigger-bd4ab031" aria-label="<?php esc_attr_e( 'Enquiry Form', 'angie-snippets' ); ?>">
 			<span class="rx-floating-icon-bd4ab031">
 				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 					<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
 				</svg>
 			</span>
-			<span class="rx-floating-text-bd4ab031"><?php esc_html_e( 'Inquire Now', 'angie-snippets' ); ?></span>
+			<span class="rx-floating-text-bd4ab031"><?php esc_html_e( 'Enquire Now', 'angie-snippets' ); ?></span>
 		</button>
 	</div>
 
