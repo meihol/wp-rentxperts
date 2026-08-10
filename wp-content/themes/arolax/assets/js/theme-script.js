@@ -213,23 +213,35 @@ document.addEventListener("DOMContentLoaded", function () {
     // Click Event (original + duplicate dono ke liye)
     document.addEventListener("click", function(e){
 
-        if(e.target.classList.contains("read-more-btn")){
+        if (e.target.classList.contains("read-more-btn")) {
+          e.preventDefault();
 
-            e.preventDefault();
-            const desc = e.target.previousElementSibling;
-            if(desc.classList.contains("expanded")){
+          const desc = e.target.previousElementSibling;
+          if (desc.classList.contains("expanded")) {
+              // Read Less
+              desc.classList.remove("expanded");
+              desc.style.maxHeight =
+                  (parseFloat(getComputedStyle(desc).lineHeight) * 4) + "px";
+              e.target.innerHTML = "Read More";
 
-                desc.classList.remove("expanded");
-                desc.style.maxHeight = (parseFloat(getComputedStyle(desc).lineHeight) * 4) + "px";
-                e.target.innerHTML = "Read More";
+              // Autoplay Resume
+              if (swiper && swiper.autoplay) {
+                  swiper.autoplay.start();
+              }
 
-            }else{
+          } else {
 
-                desc.classList.add("expanded");
-                desc.style.maxHeight = desc.scrollHeight + "px";
-                e.target.innerHTML = "Read Less";
+              // Read More / Expand
+              desc.classList.add("expanded");
+              desc.style.maxHeight = desc.scrollHeight + "px";
 
-            }
+              e.target.innerHTML = "Read Less";
+
+              // Autoplay Stop
+              if (swiper && swiper.autoplay) {
+                  swiper.autoplay.stop();
+              }
+          }
         }
 
         const searchInput =
