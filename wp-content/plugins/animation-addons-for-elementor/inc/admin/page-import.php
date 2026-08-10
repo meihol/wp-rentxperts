@@ -1,6 +1,8 @@
 <?php
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace WCF_ADDONS\Admin;
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 
 /**
  * Plugin Name: AAE Admin Buttons
@@ -32,17 +34,26 @@ final class AAE_Admin_Page_Importer
     {
         global $wpdb;
 
-        $count = $wpdb->get_var("
-            SELECT COUNT(*) FROM $wpdb->posts 
-            WHERE post_type = 'page' 
-            AND post_status = 'publish' 
-            AND ID IN (
-                SELECT post_id FROM $wpdb->postmeta 
-                WHERE meta_key = 'aae_imported' AND meta_value = '1'
-            )
-        ");
+        // Cache the imported-page count; this renders on every admin pages-list load.
+        $count = wp_cache_get('aae_imported_page_count', 'aae_page_import');
+        if (false === $count) {
+            // Fixed aggregate query with no user input; $wpdb is required for the COUNT.
+            // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+            $count = $wpdb->get_var("
+                SELECT COUNT(*) FROM $wpdb->posts
+                WHERE post_type = 'page'
+                AND post_status = 'publish'
+                AND ID IN (
+                    SELECT post_id FROM $wpdb->postmeta
+                    WHERE meta_key = 'aae_imported' AND meta_value = '1'
+                )
+            ");
+            wp_cache_set('aae_imported_page_count', $count, 'aae_page_import', MINUTE_IN_SECONDS);
+        }
 
-        $class = (isset($_GET['aae-latest-import']) && $_GET['aae-latest-import'] == 'import') ? 'current' : '';
+        // Read-only list-table view filter from a navigation link; no nonce required.
+        $current_view = isset($_GET['aae-latest-import']) ? sanitize_key(wp_unslash($_GET['aae-latest-import'])) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+        $class        = ('import' === $current_view) ? 'current' : '';
         $url   = add_query_arg('aae-latest-import', 'import', admin_url('edit.php?post_type=page'));
         $views['latest-import'] = "<a href='$url' class='$class' style='color: #fc6848; font-weight: 500' >AAE Imported <span class='count'>($count)</span></a>";
         return $views;
@@ -52,7 +63,9 @@ final class AAE_Admin_Page_Importer
         global $pagenow;
 
         if (is_admin() && $pagenow == 'edit.php' && $query->get('post_type') == 'page') {
-            if (isset($_GET['aae-latest-import']) && $_GET['aae-latest-import'] == 'import') {
+            // Read-only list-table view filter from a navigation link; no nonce required.
+            $current_view = isset($_GET['aae-latest-import']) ? sanitize_key(wp_unslash($_GET['aae-latest-import'])) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+            if ('import' === $current_view) {
                 $query->set('meta_key', 'aae_imported');
                 $query->set('meta_value', '1');
             }
@@ -62,7 +75,7 @@ final class AAE_Admin_Page_Importer
     {
         $screen = get_current_screen();
 
-        if ($screen && ($screen->id === 'admin_page_aae-page-importer' || $screen->id === 'animation-addon_page_aae-page-importer')) {
+       if ($screen && strpos($screen->id, '_page_aae-page-importer') !== false) {
             remove_all_actions('admin_notices');
             remove_all_actions('all_admin_notices');
         }
@@ -79,7 +92,7 @@ final class AAE_Admin_Page_Importer
         }
 
         // Check if we are on the correct page
-        if ($screen && ($screen->id === 'admin_page_aae-page-importer' || $screen->id === 'animation-addon_page_aae-page-importer')) {
+        if ($screen && strpos($screen->id, '_page_aae-page-importer') !== false) {
             $classes .= ' wcf-anim2024';
         }
 
@@ -148,44 +161,70 @@ final class AAE_Admin_Page_Importer
             true
         );
 
+        $is_importer_page = ( $screen &&  strpos($screen->id, '_page_aae-page-importer') !== false );
+
         wp_localize_script(self::HANDLE, 'AAE_PAGE_IMPORT', [
-            'nonce'   => wp_create_nonce('aae_admin_nonce'),
-            'screen'  => $screen->id,
-            'post_id' => $post_id,
-            'logo' => WCF_ADDONS_URL . 'assets/images/wcf-2.png',
-            'page_url'   => esc_url(admin_url('admin.php?page=aae-page-importer')),
+            'nonce'    => wp_create_nonce('aae_admin_nonce'),
+            'screen'   => $is_importer_page ? 'animation-addon_page_aae-page-importer' : '',
+            'post_id'  => $post_id,
+            'logo'     => WCF_ADDONS_URL . 'assets/images/wcf-2.png',
+            'page_url' => esc_url(admin_url('admin.php?page=aae-page-importer')),
         ]);
 
+  
         wp_enqueue_script(self::HANDLE);
     }
 
-    public function importer_assets($hook)
+   public function importer_assets($hook)
     {
+        $screen = get_current_screen();
+        if (! $screen) {
+            return;
+        }
 
-        if ($hook == 'admin_page_aae-page-importer' || $hook == 'animation-addon_page_aae-page-importer') {
+        if (strpos($screen->id, '_page_aae-page-importer') !== false) {
+
+            // Load config once
+            $config = wcf_get_config();
+
             // CSS
             wp_enqueue_style(
-                'aae-page-importer-admin', // Handle for the stylesheet
+                'aae-page-importer-admin',
                 WCF_ADDONS_URL . 'assets/build/modules/page-import/index.css',
-                array(), // Dependencies (none in this case)
+                array(),
                 time()
             );
-            wp_enqueue_script('aae-page-importer-admin', WCF_ADDONS_URL . 'assets/build/modules/page-import/index.js', array('wp-element', 'wp-i18n'), time(), true);
+
+            wp_enqueue_script(
+                'aae-page-importer-admin',
+                WCF_ADDONS_URL . 'assets/build/modules/page-import/index.js',
+                array('wp-element', 'wp-i18n'),
+                time(),
+                true
+            );
+
             $localize_data = array(
-                'ajaxurl'             => admin_url('admin-ajax.php'),
-                'nonce'               => wp_create_nonce('wcf_admin_nonce'),
-                'addons_config'       => apply_filters('wcf_addons_dashboard_config', $GLOBALS['wcf_addons_config']),
-                'adminURL'            => admin_url(),
-                'page_url'   => esc_url(admin_url('edit.php?post_type=page')),
-                'user_role'           => wcfaddon_get_current_user_roles(),
-                'version'             => WCF_ADDONS_VERSION,
-                'st_template_domain'  => WCF_TEMPLATE_STARTER_BASE_URL,
-                'home_url'            => home_url('/'),
+                'ajaxurl'      => admin_url('admin-ajax.php'),
+                'nonce'        => wp_create_nonce('wcf_admin_nonce'),
+
+                'addons_config' => apply_filters(
+                    'wcf_addons_dashboard_config',  // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+                    $config
+                ),
+
+                'adminURL'     => admin_url(),
+                'page_url'     => esc_url(admin_url('edit.php?post_type=page')),
+                'user_role'    => wcfaddon_get_current_user_roles(),
+
+                'version'            => WCF_ADDONS_VERSION,
+                'st_template_domain' => WCF_TEMPLATE_STARTER_BASE_URL,
+                'home_url'           => home_url('/'),
             );
 
             wp_localize_script('aae-page-importer-admin', 'WCF_ADDONS_ADMIN', $localize_data);
         }
     }
+
 }
 if (is_admin()) {
     new AAE_Admin_Page_Importer();

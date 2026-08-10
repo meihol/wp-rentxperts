@@ -1,5 +1,7 @@
 <?php
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace WCF_ADDONS\Widgets\Loop_Builder;
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -50,7 +52,6 @@ class Template_Manager {
 		add_action( 'elementor/template-library/create_new_dialog_fields', array( $this, 'add_template_fields' ) );
 		add_filter( 'elementor/finder/categories', array( $this, 'add_finder_items' ) );
 		add_action( 'wp_ajax_create_loop_template', array( $this, 'ajax_create_template' ) );
-		add_action( 'wp_ajax_nopriv_create_loop_template', array( $this, 'ajax_create_template' ) );
 		add_action( 'wp_ajax_clb_duplicate_template', array( $this, 'ajax_duplicate_template' ) );
 		add_action( 'wp_ajax_clb_delete_template', array( $this, 'ajax_delete_template' ) );
 	}
@@ -64,9 +65,12 @@ class Template_Manager {
 	 * @return void
 	 */
 	public function add_template_fields( $form ) {
+
 		if ( empty( $form ) ) {
 			return;
 		}
+
+		return;
 
 		$form->add_control(
 			'_elementor_source',

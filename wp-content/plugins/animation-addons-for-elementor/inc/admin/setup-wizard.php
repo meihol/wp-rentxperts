@@ -1,6 +1,8 @@
 <?php
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace WCF_ADDONS\Admin;
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 
 if (! defined('ABSPATH')) {
 	exit();
@@ -72,7 +74,8 @@ class WCF_Setup_Wizard_Init
 			return;
 		}
 
-		if ($screen->id === 'animation-addon_page_wcf_addons_setup_page') {
+		//if ($screen->id === 'animation-addon_page_wcf_addons_setup_page') {
+		if ($screen && strpos($screen->id, '_page_wcf_addons_setup_page') !== false) {
 			add_filter('admin_footer_text', '__return_empty_string');
 			add_filter('update_footer', '__return_empty_string', 11);
 		}
@@ -194,47 +197,86 @@ class WCF_Setup_Wizard_Init
 	public function enqueue_scripts($hook)
 	{
 		$total_extensions = $total_widgets = 0;
-		if ($hook == 'animation-addon_page_wcf_addons_setup_page') {
 
-			// CSS
-
-			wp_enqueue_style('wcf-admin', WCF_ADDONS_URL . 'assets/build/modules/dashboard/wizardSetup.css');
-			// JS
-			wp_enqueue_script('wcf-admin', WCF_ADDONS_URL . 'assets/build/modules/dashboard/wizardSetup.js', array('wp-data', 'react', 'react-dom', 'wp-element', 'wp-i18n'), WCF_ADDONS_VERSION, true);
-
-			wcf_get_total_config_elements_by_key($GLOBALS['wcf_addons_config']['extensions'], $total_extensions);
-			wcf_get_total_config_elements_by_key($GLOBALS['wcf_addons_config']['widgets'], $total_widgets);
-
-			$widgets       = get_option('wcf_save_widgets');
-			$saved_widgets = is_array($widgets) ? array_keys($widgets) : [];
-			wcf_get_search_active_keys($GLOBALS['wcf_addons_config']['widgets'], $saved_widgets, $foundKeys, $awidgets);
-
-			$extensions      = get_option('wcf_save_extensions');
-			$saved_extensions = is_array($extensions) ? array_keys($extensions) : [];
-			wcf_get_search_active_keys($GLOBALS['wcf_addons_config']['extensions'], $saved_extensions, $foundext, $activeext);
-
-			$active_widgets = self::get_widgets();
-			$active_ext = self::get_extensions();
-			$current_user = wp_get_current_user();
-			$localize_data = [
-				'ajaxurl'       => admin_url('admin-ajax.php'),
-				'nonce'         => wp_create_nonce('wcf_admin_nonce'),
-				'addons_config' => apply_filters('wcf_addons_dashboard_config', $GLOBALS['wcf_addons_config']),
-				'extensions'    => ['total' => $total_extensions, 'active' => is_array($active_ext) ? count($active_ext) : 0],
-				'widgets'       => ['total' => $total_widgets, 'active' => is_array($active_widgets) ? count($active_widgets) : 0],
-				'adminURL'      => admin_url(),
-				'version'       => WCF_ADDONS_VERSION,
-				'theme_status' => $this->theme_status('hello-animation'),
-				'user' => [
-					'email'    => $current_user->user_email,
-					'roles'    => $current_user->roles,
-					'display_name' => $current_user->display_name,
-					'f_name' => $current_user->first_name
-				]
-			];
-			wp_localize_script('wcf-admin', 'WCF_ADDONS_ADMIN', $localize_data);
+		$screen = get_current_screen();
+		if (!$screen || strpos($screen->id, '_page_wcf_addons_setup_page') === false) {
+			return;
 		}
+
+		// Load config once
+		$config = wcf_get_config();
+
+		// CSS
+		wp_enqueue_style(
+			'wcf-admin',
+			WCF_ADDONS_URL . 'assets/build/modules/dashboard/wizardSetup.css',
+			array(),
+			WCF_ADDONS_VERSION
+		);
+
+		// JS
+		wp_enqueue_script(
+			'wcf-admin',
+			WCF_ADDONS_URL . 'assets/build/modules/dashboard/wizardSetup.js',
+			array('wp-data', 'react', 'react-dom', 'wp-element', 'wp-i18n'),
+			WCF_ADDONS_VERSION,
+			true
+		);
+
+		// Count extensions & widgets
+		wcf_get_total_config_elements_by_key($config['extensions'], $total_extensions);
+		wcf_get_total_config_elements_by_key($config['widgets'], $total_widgets);
+
+		// Widgets
+		$widgets       = get_option('wcf_save_widgets');
+		$saved_widgets = is_array($widgets) ? array_keys($widgets) : [];
+		wcf_get_search_active_keys($config['widgets'], $saved_widgets, $foundKeys, $awidgets);
+
+		// Extensions
+		$extensions       = get_option('wcf_save_extensions');
+		$saved_extensions = is_array($extensions) ? array_keys($extensions) : [];
+		wcf_get_search_active_keys($config['extensions'], $saved_extensions, $foundext, $activeext);
+
+		$active_widgets = self::get_widgets();
+		$active_ext     = self::get_extensions();
+
+		$current_user = wp_get_current_user();
+
+		$localize_data = [
+			'ajaxurl'       => admin_url('admin-ajax.php'),
+			'nonce'         => wp_create_nonce('wcf_admin_nonce'),
+
+			'addons_config' => apply_filters(
+				'wcf_addons_dashboard_config',  // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+				$config
+			),
+
+			'extensions' => [
+				'total'  => $total_extensions,
+				'active' => is_array($active_ext) ? count($active_ext) : 0
+			],
+
+			'widgets' => [
+				'total'  => $total_widgets,
+				'active' => is_array($active_widgets) ? count($active_widgets) : 0
+			],
+
+			'adminURL' => admin_url(),
+			'version'  => WCF_ADDONS_VERSION,
+
+			'theme_status' => $this->theme_status('hello-animation'),
+
+			'user' => [
+				'email'        => $current_user->user_email,
+				'roles'        => $current_user->roles,
+				'display_name' => $current_user->display_name,
+				'f_name'       => $current_user->first_name
+			]
+		];
+
+		wp_localize_script('wcf-admin', 'WCF_ADDONS_ADMIN', $localize_data);
 	}
+
 
 	/**
 	 * Save Settings
@@ -301,13 +343,21 @@ class WCF_Setup_Wizard_Init
 	 */
 	public function remove_all_notices()
 	{
-
 		add_action('in_admin_header', function () {
+
 			$screen = get_current_screen();
-			if ($screen && in_array($screen->id, ['animation-addon_page_wcf_addons_setup_page', 'animation-addon_page_wcf-cpt-builder'], true)) {
+
+			if (
+				$screen &&
+				(
+					strpos($screen->id, '_page_wcf_addons_setup_page') !== false ||
+					strpos($screen->id, '_page_wcf-cpt-builder') !== false
+				)
+			) {
 				remove_all_actions('admin_notices');
 				remove_all_actions('all_admin_notices');
 			}
+
 		}, 1000);
 	}
 }

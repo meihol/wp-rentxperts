@@ -1,6 +1,8 @@
 <?php
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace WCF_ADDONS\Widgets;
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 
 use Elementor\Group_Control_Border;
 use Elementor\Group_Control_Box_Shadow;
@@ -124,7 +126,7 @@ class Image extends Widget_Base {
 			array(
 				'name'      => 'image_size',
 				'separator' => 'none',
-                    'exclude' => ['custom'],
+                    'exclude' => ['custom'],  // phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude
                     'include' => [],
                     'default' => 'full',
 			)
@@ -142,6 +144,9 @@ class Image extends Widget_Base {
 					'nofollow'    => true,
 				),
 				'label_block' => true,
+				'dynamic' => [
+					'active' => true,
+				],
 			)
 		);
 
@@ -490,7 +495,10 @@ class Image extends Widget_Base {
 			<?php if ( $link['url'] ) { ?>
 				<a <?php $this->print_render_attribute_string( 'link' ); ?>>
 				<?php } ?>
-				<?php echo Group_Control_Image_Size::get_attachment_image_html( $settings, 'image_size', 'image' ); ?>
+				<?php 
+				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				echo Group_Control_Image_Size::get_attachment_image_html( $settings, 'image_size', 'image' ); 
+				?>
 				<?php if ( $link['url'] ) { ?>
 				</a>
 			<?php } ?>

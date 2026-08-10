@@ -1,6 +1,8 @@
 <?php
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace WCF_ADDONS\Widgets;
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 
 use Elementor\Group_Control_Background;
 use Elementor\Group_Control_Border;
@@ -99,23 +101,45 @@ class Contact_Form_7 extends Widget_Base {
 	public function get_script_depends() {
 		return [ 'aae--contact-form' ];
 	}
+
 	public function contactform_forms() {
-		$formlist   = array();
-		$forms_args = array(
-			'posts_per_page' => - 1,
-			'post_type'      => 'wpcf7_contact_form',
-		);
-		$forms      = get_posts( $forms_args );
-		if ( $forms ) {
-			foreach ( $forms as $form ) {
-				$formlist[ $form->ID ] = $form->post_title;
-			}
-		} else {
-			$formlist['0'] = esc_html__( 'Form not found', 'animation-addons-for-elementor' );
+
+	static $cache = null;
+
+	if ($cache !== null) {
+		return $cache;
+	}
+
+	$formlist = [];
+
+	$query = new \WP_Query([
+		'post_type'              => 'wpcf7_contact_form',
+		'post_status'            => 'publish',
+		'posts_per_page'         => -1,
+		'fields'                 => 'ids',
+		'no_found_rows'          => true,
+		'update_post_meta_cache' => false,
+		'update_post_term_cache' => false,
+		'cache_results'          => true,
+	]);
+
+	if (!empty($query->posts)) {
+
+		foreach ($query->posts as $form_id) {
+			$formlist[$form_id] = get_the_title($form_id);
 		}
 
-		return $formlist;
+	} else {
+
+		$formlist['0'] = esc_html__('Form not found', 'animation-addons-for-elementor');
+
 	}
+
+	$cache = $formlist;
+
+	return $formlist;
+}
+
 
 	/**
 	 * Register the widget controls.
@@ -346,15 +370,16 @@ class Contact_Form_7 extends Widget_Base {
 				'label'     => esc_html__( 'Border Radius', 'animation-addons-for-elementor' ),
 				'type'      => Controls_Manager::DIMENSIONS,
 				'selectors' => [
-					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="text"]'   => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
-					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="email"]'  => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
-					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="url"]'    => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
-					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="number"]' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
-					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="tel"]'    => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
-					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="date"]'   => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
-					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap .wpcf7-select'         => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
+					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="text"]'   => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="email"]'  => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="url"]'    => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="number"]' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="tel"]'    => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap input[type*="date"]'   => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap .wpcf7-select'         => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 				'separator' => 'before',
+				'size_units' => [ 'px', '%', 'em' ],
 			]
 		);
 
@@ -485,9 +510,10 @@ class Contact_Form_7 extends Widget_Base {
 				'label'     => esc_html__( 'Border Radius', 'animation-addons-for-elementor' ),
 				'type'      => Controls_Manager::DIMENSIONS,
 				'selectors' => [
-					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap textarea' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
+					'{{WRAPPER}} .wpcf7-form .wpcf7-form-control-wrap textarea' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 				'separator' => 'before',
+				'size_units' => [ 'px', '%', 'em' ],
 			]
 		);
 
@@ -573,9 +599,10 @@ class Contact_Form_7 extends Widget_Base {
 				'label'     => esc_html__( 'Border Radius', 'animation-addons-for-elementor' ),
 				'type'      => Controls_Manager::DIMENSIONS,
 				'selectors' => [
-					'{{WRAPPER}} .wcf--form-wrapper form.wpcf7-form label' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
+					'{{WRAPPER}} .wcf--form-wrapper form.wpcf7-form label' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 				'separator' => 'before',
+				'size_units' => [ 'px', '%', 'em' ],
 			]
 		);
 
@@ -848,9 +875,10 @@ class Contact_Form_7 extends Widget_Base {
 				'label'     => esc_html__( 'Border Radius', 'animation-addons-for-elementor' ),
 				'type'      => Controls_Manager::DIMENSIONS,
 				'selectors' => [
-					'{{WRAPPER}} .wpcf7-form .wpcf7-submit' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
+					'{{WRAPPER}} .wpcf7-form .wpcf7-submit' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 				'separator' => 'before',
+				'size_units' => [ 'px', '%', 'em' ],
 			]
 		);
 

@@ -8,13 +8,6 @@
                 </a>
             </div>
             <div class="a-card a-card--normal chatyway-popup-box">
-                <div class="cloud-images">
-                    <img src="<?php echo esc_url(plugins_url('../../admin/assets/images/modal/cloud-1.png', __FILE__)); ?>" alt="" class="floating-image cloud-1" />
-                    <img src="<?php echo esc_url(plugins_url('../../admin/assets/images/modal/cloud-5.png', __FILE__)); ?>" alt="" class="floating-image cloud-5" />
-                    <img src="<?php echo esc_url(plugins_url('../../admin/assets/images/modal/cloud-2.png', __FILE__)); ?>" alt="" class="floating-image cloud-2" />
-                    <img src="<?php echo esc_url(plugins_url('../../admin/assets/images/modal/cloud-3.png', __FILE__)); ?>" alt="" class="floating-image cloud-3" />
-                    <img src="<?php echo esc_url(plugins_url('../../admin/assets/images/modal/cloud-4.png', __FILE__)); ?>" alt="" class="floating-image cloud-4" />
-                </div>
                 <div class="chatway-steps step-1 w-full" >
                     <div class="chatway-title text-2xl pb-4 font-primary text-[28px] text-[#092030] font-semibold"><?php esc_html_e("Chatway: Live Chat & AI Support", "chaty"); ?></div>
                     <div class="flex justify-center">
@@ -22,7 +15,7 @@
                             <ul class="text-left">
                                 <li class="text-[#092030] text-sm flex items-center">
                                     <span class="flex-none inline-flex items-center w-6 h-6 bg-[#e4fff5] mr-2 rounded-full text-center"><svg class="mx-auto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" svg-inline="" role="presentation" focusable="false" tabindex="-1"><path d="M13.333 4l-7.334 7.333L2.666 8" stroke="#0C7C17" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                                    <?php esc_html_e("24/7 AI support that handles repetitive questions", "chaty"); ?>
+                                    <?php esc_html_e("Real-time human or 24/7 AI support", "chaty"); ?>
                                 </li>
                                 <li class="text-[#092030] text-sm flex items-center">
                                     <span class="flex-none inline-flex items-center w-6 h-6 bg-[#e4fff5] mr-2 rounded-full text-center"><svg class="mx-auto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" svg-inline="" role="presentation" focusable="false" tabindex="-1"><path d="M13.333 4l-7.334 7.333L2.666 8" stroke="#0C7C17" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
@@ -40,7 +33,7 @@
                         </div>
                     </div>
                     <div class="chatyway-popup-box-img mb-5">
-                        <img src="<?php echo esc_url(CHT_PLUGIN_URL.'admin/assets/images/chatyway-app.png'); ?>" alt="chatyway">
+                        <img src="<?php echo esc_url(CHT_PLUGIN_URL.'admin/assets/images/chatway-social.webp'); ?>" alt="chatyway">
                     </div>
                     <div class="flex justify-center items-center mt-5 gap-2">
                         <div class="inline-flex gap-1 items-center">

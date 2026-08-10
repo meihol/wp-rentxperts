@@ -459,7 +459,7 @@ if ( $data && ! is_wp_error( $data ) ) {
 			</div>	
 			<div class="recommended-chatway-plugin-content-inner">
 				<h3><?php esc_html_e("Install Chatway: Live Chat & AI", "chaty"); ?></h3>
-				<p><?php esc_html_e("Talk to visitors instantly. Automate support with AI. Turn chats into customers.", "chaty"); ?></p>
+				<p><?php esc_html_e("Offer real-time human support or automate support with AI.", "chaty"); ?></p>
 				<?php
                 $chatway_feature = [
                     esc_html__("24/7 AI support that handles repetitive questions", "chaty"),

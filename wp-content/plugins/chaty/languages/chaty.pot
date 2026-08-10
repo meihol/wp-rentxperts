@@ -2,10 +2,10 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Chaty 3.5.8\n"
+"Project-Id-Version: Chaty 3.6.0\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/chaty-free-uncompressed\n"
-"POT-Creation-Date: 2026-07-17 06:14:29+00:00\n"
+"POT-Creation-Date: 2026-08-07 05:45:52+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -981,12 +981,11 @@ msgstr ""
 msgid "How would you like to show the Live Chat icon?"
 msgstr ""
 
-#: views/admin/chatway.php:5 views/admin/chatyway-info-popup.php:25
-#: views/admin/install-chatway.php:465
+#: views/admin/chatway.php:5 views/admin/install-chatway.php:465
 msgid "24/7 AI support that handles repetitive questions"
 msgstr ""
 
-#: views/admin/chatway.php:6 views/admin/chatyway-info-popup.php:29
+#: views/admin/chatway.php:6 views/admin/chatyway-info-popup.php:22
 #: views/admin/install-chatway.php:466
 msgid "All chats in one inbox (Website, Email, Messenger, Instagram)"
 msgstr ""
@@ -1003,7 +1002,7 @@ msgstr ""
 msgid "Multiple widgets & inboxes"
 msgstr ""
 
-#: views/admin/chatway.php:10 views/admin/chatyway-info-popup.php:37
+#: views/admin/chatway.php:10 views/admin/chatyway-info-popup.php:30
 #: views/admin/install-chatway.php:470
 msgid "Live visitor insights and Multilingual support"
 msgstr ""
@@ -1013,9 +1012,7 @@ msgid "Install Chatway: Live Chat & AI"
 msgstr ""
 
 #: views/admin/chatway.php:24 views/admin/install-chatway.php:462
-msgid ""
-"Talk to visitors instantly. Automate support with AI. Turn chats into "
-"customers."
+msgid "Offer real-time human support or automate support with AI."
 msgstr ""
 
 #: views/admin/chatway.php:30 views/admin/chatway.php:85
@@ -1160,45 +1157,49 @@ msgid ""
 "mobile and desktop"
 msgstr ""
 
-#: views/admin/chatyway-info-popup.php:19
+#: views/admin/chatyway-info-popup.php:12
 msgid "Chatway: Live Chat & AI Support"
 msgstr ""
 
-#: views/admin/chatyway-info-popup.php:33
+#: views/admin/chatyway-info-popup.php:18
+msgid "Real-time human or 24/7 AI support"
+msgstr ""
+
+#: views/admin/chatyway-info-popup.php:26
 msgid "Custom workflows, multiple agents, widgets & inboxes"
 msgstr ""
 
-#: views/admin/chatyway-info-popup.php:64
+#: views/admin/chatyway-info-popup.php:57
 msgid "Stay connected anywhere with mobile apps"
 msgstr ""
 
-#: views/admin/chatyway-info-popup.php:68
+#: views/admin/chatyway-info-popup.php:61
 msgid "Add Live Chat & AI Support"
 msgstr ""
 
-#: views/admin/chatyway-info-popup.php:136
+#: views/admin/chatyway-info-popup.php:129
 msgid "Want to remove Chatway Widget?"
 msgstr ""
 
-#: views/admin/chatyway-info-popup.php:139
+#: views/admin/chatyway-info-popup.php:132
 msgid ""
 "Chatway widget will continue to appear on your website as a separate icon. "
 "To remove it completely you need to uninstall Chatway."
 msgstr ""
 
-#: views/admin/chatyway-info-popup.php:142
+#: views/admin/chatyway-info-popup.php:135
 msgid "Remove from Channels"
 msgstr ""
 
-#: views/admin/chatyway-info-popup.php:143
+#: views/admin/chatyway-info-popup.php:136
 msgid "Manage Plugins"
 msgstr ""
 
-#: views/admin/chatyway-info-popup.php:162
+#: views/admin/chatyway-info-popup.php:155
 msgid "View method has been changed 🥳"
 msgstr ""
 
-#: views/admin/chatyway-info-popup.php:205 views/admin/first-popup.php:54
+#: views/admin/chatyway-info-popup.php:198 views/admin/first-popup.php:54
 #: views/admin/help.php:389
 msgid "Close"
 msgstr ""

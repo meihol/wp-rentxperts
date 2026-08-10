@@ -1,6 +1,8 @@
 <?php
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace WCF_ADDONS;
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 
 use Elementor\Controls_Manager;
 use Elementor\Controls_Stack;
@@ -30,7 +32,7 @@ class WCF_Custom_CSS {
 		$element->start_controls_section(
 			'wcf_section_custom_css',
 			[
-				'label' =>  sprintf('%s <i class="wcf-logo"></i>', esc_html__('Custom CSS', 'animation-addons-for-elementor')),
+				'label' =>  sprintf('<i class="wcf-logo"></i> %s', esc_html__('Custom CSS', 'animation-addons-for-elementor')),
 				'tab' => Controls_Manager::TAB_ADVANCED,
 			]
 		);

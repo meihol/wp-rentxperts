@@ -1039,6 +1039,9 @@
 .wcf-anim2024 .pr-2\.5 {
   padding-right: 0.625rem;
 }
+.wcf-anim2024 .pr-4 {
+  padding-right: 1rem;
+}
 .wcf-anim2024 .pr-7 {
   padding-right: 1.75rem;
 }
@@ -2228,6 +2231,10 @@
   .wcf-anim2024 .\32xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+}
+
+.wcf-anim2024 .rtl\:pr-5:where([dir="rtl"], [dir="rtl"] *) {
+  padding-right: 1.25rem;
 }
 
 .wcf-anim2024 .\[\&\:has\(\[role\=checkbox\]\)\]\:pr-0:has([role=checkbox]) {

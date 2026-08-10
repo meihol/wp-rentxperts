@@ -1,6 +1,10 @@
 <?php
-
+/**
+ * @phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound
+ */
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace WCF_ADDONS\Widgets;
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 
 use Elementor\Control_Media;
 use Elementor\Group_Control_Image_Size;
@@ -79,6 +83,10 @@ class Image_Gallery extends Widget_Base {
 
 	public function get_style_depends() {
 		return [ 'wcf--image-gallery' ];
+	}
+
+	public function get_script_depends() {
+		return [ 'wcf--image-gallery-js' ];
 	}
 
 	/**
@@ -240,6 +248,123 @@ class Image_Gallery extends Widget_Base {
 
 		$this->end_controls_section();
 
+		// Lightbox Section
+		$this->start_controls_section(
+			'section_lightbox',
+			[
+				'label' => esc_html__( 'Lightbox', 'animation-addons-for-elementor' ),
+			]
+		);
+
+		$this->add_control(
+			'enable_lightbox',
+			[
+				'label'        => esc_html__( 'Enable Lightbox', 'animation-addons-for-elementor' ),
+				'type'         => Controls_Manager::SWITCHER,
+				'label_on'     => esc_html__( 'Yes', 'animation-addons-for-elementor' ),
+				'label_off'    => esc_html__( 'No', 'animation-addons-for-elementor' ),
+				'return_value' => 'yes',
+				'default'      => '',
+			]
+		);
+
+		$this->add_control(
+			'lightbox_animation',
+			[
+				'label'     => esc_html__( 'Animation', 'animation-addons-for-elementor' ),
+				'type'      => Controls_Manager::SELECT,
+				'default'   => 'fade-scale',
+				'options'   => [
+					'fade-scale' => esc_html__( 'Fade & Scale', 'animation-addons-for-elementor' ),
+					'slide'      => esc_html__( 'Slide', 'animation-addons-for-elementor' ),
+				],
+				'condition' => [
+					'enable_lightbox' => 'yes',
+				],
+			]
+		);
+
+		$this->add_control(
+			'lightbox_close_icon',
+			[
+				'label'            => esc_html__( 'Close Icon', 'animation-addons-for-elementor' ),
+				'type'             => Controls_Manager::ICONS,
+				'fa4compatibility' => 'lightbox_close_icon_fa4',
+				'default'          => [
+					'value'   => 'fas fa-times',
+					'library' => 'fa-solid',
+				],
+				'condition'        => [
+					'enable_lightbox' => 'yes',
+				],
+			]
+		);
+
+		$this->add_control(
+			'lightbox_prev_icon',
+			[
+				'label'            => esc_html__( 'Previous Arrow Icon', 'animation-addons-for-elementor' ),
+				'type'             => Controls_Manager::ICONS,
+				'fa4compatibility' => 'lightbox_prev_icon_fa4',
+				'default'          => [
+					'value'   => 'fas fa-chevron-left',
+					'library' => 'fa-solid',
+				],
+				'condition'        => [
+					'enable_lightbox' => 'yes',
+				],
+			]
+		);
+
+		$this->add_control(
+			'lightbox_next_icon',
+			[
+				'label'            => esc_html__( 'Next Arrow Icon', 'animation-addons-for-elementor' ),
+				'type'             => Controls_Manager::ICONS,
+				'fa4compatibility' => 'lightbox_next_icon_fa4',
+				'default'          => [
+					'value'   => 'fas fa-chevron-right',
+					'library' => 'fa-solid',
+				],
+				'condition'        => [
+					'enable_lightbox' => 'yes',
+				],
+			]
+		);
+
+		$this->add_control(
+			'lightbox_fullscreen_icon',
+			[
+				'label'            => esc_html__( 'Fullscreen Icon', 'animation-addons-for-elementor' ),
+				'type'             => Controls_Manager::ICONS,
+				'fa4compatibility' => 'lightbox_fullscreen_icon_fa4',
+				'default'          => [
+					'value'   => 'fas fa-expand',
+					'library' => 'fa-solid',
+				],
+				'condition'        => [
+					'enable_lightbox' => 'yes',
+				],
+			]
+		);
+
+		$this->add_control(
+			'lightbox_counter',
+			[
+				'label'        => esc_html__( 'Show Counter', 'animation-addons-for-elementor' ),
+				'type'         => Controls_Manager::SWITCHER,
+				'label_on'     => esc_html__( 'Yes', 'animation-addons-for-elementor' ),
+				'label_off'    => esc_html__( 'No', 'animation-addons-for-elementor' ),
+				'return_value' => 'yes',
+				'default'      => 'yes',
+				'condition'    => [
+					'enable_lightbox' => 'yes',
+				],
+			]
+		);
+
+		$this->end_controls_section();
+
 		$this->start_controls_section(
 			'section_style_image',
 			[
@@ -340,6 +465,110 @@ class Image_Gallery extends Widget_Base {
 					'right-move'      => esc_html__( 'Right Move', 'animation-addons-for-elementor' ),
 				],
 				'prefix_class' => 'wcf--image-',
+			]
+		);
+
+		$this->end_controls_section();
+
+		// Icon style section
+		$this->start_controls_section(
+			'section_style_icon',
+			[
+				'label'     => esc_html__( 'Icon', 'animation-addons-for-elementor' ),
+				'tab'       => Controls_Manager::TAB_STYLE,
+				'condition' => [ 'show_icon' => 'yes' ],
+			]
+		);
+
+		$this->add_responsive_control(
+			'icon_align',
+			[
+				'label'     => esc_html__( 'Alignment', 'animation-addons-for-elementor' ),
+				'type'      => Controls_Manager::CHOOSE,
+				'options'   => [
+					'flex-start' => [
+						'title' => esc_html__( 'Left', 'animation-addons-for-elementor' ),
+						'icon'  => 'eicon-h-align-left',
+					],
+					'center'     => [
+						'title' => esc_html__( 'Center', 'animation-addons-for-elementor' ),
+						'icon'  => 'eicon-h-align-center',
+					],
+					'flex-end'   => [
+						'title' => esc_html__( 'Right', 'animation-addons-for-elementor' ),
+						'icon'  => 'eicon-h-align-right',
+					],
+				],
+				'default'   => 'center',
+				'selectors' => [
+					'{{WRAPPER}} .wcf--gallery-item .icon' => 'display: flex; align-items: center; justify-content: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_control(
+			'icon_color',
+			[
+				'label'     => esc_html__( 'Color', 'animation-addons-for-elementor' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .wcf--gallery-item .icon i'   => 'color: {{VALUE}};',
+					'{{WRAPPER}} .wcf--gallery-item .icon svg' => 'fill: {{VALUE}}; color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_responsive_control(
+			'icon_size',
+			[
+				'label'      => esc_html__( 'Size', 'animation-addons-for-elementor' ),
+				'type'       => Controls_Manager::SLIDER,
+				'size_units' => [ 'px', 'em', 'rem' ],
+				'range'      => [
+					'px' => [ 'min' => 6, 'max' => 200, 'step' => 1 ],
+					'em' => [ 'min' => 0.5, 'max' => 10, 'step' => 0.1 ],
+					'rem' => [ 'min' => 0.5, 'max' => 10, 'step' => 0.1 ],
+				],
+				'default'    => [ 'unit' => 'px', 'size' => 20 ],
+				'selectors'  => [
+					'{{WRAPPER}} .wcf--gallery-item .icon i'   => 'font-size: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .wcf--gallery-item .icon svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
+				],
+			]
+		);
+
+		$this->add_control(
+			'icon_bg_color',
+			[
+				'label'     => esc_html__( 'Background Color', 'animation-addons-for-elementor' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .wcf--gallery-item .icon' => 'background-color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_responsive_control(
+			'icon_padding',
+			[
+				'label'      => esc_html__( 'Padding', 'animation-addons-for-elementor' ),
+				'type'       => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', 'em', '%' ],
+				'selectors'  => [
+					'{{WRAPPER}} .wcf--gallery-item .icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+
+		$this->add_responsive_control(
+			'icon_border_radius',
+			[
+				'label'      => esc_html__( 'Border Radius', 'animation-addons-for-elementor' ),
+				'type'       => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%' ],
+				'selectors'  => [
+					'{{WRAPPER}} .wcf--gallery-item .icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
 			]
 		);
 
@@ -458,6 +687,7 @@ class Image_Gallery extends Widget_Base {
 		 *
 		 * @since 2.4.0
 		 */
+		// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- Backward compatibility hook.
 		return apply_filters( 'wcf/image_size/get_gallery_attachment_image_html', $html, $settings, $image_size_key, $image_key, $attr_key );
 	}
 
@@ -470,6 +700,20 @@ class Image_Gallery extends Widget_Base {
 	 *
 	 * @access protected
 	 */
+	/**
+	 * Get the full-size image URL for lightbox.
+	 */
+	private function get_lightbox_image_url( $image ) {
+		if ( ! empty( $image['id'] ) ) {
+			$full_src = wp_get_attachment_image_src( $image['id'], 'full' );
+			if ( $full_src ) {
+				return $full_src[0];
+			}
+		}
+
+		return ! empty( $image['url'] ) ? $image['url'] : '';
+	}
+
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 
@@ -477,7 +721,14 @@ class Image_Gallery extends Widget_Base {
 			return;
 		}
 
+		$enable_lightbox = 'yes' === $settings['enable_lightbox'];
+
 		$this->add_render_attribute( 'wrapper', 'class', 'wcf--image-gallery style-' . $settings['layout_style'] );
+
+		if ( $enable_lightbox ) {
+			$this->add_render_attribute( 'wrapper', 'class', 'wcf--lightbox-enabled' );
+			$this->add_render_attribute( 'wrapper', 'data-lightbox-animation', $settings['lightbox_animation'] );
+		}
 
 		$this->add_render_attribute( 'item', 'class', 'wcf--gallery-item' );
 
@@ -509,28 +760,86 @@ class Image_Gallery extends Widget_Base {
 			<?php
 			foreach ( $settings['wcf_image_gallery'] as $index => $item ) {
 				$link_key = 'link_' . $index;
-				$this->add_link_attributes( $link_key, $item['link'] );
-				?>
-				<div <?php $this->print_render_attribute_string( 'item' ); ?> >
-					<a <?php $this->print_render_attribute_string( $link_key ); ?>>
-                        <span class="screen-reader-text"><?php echo esc_html__('Go for details', 'animation-addons-for-elementor'); ?></span>
-						<?php Utils::print_wp_kses_extended( $this::get_gallery_attachment_image_html( $settings, $item, $image_size_key = 'image', $image_key = null, 'image' ), [ 'image' ] ); ?>
 
-						<?php if ( $settings['show_icon'] ) : ?>
-							<div class="icon">
-								<?php if ( $is_new || $migrated ) :
-									Icons_Manager::render_icon( $settings['selected_icon'], [ 'aria-hidden' => 'true' ] );
-								else : ?>
-									<i <?php $this->print_render_attribute_string( 'icon' ); ?>></i>
-								<?php endif; ?>
-							</div>
-						<?php endif; ?>
-					</a>
-				</div>
-				<?php
+				if ( $enable_lightbox ) {
+					?>
+					<div <?php $this->print_render_attribute_string( 'item' ); ?> >
+						<a href="#" class="wcf--lightbox-trigger" data-lightbox-index="<?php echo esc_attr( $index ); ?>">
+							<span class="screen-reader-text"><?php echo esc_html__( 'Open image in lightbox', 'animation-addons-for-elementor' ); ?></span>
+							<?php Utils::print_wp_kses_extended( $this::get_gallery_attachment_image_html( $settings, $item, $image_size_key = 'image', $image_key = null, 'image' ), [ 'image' ] ); ?>
+
+							<?php if ( $settings['show_icon'] ) : ?>
+								<div class="icon">
+									<?php if ( $is_new || $migrated ) :
+										Icons_Manager::render_icon( $settings['selected_icon'], [ 'aria-hidden' => 'true' ] );
+									else : ?>
+										<i <?php $this->print_render_attribute_string( 'icon' ); ?>></i>
+									<?php endif; ?>
+								</div>
+							<?php endif; ?>
+						</a>
+					</div>
+					<?php
+				} else {
+					$this->add_link_attributes( $link_key, $item['link'] );
+					?>
+					<div <?php $this->print_render_attribute_string( 'item' ); ?> >
+						<a <?php $this->print_render_attribute_string( $link_key ); ?>>
+							<span class="screen-reader-text"><?php echo esc_html__( 'Go for details', 'animation-addons-for-elementor' ); ?></span>
+							<?php Utils::print_wp_kses_extended( $this::get_gallery_attachment_image_html( $settings, $item, $image_size_key = 'image', $image_key = null, 'image' ), [ 'image' ] ); ?>
+
+							<?php if ( $settings['show_icon'] ) : ?>
+								<div class="icon">
+									<?php if ( $is_new || $migrated ) :
+										Icons_Manager::render_icon( $settings['selected_icon'], [ 'aria-hidden' => 'true' ] );
+									else : ?>
+										<i <?php $this->print_render_attribute_string( 'icon' ); ?>></i>
+									<?php endif; ?>
+								</div>
+							<?php endif; ?>
+						</a>
+					</div>
+					<?php
+				}
 			}
 			?>
 		</div>
+
+		<?php if ( $enable_lightbox ) : ?>
+			<?php
+			// Collect all full-size image URLs for the lightbox
+			$lightbox_images = [];
+			foreach ( $settings['wcf_image_gallery'] as $item ) {
+				$lightbox_images[] = $this->get_lightbox_image_url( $item['image'] );
+			}
+
+			// Render icon HTML for JS to use
+			ob_start();
+			Icons_Manager::render_icon( $settings['lightbox_close_icon'], [ 'aria-hidden' => 'true' ] );
+			$close_icon_html = ob_get_clean();
+
+			ob_start();
+			Icons_Manager::render_icon( $settings['lightbox_prev_icon'], [ 'aria-hidden' => 'true' ] );
+			$prev_icon_html = ob_get_clean();
+
+			ob_start();
+			Icons_Manager::render_icon( $settings['lightbox_next_icon'], [ 'aria-hidden' => 'true' ] );
+			$next_icon_html = ob_get_clean();
+
+			ob_start();
+			Icons_Manager::render_icon( $settings['lightbox_fullscreen_icon'], [ 'aria-hidden' => 'true' ] );
+			$fullscreen_icon_html = ob_get_clean();
+			?>
+			<div class="wcf--lightbox-data" style="display:none;"
+				data-images="<?php echo esc_attr( wp_json_encode( $lightbox_images ) ); ?>"
+				data-animation="<?php echo esc_attr( $settings['lightbox_animation'] ); ?>"
+				data-counter="<?php echo esc_attr( $settings['lightbox_counter'] ); ?>"
+				data-close-icon="<?php echo esc_attr( $close_icon_html ); ?>"
+				data-prev-icon="<?php echo esc_attr( $prev_icon_html ); ?>"
+				data-next-icon="<?php echo esc_attr( $next_icon_html ); ?>"
+				data-fullscreen-icon="<?php echo esc_attr( $fullscreen_icon_html ); ?>"
+			></div>
+		<?php endif; ?>
 		<?php
 	}
 }

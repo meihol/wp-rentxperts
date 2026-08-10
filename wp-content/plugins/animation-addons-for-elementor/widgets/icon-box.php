@@ -1,6 +1,8 @@
 <?php
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace WCF_ADDONS\Widgets;
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 
 use Elementor\Group_Control_Background;
 use Elementor\Group_Control_Border;
@@ -12,7 +14,7 @@ use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 use WCF_ADDONS\WCF_Button_Trait;
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (! defined('ABSPATH')) {
 	exit; // Exit if accessed directly
 }
 
@@ -23,10 +25,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-class Icon_Box extends Widget_Base {
-	
-	use WCF_Button_Trait;	
-	public function get_name() {
+class Icon_Box extends Widget_Base
+{
+
+	use WCF_Button_Trait;
+	public function get_name()
+	{
 		return 'wcf--icon-box';
 	}
 
@@ -38,8 +42,9 @@ class Icon_Box extends Widget_Base {
 	 *
 	 * @access public
 	 */
-	public function get_title() {
-		return esc_html__( 'Icon Box', 'animation-addons-for-elementor' );
+	public function get_title()
+	{
+		return esc_html__('Icon Box', 'animation-addons-for-elementor');
 	}
 
 	/**
@@ -50,7 +55,8 @@ class Icon_Box extends Widget_Base {
 	 *
 	 * @access public
 	 */
-	public function get_icon() {
+	public function get_icon()
+	{
 		return 'wcf eicon-icon-box';
 	}
 
@@ -67,8 +73,9 @@ class Icon_Box extends Widget_Base {
 	 *
 	 * @access public
 	 */
-	public function get_categories() {
-		return [ 'weal-coder-addon' ];
+	public function get_categories()
+	{
+		return ['weal-coder-addon'];
 	}
 
 	/**
@@ -76,7 +83,8 @@ class Icon_Box extends Widget_Base {
 	 *
 	 * @return array
 	 */
-	public function get_style_depends() {
+	public function get_style_depends()
+	{
 		return array(
 			'wcf--icon-box',
 			'wcf--button',
@@ -92,28 +100,29 @@ class Icon_Box extends Widget_Base {
 	 *
 	 * @access protected
 	 */
-	protected function register_controls() {
+	protected function register_controls()
+	{
 
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Icon Box', 'animation-addons-for-elementor' ),
+				'label' => esc_html__('Icon Box', 'animation-addons-for-elementor'),
 			]
 		);
 
 		$this->add_control(
 			'element_list',
 			[
-				'label'   => esc_html__( 'Icon Box Style', 'animation-addons-for-elementor' ),
+				'label'   => esc_html__('Icon Box Style', 'animation-addons-for-elementor'),
 				'type'    => Controls_Manager::SELECT,
 				'default' => '',
 				'options' => [
-					''  => esc_html__( 'Default', 'animation-addons-for-elementor' ),
-					'1' => esc_html__( 'One', 'animation-addons-for-elementor' ),
-					'2' => esc_html__( 'Two', 'animation-addons-for-elementor' ),
-					'3' => esc_html__( 'Three', 'animation-addons-for-elementor' ),
-					'4' => esc_html__( 'Four', 'animation-addons-for-elementor' ),
-					'5' => esc_html__( 'Five', 'animation-addons-for-elementor' ),
+					''  => esc_html__('Default', 'animation-addons-for-elementor'),
+					'1' => esc_html__('One', 'animation-addons-for-elementor'),
+					'2' => esc_html__('Two', 'animation-addons-for-elementor'),
+					'3' => esc_html__('Three', 'animation-addons-for-elementor'),
+					'4' => esc_html__('Four', 'animation-addons-for-elementor'),
+					'5' => esc_html__('Five', 'animation-addons-for-elementor'),
 				],
 			]
 		);
@@ -121,27 +130,27 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'selected_icon',
 			[
-				'label'            => esc_html__( 'Icon', 'animation-addons-for-elementor' ),
+				'label'            => esc_html__('Icon', 'animation-addons-for-elementor'),
 				'type'             => Controls_Manager::ICONS,
 				'fa4compatibility' => 'icon',
 				'default'          => [
 					'value'   => 'fas fa-star',
 					'library' => 'fa-solid',
-				],				
-				
+				],
+
 			]
 		);
 
 		$this->add_control(
 			'title_text',
 			[
-				'label'       => esc_html__( 'Title', 'animation-addons-for-elementor' ),
+				'label'       => esc_html__('Title', 'animation-addons-for-elementor'),
 				'type'        => Controls_Manager::TEXT,
 				'dynamic'     => [
 					'active' => true,
 				],
-				'default'     => esc_html__( 'This is the heading', 'animation-addons-for-elementor' ),
-				'placeholder' => esc_html__( 'Enter your title', 'animation-addons-for-elementor' ),
+				'default'     => esc_html__('This is the heading', 'animation-addons-for-elementor'),
+				'placeholder' => esc_html__('Enter your title', 'animation-addons-for-elementor'),
 				'label_block' => true,
 			]
 		);
@@ -149,7 +158,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'title_size',
 			[
-				'label'   => esc_html__( 'Title HTML Tag', 'animation-addons-for-elementor' ),
+				'label'   => esc_html__('Title HTML Tag', 'animation-addons-for-elementor'),
 				'type'    => Controls_Manager::SELECT,
 				'options' => [
 					'h1'   => 'H1',
@@ -169,23 +178,23 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'description_text',
 			[
-				'label'   => esc_html__( 'Description', 'animation-addons-for-elementor' ),
+				'label'   => esc_html__('Description', 'animation-addons-for-elementor'),
 				'type'    => Controls_Manager::WYSIWYG,
-				'default' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'animation-addons-for-elementor' ),
+				'default' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'animation-addons-for-elementor'),
 			]
 		);
 
 		$this->add_control(
 			'link_type',
 			[
-				'label'     => esc_html__( 'Link Type', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Link Type', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::SELECT,
 				'default'   => 'button',
 				'separator' => 'before',
 				'options'   => [
-					'none'    => esc_html__( 'None', 'animation-addons-for-elementor' ),
-					'button'  => esc_html__( 'Button', 'animation-addons-for-elementor' ),
-					'wrapper' => esc_html__( 'Wrapper', 'animation-addons-for-elementor' ),
+					'none'    => esc_html__('None', 'animation-addons-for-elementor'),
+					'button'  => esc_html__('Button', 'animation-addons-for-elementor'),
+					'wrapper' => esc_html__('Wrapper', 'animation-addons-for-elementor'),
 				],
 			]
 		);
@@ -194,7 +203,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label'       => esc_html__( 'Link', 'animation-addons-for-elementor' ),
+				'label'       => esc_html__('Link', 'animation-addons-for-elementor'),
 				'type'        => Controls_Manager::URL,
 				'dynamic'     => [
 					'active' => true,
@@ -212,7 +221,7 @@ class Icon_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_button_content',
 			[
-				'label'     => esc_html__( 'Button', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Button', 'animation-addons-for-elementor'),
 				'condition' => [
 					'link_type' => 'button',
 				],
@@ -227,7 +236,7 @@ class Icon_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_style_box',
 			[
-				'label' => esc_html__( 'Box', 'animation-addons-for-elementor' ),
+				'label' => esc_html__('Box', 'animation-addons-for-elementor'),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -236,8 +245,8 @@ class Icon_Box extends Widget_Base {
 			Group_Control_Background::get_type(),
 			[
 				'name'     => 'wrapper_background',
-				'types'    => [ 'classic', 'gradient' ],
-				'exclude'  => [ 'image' ],
+				'types'    => ['classic', 'gradient'],
+				'exclude'  => ['image'],  // phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude
 				'selector' => '{{WRAPPER}} .wcf__iconbox',
 			]
 		);
@@ -254,9 +263,9 @@ class Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'wrapper_border_radius',
 			[
-				'label'      => esc_html__( 'Border Radius', 'animation-addons-for-elementor' ),
+				'label'      => esc_html__('Border Radius', 'animation-addons-for-elementor'),
 				'type'       => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'size_units' => ['px', '%', 'em', 'rem', 'custom'],
 				'selectors'  => [
 					'{{WRAPPER}} .wcf__iconbox' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
@@ -274,9 +283,9 @@ class Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'wrapper_padding',
 			[
-				'label'      => esc_html__( 'Padding', 'animation-addons-for-elementor' ),
+				'label'      => esc_html__('Padding', 'animation-addons-for-elementor'),
 				'type'       => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px', '%', 'em', 'rem', 'vw', 'custom' ],
+				'size_units' => ['px', '%', 'em', 'rem', 'vw', 'custom'],
 				'selectors'  => [
 					'{{WRAPPER}} .wcf__iconbox' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
@@ -287,23 +296,23 @@ class Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label'     => esc_html__( 'Alignment', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Alignment', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => [
 					'left'    => [
-						'title' => esc_html__( 'Left', 'animation-addons-for-elementor' ),
+						'title' => esc_html__('Left', 'animation-addons-for-elementor'),
 						'icon'  => 'eicon-text-align-left',
 					],
 					'center'  => [
-						'title' => esc_html__( 'Center', 'animation-addons-for-elementor' ),
+						'title' => esc_html__('Center', 'animation-addons-for-elementor'),
 						'icon'  => 'eicon-text-align-center',
 					],
 					'right'   => [
-						'title' => esc_html__( 'Right', 'animation-addons-for-elementor' ),
+						'title' => esc_html__('Right', 'animation-addons-for-elementor'),
 						'icon'  => 'eicon-text-align-right',
 					],
 					'justify' => [
-						'title' => esc_html__( 'Justified', 'animation-addons-for-elementor' ),
+						'title' => esc_html__('Justified', 'animation-addons-for-elementor'),
 						'icon'  => 'eicon-text-align-justify',
 					],
 				],
@@ -321,7 +330,7 @@ class Icon_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_style_icon',
 			[
-				'label' => esc_html__( 'Icon', 'animation-addons-for-elementor' ),
+				'label' => esc_html__('Icon', 'animation-addons-for-elementor'),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -329,7 +338,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'icon_color',
 			[
-				'label'     => esc_html__( 'Icon Color', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Icon Color', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [
@@ -342,7 +351,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'icon_bg_color',
 			[
-				'label'     => esc_html__( 'Icon BG Color', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Icon BG Color', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [
@@ -354,9 +363,9 @@ class Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_space',
 			[
-				'label'      => esc_html__( 'Spacing', 'animation-addons-for-elementor' ),
+				'label'      => esc_html__('Spacing', 'animation-addons-for-elementor'),
 				'type'       => Controls_Manager::SLIDER,
-				'size_units' => [ 'px', '%', 'em', 'rem', 'vw', 'custom' ],
+				'size_units' => ['px', '%', 'em', 'rem', 'vw', 'custom'],
 				'default'    => [
 					'size' => 15,
 				],
@@ -375,9 +384,9 @@ class Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_size',
 			[
-				'label'      => esc_html__( 'Size', 'animation-addons-for-elementor' ),
+				'label'      => esc_html__('Size', 'animation-addons-for-elementor'),
 				'type'       => Controls_Manager::SLIDER,
-				'size_units' => [ 'px', '%', 'em', 'rem', 'vw', 'custom' ],
+				'size_units' => ['px', '%', 'em', 'rem', 'vw', 'custom'],
 				'range'      => [
 					'px' => [
 						'min' => 6,
@@ -393,7 +402,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_padding',
 			[
-				'label'     => esc_html__( 'Padding', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Padding', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::SLIDER,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-icon' => 'padding: {{SIZE}}{{UNIT}};',
@@ -418,9 +427,9 @@ class Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'border_radius',
 			[
-				'label'      => esc_html__( 'Border Radius', 'animation-addons-for-elementor' ),
+				'label'      => esc_html__('Border Radius', 'animation-addons-for-elementor'),
 				'type'       => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'size_units' => ['px', '%', 'em', 'rem', 'custom'],
 				'selectors'  => [
 					'{{WRAPPER}} .elementor-icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
@@ -433,7 +442,7 @@ class Icon_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_style_content',
 			[
-				'label' => esc_html__( 'Content', 'animation-addons-for-elementor' ),
+				'label' => esc_html__('Content', 'animation-addons-for-elementor'),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -441,7 +450,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'heading_title',
 			[
-				'label'     => esc_html__( 'Title', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Title', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -450,7 +459,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'title_bottom_space',
 			[
-				'label'     => esc_html__( 'Spacing', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Spacing', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [
@@ -470,7 +479,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label'     => esc_html__( 'Color', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Color', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [
@@ -490,7 +499,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'heading_description',
 			[
-				'label'     => esc_html__( 'Description', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Description', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -499,7 +508,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'description_color',
 			[
-				'label'     => esc_html__( 'Color', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Color', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [
@@ -519,7 +528,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'description_bottom_space',
 			[
-				'label'     => esc_html__( 'Spacing', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Spacing', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [
@@ -539,9 +548,9 @@ class Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'description_margin',
 			[
-				'label'      => esc_html__( 'Margin', 'animation-addons-for-elementor' ),
+				'label'      => esc_html__('Margin', 'animation-addons-for-elementor'),
 				'type'       => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px', '%', 'em', 'rem', 'vw', 'custom' ],
+				'size_units' => ['px', '%', 'em', 'rem', 'vw', 'custom'],
 				'selectors'  => [
 					'{{WRAPPER}} .desc' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
@@ -554,7 +563,7 @@ class Icon_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_btn_style',
 			[
-				'label'     => esc_html__( 'Button', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Button', 'animation-addons-for-elementor'),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'link_type' => 'button',
@@ -568,9 +577,9 @@ class Icon_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'button_margin',
 			[
-				'label'      => esc_html__( 'Margin', 'animation-addons-for-elementor' ),
+				'label'      => esc_html__('Margin', 'animation-addons-for-elementor'),
 				'type'       => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px', '%', 'em', 'rem', 'vw', 'custom' ],
+				'size_units' => ['px', '%', 'em', 'rem', 'vw', 'custom'],
 				'selectors'  => [
 					'{{WRAPPER}} .wcf__btn' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
@@ -580,10 +589,40 @@ class Icon_Box extends Widget_Base {
 		$this->end_controls_section();
 
 		//section hover
+
+		$this->start_controls_section(
+			'section_icon_hover_style',
+			[
+				'label'     => esc_html__('Icon Hover ', 'animation-addons-for-elementor'),
+				'tab'       => Controls_Manager::TAB_STYLE,
+				'condition' => [
+					'element_list' => ['2'],
+				],
+			]
+		);
+
+		$this->add_control(
+			'enable_icon_hover_effect',
+			[
+				'label' => esc_html__('Enable Icon Hover Effect', 'animation-addons-for-elementor'),
+				'type' => Controls_Manager::SWITCHER,
+				'label_on' => esc_html__('Show', 'animation-addons-for-elementor'),
+				'label_off' => esc_html__('Hide', 'animation-addons-for-elementor'),
+				'return_value' => 'yes',
+				'default' => 'yes',
+				'condition' => [
+					'element_list' => '2',
+				],
+			]
+			
+		);
+
+		$this->end_controls_section();
+
 		$this->start_controls_section(
 			'section_hover_style',
 			[
-				'label'     => esc_html__( 'Hover', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Hover', 'animation-addons-for-elementor'),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'element_list' => ['3', '5'],
@@ -594,14 +633,14 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'box_animated_bg',
 			[
-				'label' => esc_html__( 'Hover Start From', 'animation-addons-for-elementor' ),
+				'label' => esc_html__('Hover Start From', 'animation-addons-for-elementor'),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'right',
 				'options' => [
-					'top'    => esc_html__( 'Top', 'animation-addons-for-elementor' ),
-					'right'  => esc_html__( 'Right', 'animation-addons-for-elementor' ),
-					'bottom' => esc_html__( 'Bottom', 'animation-addons-for-elementor' ),
-					'left'   => esc_html__( 'Left', 'animation-addons-for-elementor' ),
+					'top'    => esc_html__('Top', 'animation-addons-for-elementor'),
+					'right'  => esc_html__('Right', 'animation-addons-for-elementor'),
+					'bottom' => esc_html__('Bottom', 'animation-addons-for-elementor'),
+					'left'   => esc_html__('Left', 'animation-addons-for-elementor'),
 				],
 				'prefix_class' => 'hover-start-',
 				'condition' => [
@@ -613,7 +652,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'box_bg_transition',
 			[
-				'label' => esc_html__( 'Transition', 'animation-addons-for-elementor' ),
+				'label' => esc_html__('Transition', 'animation-addons-for-elementor'),
 				'type' => Controls_Manager::NUMBER,
 				'min' => 0,
 				'max' => 10,
@@ -630,7 +669,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'heading_Box',
 			[
-				'label'     => esc_html__( 'Box', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Box', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -640,8 +679,8 @@ class Icon_Box extends Widget_Base {
 			Group_Control_Background::get_type(),
 			[
 				'name'     => 'wrapper_hover_background',
-				'types'    => [ 'classic', 'gradient' ],
-				'exclude'  => [ 'image' ],
+				'types'    => ['classic', 'gradient'],
+				'exclude'  => ['image'],  // phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude
 				'selector' => '{{WRAPPER}} .wcf__iconbox:hover:after, {{WRAPPER}} .wcf__iconbox::after',
 			]
 		);
@@ -649,7 +688,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'heading_hover_icon',
 			[
-				'label'     => esc_html__( 'Icon', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Icon', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -658,7 +697,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'icon_hover_color',
 			[
-				'label'     => esc_html__( 'Icon Color', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Icon Color', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [
@@ -671,7 +710,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'icon_hover_bg_color',
 			[
-				'label'     => esc_html__( 'Icon BG Color', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Icon BG Color', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [
@@ -683,7 +722,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'heading_hover_title',
 			[
-				'label'     => esc_html__( 'Title', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Title', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -692,7 +731,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'title_hover_color',
 			[
-				'label'     => esc_html__( 'Color', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Color', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [
@@ -704,7 +743,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'heading_hover_desc',
 			[
-				'label'     => esc_html__( 'Description', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Description', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -713,7 +752,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'desc_hover_color',
 			[
-				'label'     => esc_html__( 'Color', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Color', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [
@@ -725,7 +764,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'heading_hover_button',
 			[
-				'label'     => esc_html__( 'Button', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Button', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -734,7 +773,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'icon_box_button_hover_color',
 			[
-				'label'     => esc_html__( 'Text Color', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Text Color', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .wcf__iconbox:hover .wcf__btn a' => 'color: {{VALUE}};',
@@ -746,8 +785,8 @@ class Icon_Box extends Widget_Base {
 			Group_Control_Background::get_type(),
 			[
 				'name'     => 'icon_box_btn_hover_background',
-				'types'    => [ 'classic', 'gradient' ],
-				'exclude'  => [ 'image' ],
+				'types'    => ['classic', 'gradient'],
+				'exclude'  => ['image'],  // phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude
 				'selector' => '{{WRAPPER}}  .wcf__iconbox:hover .wcf__btn a',
 			]
 		);
@@ -755,7 +794,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'icon_box_button_hover_border_color',
 			[
-				'label'     => esc_html__( 'Border Color', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Border Color', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .wcf__iconbox:hover .wcf__btn a' => 'border-color: {{VALUE}};',
@@ -766,7 +805,7 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'heading_hover_arrow',
 			[
-				'label'     => esc_html__( 'Arrow', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Arrow', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 				'condition' => [
@@ -778,14 +817,14 @@ class Icon_Box extends Widget_Base {
 		$this->add_control(
 			'arrow_hover_color',
 			[
-				'label'     => esc_html__( 'Color', 'animation-addons-for-elementor' ),
+				'label'     => esc_html__('Color', 'animation-addons-for-elementor'),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .wcf__iconbox.style-3::before' => 'color: {{VALUE}};',
 				],
-                'condition' => [
-                        'element_list' => '3',
-                ],
+				'condition' => [
+					'element_list' => '3',
+				],
 			]
 		);
 
@@ -801,70 +840,76 @@ class Icon_Box extends Widget_Base {
 	 *
 	 * @access protected
 	 */
-	protected function render() {
+	protected function render()
+	{
 		$settings = $this->get_settings_for_display();
 
 		//wrapper class
-		$this->add_render_attribute( 'wrapper', 'class', [ 'wcf__iconbox', 'style-' . $settings['element_list'] ] );
-		if ( '3' === $settings['element_list'] ) {
-			$this->add_render_attribute( 'wrapper', 'class', 'service-rollover-left' );
+		$this->add_render_attribute('wrapper', 'class', ['wcf__iconbox', 'style-' . $settings['element_list']]);
+		if ('3' === $settings['element_list']) {
+			$this->add_render_attribute('wrapper', 'class', 'service-rollover-left');
+		}
+
+		if ('2' === $settings['element_list'] && ( $settings['enable_icon_hover_effect'] ?? '' ) === 'yes') {
+			$this->add_render_attribute('wrapper', 'class', 'icon-hover-effect-enabled');
 		}
 
 		//link tag
 		$link_tag = 'div';
-		if ( ! empty( $settings['link']['url'] ) && 'wrapper' === $settings['link_type'] ) {
+		if (! empty($settings['link']['url']) && 'wrapper' === $settings['link_type']) {
 			$link_tag = 'a';
-			$this->add_link_attributes( 'wrapper', $settings['link'] );
-			$this->add_link_attributes( 'link', $settings['link'] );
+			$this->add_link_attributes('wrapper', $settings['link']);
+			$this->add_link_attributes('link', $settings['link']);
 		}
 
 		//icon
-		if ( empty( $settings['icon'] ) && ! Icons_Manager::is_migration_allowed() ) {
+		if (empty($settings['icon']) && ! Icons_Manager::is_migration_allowed()) {
 			// add old default
 			$settings['icon'] = 'fa fa-star';
 		}
 
-		if ( ! empty( $settings['icon'] ) ) {
-			$this->add_render_attribute( 'icon', 'class', $settings['icon'] );
-			$this->add_render_attribute( 'icon', 'aria-hidden', 'true' );
+		if (! empty($settings['icon'])) {
+			$this->add_render_attribute('icon', 'class', $settings['icon']);
+			$this->add_render_attribute('icon', 'aria-hidden', 'true');
 		}
 
-		$migrated = isset( $settings['__fa4_migrated']['selected_icon'] );
-		$is_new   = empty( $settings['icon'] ) && Icons_Manager::is_migration_allowed();
-		?>
-		<<?php Utils::print_validated_html_tag( $link_tag ); ?> <?php $this->print_render_attribute_string( 'wrapper' ); ?> >
+		$migrated = isset($settings['__fa4_migrated']['selected_icon']);
+		$is_new   = empty($settings['icon']) && Icons_Manager::is_migration_allowed();
+?>
+		<<?php Utils::print_validated_html_tag($link_tag); ?> <?php $this->print_render_attribute_string('wrapper'); ?>>
 
-		<?php if ( '4' === $settings['element_list'] ) { ?>
-			<<?php Utils::print_validated_html_tag( $settings['title_size'] ); ?> class="title">
-			<?php $this->print_unescaped_setting( 'title_text' ); ?>
-			</<?php Utils::print_validated_html_tag( $settings['title_size'] ); ?>>
-		<?php } ?>
+			<?php if ('4' === $settings['element_list']) { ?>
+				<<?php Utils::print_validated_html_tag($settings['title_size']); ?> class="title">
+					<?php $this->print_unescaped_setting('title_text'); ?>
+				</<?php Utils::print_validated_html_tag($settings['title_size']); ?>>
+			<?php } ?>
 
-		<div class="elementor-icon icon">
-			<?php if ( $is_new || $migrated ) :
-				Icons_Manager::render_icon( $settings['selected_icon'], [ 'aria-hidden' => 'true' ] );
-			else : ?>
-				<i <?php $this->print_render_attribute_string( 'icon' ); ?>></i>
-			<?php endif; ?>
-		</div>
-
-		<?php if ( '4' !== $settings['element_list'] ) { ?>
-			<<?php Utils::print_validated_html_tag( $settings['title_size'] ); ?> class="title">
-			<?php $this->print_unescaped_setting( 'title_text' ); ?>
-			</<?php Utils::print_validated_html_tag( $settings['title_size'] ); ?>>
-		<?php } ?>
-
-		<?php if ( ! Utils::is_empty( $settings['description_text'] ) ) : ?>
-			<div class="desc">
-                <?php echo $this->parse_text_editor( $settings['description_text'] ) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			<div class="elementor-icon icon">
+				<?php if ($is_new || $migrated) :
+					Icons_Manager::render_icon($settings['selected_icon'], ['aria-hidden' => 'true']);
+				else : ?>
+					<i <?php $this->print_render_attribute_string('icon'); ?>></i>
+				<?php endif; ?>
 			</div>
-		<?php endif; ?>
 
-		<?php if ( 'button' === $settings['link_type'] ) : ?>
-        <?php $this->render_button( $settings ); ?>
-		<?php endif; ?>
+			<?php if ('4' !== $settings['element_list']) { ?>
+				<<?php Utils::print_validated_html_tag($settings['title_size']); ?> class="title">
+					<?php $this->print_unescaped_setting('title_text'); ?>
+				</<?php Utils::print_validated_html_tag($settings['title_size']); ?>>
+			<?php } ?>
 
-		</<?php Utils::print_validated_html_tag( $link_tag ); ?>>
-		<?php
+			<?php if (! Utils::is_empty($settings['description_text'])) : ?>
+				<div class="desc">
+					<?php echo $this->parse_text_editor($settings['description_text']) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+					?>
+				</div>
+			<?php endif; ?>
+
+			<?php if ('button' === $settings['link_type']) : ?>
+				<?php $this->render_button($settings); ?>
+			<?php endif; ?>
+
+		</<?php Utils::print_validated_html_tag($link_tag); ?>>
+<?php
 	}
 }

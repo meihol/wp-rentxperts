@@ -1,6 +1,8 @@
 <?php
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace WCF_ADDONS\Admin;
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 
 use Elementor\Modules\ElementManager\Options;
 use Elementor\Plugin;
@@ -14,6 +16,22 @@ class WCF_Admin_Init
 
 
 	use \WCF_ADDONS\WCF_Extension_Widgets_Trait;
+
+	/**
+	 * Allowed option names for AJAX read/write.
+	 * Prevents arbitrary option manipulation (e.g., siteurl, admin_email).
+	 *
+	 * @since 2.7.3
+	 */
+	private static $allowed_option_names = array(
+		'wcf_save_widgets',
+		'wcf_save_extensions',
+		'wcf_custom_font_setting',
+		'wcf_smooth_scroller',
+		'wcf_notice_data',
+		'wcf_addons_setup_wizard',
+		'aae_mailchimp_api',
+	);
 
 	/**
 	 * Parent Menu Page Slug
@@ -73,7 +91,7 @@ class WCF_Admin_Init
 		}
 
 		// Check if we are on the correct page
-		if ($screen && $screen->id === 'animation-addon_page_wcf_addons_settings') {
+		if ($screen && strpos($screen->id, '_page_wcf_addons_settings') !== false) {
 			$classes .= ' wcf-anim2024';
 		}
 
@@ -333,64 +351,125 @@ class WCF_Admin_Init
 	{
 		$total_extensions = $total_widgets = 0;
 
-		if ($hook == 'animation-addon_page_wcf_addons_settings') {
-			// sync element manager
-			$this->disable_widgets_by_element_manager();
-			// CSS
-			wp_enqueue_style(
-				'wcf-admin', // Handle for the stylesheet
-				WCF_ADDONS_URL . 'assets/build/modules/dashboard/index.css',
-				array(), // Dependencies (none in this case)
-				time()
-			);
+		$screen = get_current_screen();
+		if ( ! $screen || strpos($screen->id, '_page_wcf_addons_settings') === false) {
+			return;
+		}
 
-			wp_enqueue_script('wcf-admin', WCF_ADDONS_URL . 'assets/build/modules/dashboard/index.js', array('react', 'react-dom', 'wp-element', 'wp-i18n'), time(), true);
-			wcf_get_total_config_elements_by_key($GLOBALS['wcf_addons_config']['extensions'], $total_extensions);
-			wcf_get_total_config_elements_by_key($GLOBALS['wcf_addons_config']['widgets'], $total_widgets);
+		// Load config once
+		$config = wcf_get_config();
 
-			$widgets       = get_option('wcf_save_widgets');
-			$saved_widgets = is_array($widgets) ? array_keys($widgets) : array();
+		// sync element manager
+		$this->disable_widgets_by_element_manager();
 
-			wcf_get_search_active_keys($GLOBALS['wcf_addons_config']['widgets'], $saved_widgets, $foundKeys, $awidgets);
+		// CSS
+		wp_enqueue_style(
+			'wcf-admin',
+			WCF_ADDONS_URL . 'assets/build/modules/dashboard/index.css',
+			array(),
+			time()
+		);
 
-			$extensions       = get_option('wcf_save_extensions');
-			$saved_extensions = is_array($extensions) ? array_keys($extensions) : array();
+		wp_enqueue_script(
+			'wcf-admin',
+			WCF_ADDONS_URL . 'assets/build/modules/dashboard/index.js',
+			array('react', 'react-dom', 'wp-element', 'wp-i18n'),
+			time(),
+			true
+		);
 
-			wcf_get_search_active_keys($GLOBALS['wcf_addons_config']['extensions'], $saved_extensions, $foundext, $activeext);
+		// Count widgets/extensions
+		wcf_get_total_config_elements_by_key($config['extensions'], $total_extensions);
+		wcf_get_total_config_elements_by_key($config['widgets'], $total_widgets);
 
-			$active_widgets = self::get_widgets();
-			$active_ext     = self::get_extensions();
-			$font_settings  = wp_unslash(get_option('wcf_custom_font_setting'));
+		// Widgets
+		$widgets       = get_option('wcf_save_widgets');
+		$saved_widgets = is_array($widgets) ? array_keys($widgets) : array();
 
-			$localize_data = array(
-				'ajaxurl'             => admin_url('admin-ajax.php'),
-				'nonce'               => wp_create_nonce('wcf_admin_nonce'),
-				'addons_config'       => apply_filters('wcf_addons_dashboard_config', $GLOBALS['wcf_addons_config']),
-				'adminURL'            => admin_url(),
-				'smoothScroller'      => json_decode(get_option('wcf_smooth_scroller')),
-				'cf_settings'         => is_string($font_settings) ? json_decode($font_settings) : array(),
-				'extensions'          => array(
-					'total'  => $total_extensions,
-					'active' => is_array($active_ext) ? count($active_ext) : 0,
-				),
-				'widgets'             => array(
-					'total'  => $total_widgets,
-					'active' => is_array($active_widgets) ? count($active_widgets) : 0,
-				),
-				'global_settings_url' => $this->get_elementor_active_edit_url(),
-				'theme_builder_url'   => admin_url('edit.php?post_type=wcf-addons-template'),
-				'user_role'           => wcfaddon_get_current_user_roles(),
-				'version'             => WCF_ADDONS_VERSION,
-				'st_template_domain'  => WCF_TEMPLATE_STARTER_BASE_URL,
-				'home_url' => add_query_arg(['aae-cache' => 1], home_url('/')),
-				'template_menu' => $this->get_template_menu_data(),
-				'hero' => file_exists($this->plugin_file) ? WCF_ADDONS_URL . 'assets/images/hero-banner.jpg' : 'no',
-				'hero_offer' => WCF_ADDONS_URL . 'assets/video/cyber-sale.mp4',
+		wcf_get_search_active_keys($config['widgets'], $saved_widgets, $foundKeys, $awidgets);
 
-			);
-			wp_localize_script('wcf-admin', 'WCF_ADDONS_ADMIN', $localize_data);
+		// Extensions
+		$extensions       = get_option('wcf_save_extensions');
+		$saved_extensions = is_array($extensions) ? array_keys($extensions) : array();
+
+		wcf_get_search_active_keys($config['extensions'], $saved_extensions, $foundext, $activeext);
+
+		$active_widgets = self::get_widgets();
+		$active_ext     = self::get_extensions();
+
+		$font_settings = wp_unslash(get_option('wcf_custom_font_setting'));
+
+		$localize_data = array(
+			'ajaxurl'        => admin_url('admin-ajax.php'),
+			'isSettingsPage' => true,
+			'nonce'          => wp_create_nonce('wcf_admin_nonce'),
+
+			'addons_config'  => apply_filters('wcf_addons_dashboard_config', $config),  // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+
+			'adminURL'       => admin_url(),
+			'smoothScroller' => json_decode(get_option('wcf_smooth_scroller')),
+
+			'cf_settings' => is_string($font_settings)
+				? json_decode($font_settings)
+				: array(),
+
+			'extensions' => array(
+				'total'  => $total_extensions,
+				'active' => is_array($active_ext) ? count($active_ext) : 0,
+			),
+
+			'widgets' => array(
+				'total'  => $total_widgets,
+				'active' => is_array($active_widgets) ? count($active_widgets) : 0,
+			),
+
+			'global_settings_url' => $this->get_elementor_active_edit_url(),
+			'theme_builder_url'   => admin_url('edit.php?post_type=wcf-addons-template'),
+			'user_role'           => wcfaddon_get_current_user_roles(),
+
+			'version'            => WCF_ADDONS_VERSION,
+			'st_template_domain' => WCF_TEMPLATE_STARTER_BASE_URL,
+
+			'home_url' => add_query_arg(['aae-cache' => 1], home_url('/')),
+
+			'template_menu' => $this->get_template_menu_data(),
+
+			'hero'       => file_exists($this->plugin_file)
+				? WCF_ADDONS_URL . 'assets/images/hero-banner.jpg'
+				: 'no',
+
+			'hero_offer' => WCF_ADDONS_URL . 'assets/video/cyber-sale.mp4',
+		);
+
+		wp_localize_script('wcf-admin', 'WCF_ADDONS_ADMIN', $localize_data);
+
+		// WordPress.org translations take priority, bundled translations in plugin's languages/ folder serve as fallback
+		wp_set_script_translations('wcf-admin', 'animation-addons-for-elementor', WCF_ADDONS_PATH . 'languages');
+
+		// Support user-level locale (when user sets language in their profile)
+		$user_locale = get_user_locale();
+		$site_locale = get_locale();
+
+		if ($user_locale !== $site_locale && $user_locale !== 'en_US') {
+			$md5    = md5('assets/build/modules/dashboard/index.js');
+			$json_file = WCF_ADDONS_PATH . "languages/animation-addons-for-elementor-{$user_locale}-{$md5}.json";
+
+			if (file_exists($json_file)) {
+				$json    = file_get_contents($json_file);
+				$decoded = json_decode($json, true);
+
+				if ($decoded && isset($decoded['locale_data']['messages'])) {
+					$locale_data = wp_json_encode($decoded['locale_data']['messages']);
+					wp_add_inline_script(
+						'wcf-admin',
+						"wp.i18n.setLocaleData({$locale_data}, 'animation-addons-for-elementor');",
+						'before'
+					);
+				}
+			}
 		}
 	}
+
 
 	public function get_template_menu_data()
 	{
@@ -505,7 +584,7 @@ class WCF_Admin_Init
 		$screen = get_current_screen();
 
 		// Check if we are on the correct admin page
-		if ($screen && $screen->id === 'animation-addon_page_wcf_addons_settings') {
+		if ($screen && strpos($screen->id, '_page_wcf_addons_settings') !== false) {
 			echo '<div id="wcf-admin-toast"></div>';
 		}
 	}
@@ -528,7 +607,7 @@ class WCF_Admin_Init
 			'in_admin_header',
 			function () {
 				$screen = get_current_screen();
-				if ($screen && 'animation-addon_page_wcf_addons_settings' === $screen->id) {
+				if ($screen && strpos($screen->id, '_page_wcf_addons_settings') !== false) {
 					remove_all_actions('admin_notices');
 					remove_all_actions('all_admin_notices');
 					remove_all_actions('user_admin_notices');
@@ -550,6 +629,7 @@ class WCF_Admin_Init
 	public function save_settings()
 	{
 
+	
 		check_ajax_referer('wcf_admin_nonce', 'nonce');
 
 		if (! current_user_can('manage_options')) {
@@ -562,6 +642,12 @@ class WCF_Admin_Init
 
 		$actives       = $foundkeys = array();
 		$option_name   = isset($_POST['settings']) ? sanitize_text_field(wp_unslash($_POST['settings'])) : '';
+
+		// Security: only allow whitelisted option names.
+		if ( ! empty( $option_name ) && ! in_array( $option_name, self::$allowed_option_names, true ) ) {
+			wp_send_json_error( esc_html__( 'Invalid option name.', 'animation-addons-for-elementor' ) );
+		}
+
 		$sanitize_data = sanitize_text_field(wp_unslash($_POST['fields']));
 		$settings      = json_decode($sanitize_data, true);
 		wcf_get_nested_active_config_keys($settings, $found, $actives);
@@ -604,6 +690,12 @@ class WCF_Admin_Init
 		}
 
 		$setting_name = sanitize_text_field(wp_unslash($_POST['setting_name']));
+
+		// Security: only allow whitelisted option names.
+		if ( ! in_array( $setting_name, self::$allowed_option_names, true ) ) {
+			wp_send_json_error( esc_html__( 'Invalid option name.', 'animation-addons-for-elementor' ) );
+		}
+
 		$settings     = get_option($setting_name);
 
 		// If the option was stored as JSON, decode it
@@ -646,6 +738,12 @@ class WCF_Admin_Init
 
 		$form_data    = sanitize_text_field(wp_unslash($_POST['form_fields']));
 		$setting_name = sanitize_text_field(wp_unslash($_POST['setting_name']));
+
+		// Security: only allow whitelisted option names.
+		if ( ! in_array( $setting_name, self::$allowed_option_names, true ) ) {
+			wp_send_json_error( esc_html__( 'Invalid option name.', 'animation-addons-for-elementor' ) );
+		}
+
 		update_option($setting_name, $form_data);
 
 		$return_message = array(
@@ -741,6 +839,12 @@ class WCF_Admin_Init
 
 		$actives       = array();
 		$option_name   = isset($_POST['settings']) ? sanitize_text_field(wp_unslash($_POST['settings'])) : '';
+
+		// Security: only allow whitelisted option names.
+		if ( ! empty( $option_name ) && ! in_array( $option_name, self::$allowed_option_names, true ) ) {
+			wp_send_json_error( esc_html__( 'Invalid option name.', 'animation-addons-for-elementor' ) );
+		}
+
 		$sanitize_data = sanitize_text_field(wp_unslash($_POST['fields']));
 		$settings      = json_decode($sanitize_data, true);
 		$actives       = get_option('wcf_save_widgets');
@@ -797,21 +901,10 @@ class WCF_Admin_Init
 			return;
 		}
 
-		$settings = array(
-			'smooth' => sanitize_text_field(wp_unslash($_POST['smooth'])),
-		);
-
-		if (isset($_POST['mobile'])) {
-			$settings['mobile'] = sanitize_text_field(wp_unslash($_POST['mobile']));
-		}
-		if (isset($_POST['disableMode'])) {
-			$settings['disableMode'] = sanitize_text_field(wp_unslash($_POST['disableMode']));
-		}
-		if (isset($_POST['media'])) {
-			$settings['media'] = sanitize_text_field(wp_unslash($_POST['media']));
-		}
-
-		$option = wp_json_encode($settings);
+		$settings = sanitize_text_field(wp_unslash($_POST['smooth']));
+	
+		$decode = json_decode($settings);
+		$option = wp_json_encode($decode);
 
 		// update new settings
 		if (! empty($_POST['smooth'])) {

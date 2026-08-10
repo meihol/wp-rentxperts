@@ -1,6 +1,8 @@
 <?php
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace WCF_ADDONS;
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 
 use Elementor\Plugin;
 use WP_Query;
@@ -14,15 +16,13 @@ class Ajax_Handler {
 		add_action( 'wp_ajax_live_search', array( __CLASS__, 'handle_live_search' ) );
 		add_action( 'wp_ajax_nopriv_live_search', array( __CLASS__, 'handle_live_search' ) );
 
-		// Mailchimp AJAX handlers
+		// Mailchimp AJAX handlers (editor-only: require logged-in user)
 		add_action( 'wp_ajax_mailchimp_api', array( __CLASS__, 'mailchimp_lists' ) );
-		add_action( 'wp_ajax_nopriv_mailchimp_api', array( __CLASS__, 'mailchimp_lists' ) );
 
 		add_action( 'wp_ajax_wcf_mailchimp_ajax', array( __CLASS__, 'mailchimp_prepare_ajax' ) );
 		add_action( 'wp_ajax_nopriv_wcf_mailchimp_ajax', array( __CLASS__, 'mailchimp_prepare_ajax' ) );
 
 		add_action( 'wp_ajax_wcf_mailchimp_list_fields', array( __CLASS__, 'wcf_mailchimp_list_fields' ) );
-		add_action( 'wp_ajax_nopriv_wcf_mailchimp_list_fields', array( __CLASS__, 'wcf_mailchimp_list_fields' ) );
 
 		add_action( 'wp_ajax_wcf_load_popup_content', array( __CLASS__, 'wcf__popup_content' ) );
 		add_action( 'wp_ajax_nopriv_wcf_load_popup_content', array( __CLASS__, 'wcf__popup_content' ) );
@@ -145,6 +145,10 @@ class Ajax_Handler {
 	 */
 	public static function mailchimp_lists() {
 
+		if ( ! current_user_can( 'edit_posts' ) ) {
+			wp_send_json_error( 'Unauthorized' );
+		}
+
 		if ( ! isset( $_REQUEST['nonce'] ) || empty( $_REQUEST['nonce'] ) ) {
 			wp_send_json_error( 'Missing nonce' );
 		}
@@ -164,6 +168,10 @@ class Ajax_Handler {
 	}
 
 	public static function wcf_mailchimp_list_fields() {
+
+		if ( ! current_user_can( 'edit_posts' ) ) {
+			wp_send_json_error( 'Unauthorized' );
+		}
 
 		if ( ! isset( $_REQUEST['nonce'] ) || empty( $_REQUEST['nonce'] ) ) {
 			wp_send_json_error( 'Missing nonce' );
