@@ -28,6 +28,7 @@
 #blt-8ac671e4-834a773 .blt-8ac671e4-header-container {
 	justify-content: space-between;
 	margin-block-end: 15px;
+  display: none;
 }
 .blt-8ac671e4-tabs-list {
 	overflow: auto;
