@@ -11,6 +11,9 @@
 .mobile-menu-active .wcf-nav-item .menu-text {
 	width: 100%;
 }
+.blt-8ac671e4-header-container {
+	display: none;
+}
 .rent-box-slider-main .description {
 	position: relative;
 	overflow: hidden;
