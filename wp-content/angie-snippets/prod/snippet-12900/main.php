@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const FLOATING_INQUIRY_BUTTON_ASSETS_VERSION_bd4ab031 = '1.0.0';
+const FLOATING_INQUIRY_BUTTON_ASSETS_VERSION_bd4ab031 = '1.1.0';
 
 /**
  * Enqueue scripts and styles
@@ -47,7 +47,7 @@ function render_floating_button_bd4ab031() {
 					<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
 				</svg>
 			</span>
-			<span class="rx-floating-text-bd4ab031"><?php esc_html_e( 'Enquire Now*', 'angie-snippets' ); ?></span>
+			<span class="rx-floating-text-bd4ab031"><?php esc_html_e( 'Enquire Now', 'angie-snippets' ); ?></span>
 		</button>
 	</div>
 
