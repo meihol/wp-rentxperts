@@ -125,6 +125,9 @@ body #rentheadersicky {z-index: 9999;}
 .wcf__slider .wcf--image-box.style-1 {
 	padding-block: 15px 0;
 }
+.rentexperts-text-slider .wcf__slider-wrapper .ts-navigation .wcf-arrow.wcf-arrow {
+	width: 40px;
+}
 .wcf__slider-wrapper .ts-pagination {
 	margin-block-start: 30px;
 }
