@@ -256,9 +256,11 @@ document.addEventListener("DOMContentLoaded", function () {
         /* =========================
             FILTER BUTTON
         ========================= */
-        filterBtn.addEventListener("click", function () {
-            filterList.classList.toggle("show");
-        });
+        if (filterBtn && filterList) {
+            filterBtn.addEventListener("click", function () {
+                filterList.classList.toggle("show");
+            });
+        }
 
 
         /* =========================
