@@ -170,16 +170,42 @@ jQuery(document).ready(function($) {
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    /* =========================
+       ELEMENTS
+    ========================= */
+    const searchInput = document.getElementById("custom-blog-search");
+    const filterBtn = document.getElementById("custom-blog-filter-btn");
+    const filterList = document.getElementById("custom-blog-filter-list");
+    const noResult = document.getElementById("custom-blog-no-result");
+
+    let selectedCategory = "all";
+
+
+    /* =========================
+       READ MORE / READ LESS
+    ========================= */
     function initReadMore() {
 
-        document.querySelectorAll(".description").forEach(function(desc){
+        document.querySelectorAll(".description").forEach(function (desc) {
 
-            if(desc.dataset.readmore === "true") return;
+            // Already initialized
+            if (desc.dataset.readmore === "true") {
+                return;
+            }
 
-            const lineHeight = parseFloat(getComputedStyle(desc).lineHeight);
+            const lineHeight = parseFloat(
+                getComputedStyle(desc).lineHeight
+            );
+
+            // Safety check
+            if (!lineHeight || isNaN(lineHeight)) {
+                return;
+            }
+
             const collapsedHeight = lineHeight * 4;
 
-            if(desc.scrollHeight <= collapsedHeight + 2){
+            // Don't show Read More if content is already <= 4 lines
+            if (desc.scrollHeight <= collapsedHeight + 2) {
                 return;
             }
 
@@ -190,142 +216,226 @@ document.addEventListener("DOMContentLoaded", function () {
             desc.style.transition = "max-height 0.4s ease";
 
             const btn = document.createElement("a");
+
             btn.href = "#";
             btn.className = "read-more-btn";
-            btn.innerHTML = "Read More";
+            btn.textContent = "Read More";
 
             desc.insertAdjacentElement("afterend", btn);
-
         });
     }
 
 
+    /* =========================
+       INITIALIZE READ MORE
+    ========================= */
     initReadMore();
 
 
-    // Swiper clone slides ke liye
-    setTimeout(function(){
-        initReadMore();
-    },1000);
+    /*
+     * Swiper / dynamically cloned slides
+     */
+    setTimeout(initReadMore, 1000);
 
 
+    /* =========================
+       READ MORE CLICK
+    ========================= */
+    document.addEventListener("click", function (e) {
 
-    // Click Event (original + duplicate dono ke liye)
-    document.addEventListener("click", function(e){
+        const button = e.target.closest(".read-more-btn");
 
-        if(e.target.classList.contains("read-more-btn")){
+        if (!button) {
+            return;
+        }
+
+        e.preventDefault();
+
+        const desc = button.previousElementSibling;
+
+        if (!desc) {
+            return;
+        }
+
+        const lineHeight = parseFloat(
+            getComputedStyle(desc).lineHeight
+        );
+
+        const collapsedHeight = lineHeight * 4;
+
+        const isExpanded =
+            desc.classList.contains("expanded");
+
+
+        if (isExpanded) {
+
+            desc.classList.remove("expanded");
+
+            desc.style.maxHeight =
+                collapsedHeight + "px";
+
+            button.textContent = "Read More";
+
+        } else {
+
+            desc.classList.add("expanded");
+
+            desc.style.maxHeight =
+                desc.scrollHeight + "px";
+
+            button.textContent = "Read Less";
+        }
+
+    });
+
+
+    /* =========================
+       FILTER ELEMENTS
+    ========================= */
+    function getCards() {
+        return document.querySelectorAll(".custom-blog-card");
+    }
+
+    function getFilterButtons() {
+        return document.querySelectorAll(".blog-category-filter");
+    }
+
+
+    /* =========================
+       FILTER BUTTON
+    ========================= */
+    if (filterBtn && filterList) {
+
+        filterBtn.addEventListener("click", function (e) {
 
             e.preventDefault();
-            const desc = e.target.previousElementSibling;
-            if(desc.classList.contains("expanded")){
+            e.stopPropagation();
 
-                desc.classList.remove("expanded");
-                desc.style.maxHeight = (parseFloat(getComputedStyle(desc).lineHeight) * 4) + "px";
-                e.target.innerHTML = "Read More";
+            filterList.classList.toggle("show");
+        });
+    }
 
-            }else{
 
-                desc.classList.add("expanded");
-                desc.style.maxHeight = desc.scrollHeight + "px";
-                e.target.innerHTML = "Read Less";
+    /* =========================
+       CATEGORY FILTER
+    ========================= */
+    document.addEventListener("click", function (e) {
 
+        const button =
+            e.target.closest(".blog-category-filter");
+
+        if (!button) {
+            return;
+        }
+
+        const filterButtons = getFilterButtons();
+
+        filterButtons.forEach(function (btn) {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        selectedCategory =
+            button.getAttribute("data-category") || "all";
+
+        filterPosts();
+
+        // Close dropdown after selection
+        if (filterList) {
+            filterList.classList.remove("show");
+        }
+    });
+
+
+    /* =========================
+       SEARCH
+    ========================= */
+    if (searchInput) {
+
+        searchInput.addEventListener("input", filterPosts);
+    }
+
+
+    /* =========================
+       FILTER POSTS
+    ========================= */
+    function filterPosts() {
+
+        const search = searchInput
+            ? searchInput.value.toLowerCase().trim()
+            : "";
+
+        const cards = getCards();
+
+        let visiblePosts = 0;
+
+
+        cards.forEach(function (card) {
+
+            const title =
+                (card.getAttribute("data-title") || "")
+                .toLowerCase();
+
+            const content =
+                (card.getAttribute("data-content") || "")
+                .toLowerCase();
+
+            const category =
+                card.getAttribute("data-category") || "";
+
+
+            const searchMatch =
+                !search ||
+                title.includes(search) ||
+                content.includes(search);
+
+
+            const categoryMatch =
+                selectedCategory === "all" ||
+                category === selectedCategory;
+
+
+            const showCard =
+                searchMatch && categoryMatch;
+
+
+            card.style.display =
+                showCard ? "" : "none";
+
+
+            if (showCard) {
+                visiblePosts++;
             }
-        }
-
-        const searchInput =
-            document.getElementById("custom-blog-search");
-
-        const cards =
-            document.querySelectorAll(".custom-blog-card");
-
-        const filterBtn =
-            document.getElementById("custom-blog-filter-btn");
-
-        const filterList =
-            document.getElementById("custom-blog-filter-list");
-
-        const filterButtons =
-            document.querySelectorAll(".blog-category-filter");
-
-        const noResult =
-            document.getElementById("custom-blog-no-result");
-
-        let selectedCategory = "all";
-
-
-        /* =========================
-            FILTER BUTTON
-        ========================= */
-        if (filterBtn && filterList) {
-            filterBtn.addEventListener("click", function () {
-                filterList.classList.toggle("show");
-            });
-        }
-
-
-        /* =========================
-            CATEGORY FILTER
-        ========================= */
-        filterButtons.forEach(function (button) {
-            button.addEventListener("click", function () {
-                filterButtons.forEach(function (btn) {
-                    btn.classList.remove("active");
-                });
-                this.classList.add("active");
-                selectedCategory =
-                    this.getAttribute("data-category");
-                filterPosts();
-            });
         });
 
 
         /* =========================
-            SEARCH
+           NO RESULT
         ========================= */
-        searchInput.addEventListener("input", function () {
-            filterPosts();
-        });
+        if (noResult) {
+
+            noResult.classList.toggle(
+                "show",
+                visiblePosts === 0
+            );
+        }
+    }
 
 
-        /* =========================
-            FILTER POSTS
-        ========================= */
-        function filterPosts() {
-            const search =
-                searchInput.value.toLowerCase().trim();
-            let visiblePosts = 0;
-            cards.forEach(function (card) {
-                const title =
-                    card.getAttribute("data-title") || "";
+    /* =========================
+       CLOSE FILTER OUTSIDE CLICK
+    ========================= */
+    document.addEventListener("click", function (e) {
 
-                const content =
-                    card.getAttribute("data-content") || "";
-
-                const category =
-                    card.getAttribute("data-category") || "";
-
-                const searchMatch =
-                    title.includes(search) ||
-                    content.includes(search);
-
-                const categoryMatch =
-                    selectedCategory === "all" ||
-                    category === selectedCategory;
-
-                if (searchMatch && categoryMatch) {
-                    card.style.display = "";
-                    visiblePosts++;
-                } else {
-                    card.style.display = "none";
-                }
-            });
-
-
-            if (visiblePosts === 0) {
-                noResult.classList.add("show");
-            } else {
-                noResult.classList.remove("show");
-            }
+        if (
+            filterList &&
+            filterBtn &&
+            filterList.classList.contains("show") &&
+            !filterList.contains(e.target) &&
+            !filterBtn.contains(e.target)
+        ) {
+            filterList.classList.remove("show");
         }
     });
 });
