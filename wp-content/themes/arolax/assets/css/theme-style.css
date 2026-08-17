@@ -121,12 +121,12 @@ body #rentheadersicky {z-index: 9999;}
 .rentexperts-text-slider .wcf__slider-wrapper .wcf--image-box .thumb {
 	display: none;
 }
-.rentexperts-text-slider .wcf__slider-wrapper .ts-navigation {
+/* .rentexperts-text-slider .wcf__slider-wrapper .ts-navigation {
 	top: 0;
 	bottom: 0;
 	margin: auto;
   z-index: -5;
-}
+} */
 .wcf__slider .wcf--image-box.style-1 {
 	padding-block: 15px 0;
 }
