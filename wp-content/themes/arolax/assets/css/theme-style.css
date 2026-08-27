@@ -121,6 +121,8 @@ body #rentheadersicky {z-index: 9999;}
 .rentexperts-text-slider .wcf__slider-wrapper .wcf--image-box .thumb {
 	display: none;
 }
+.rx-service ul {padding-inline-start: 20px;}
+.rx-service ul li {list-style: disc;}
 .rentexperts-text-slider .wcf__slider-wrapper .ts-navigation {top: 0;}
 .wcf__slider .wcf--image-box.style-1 {
 	padding-block: 15px 0;
