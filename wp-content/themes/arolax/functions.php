@@ -190,9 +190,9 @@ function custom_blog_posts_shortcode($atts) {
     <div class="custom-blog-wrapper">
 
         <!-- Search -->
-        <!-- <div class="custom-blog-search">
+        <!-- <div class="custom-blog-search"> -->
 
-            <div class="blog-search-left">
+            <!-- <div class="blog-search-left">
 
                 <svg class="blog-search-icon"
                      viewBox="0 0 24 24"
@@ -214,10 +214,10 @@ function custom_blog_posts_shortcode($atts) {
                     autocomplete="off"
                 >
 
-            </div>
+            </div> -->
 
             <!-- Mic -->
-            <button type="button"
+            <!-- <button type="button"
                     class="blog-mic-btn"
                     aria-label="Voice search">
 
@@ -244,10 +244,10 @@ function custom_blog_posts_shortcode($atts) {
                           stroke-linecap="round"/>
                 </svg>
 
-            </button>
+            </button> -->
 
             <!-- Filter -->
-            <button type="button"
+            <!-- <button type="button"
                     class="blog-filter-btn"
                     id="custom-blog-filter-btn"
                     aria-label="Filter">
@@ -261,13 +261,13 @@ function custom_blog_posts_shortcode($atts) {
                           stroke-linejoin="round"/>
                 </svg>
 
-            </button>
+            </button> -->
 
-        </div> -->
+        <!-- </div> -->
 
 
         <!-- Category Filter -->
-        <div class="custom-blog-filter-list" id="custom-blog-filter-list">
+        <!-- <div class="custom-blog-filter-list" id="custom-blog-filter-list">
 
             <button type="button"
                     class="blog-category-filter active"
@@ -285,7 +285,7 @@ function custom_blog_posts_shortcode($atts) {
 
             <?php endforeach; ?>
 
-        </div>
+        </div> -->
 
 
         <!-- Heading -->
