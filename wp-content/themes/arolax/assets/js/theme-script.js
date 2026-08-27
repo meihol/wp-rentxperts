@@ -173,12 +173,12 @@ document.addEventListener("DOMContentLoaded", function () {
     /* =========================
        ELEMENTS
     ========================= */
-    const searchInput = document.getElementById("custom-blog-search");
-    const filterBtn = document.getElementById("custom-blog-filter-btn");
-    const filterList = document.getElementById("custom-blog-filter-list");
-    const noResult = document.getElementById("custom-blog-no-result");
+    // const searchInput = document.getElementById("custom-blog-search");
+    // const filterBtn = document.getElementById("custom-blog-filter-btn");
+    // const filterList = document.getElementById("custom-blog-filter-list");
+    // const noResult = document.getElementById("custom-blog-no-result");
 
-    let selectedCategory = "all";
+    // let selectedCategory = "all";
 
 
     /* =========================
@@ -292,150 +292,150 @@ document.addEventListener("DOMContentLoaded", function () {
     /* =========================
        FILTER ELEMENTS
     ========================= */
-    function getCards() {
-        return document.querySelectorAll(".custom-blog-card");
-    }
+    // function getCards() {
+    //     return document.querySelectorAll(".custom-blog-card");
+    // }
 
-    function getFilterButtons() {
-        return document.querySelectorAll(".blog-category-filter");
-    }
-
-
-    /* =========================
-       FILTER BUTTON
-    ========================= */
-    if (filterBtn && filterList) {
-
-        filterBtn.addEventListener("click", function (e) {
-
-            e.preventDefault();
-            e.stopPropagation();
-
-            filterList.classList.toggle("show");
-        });
-    }
+    // function getFilterButtons() {
+    //     return document.querySelectorAll(".blog-category-filter");
+    // }
 
 
-    /* =========================
-       CATEGORY FILTER
-    ========================= */
-    document.addEventListener("click", function (e) {
+    // /* =========================
+    //    FILTER BUTTON
+    // ========================= */
+    // if (filterBtn && filterList) {
 
-        const button =
-            e.target.closest(".blog-category-filter");
+    //     filterBtn.addEventListener("click", function (e) {
 
-        if (!button) {
-            return;
-        }
+    //         e.preventDefault();
+    //         e.stopPropagation();
 
-        const filterButtons = getFilterButtons();
-
-        filterButtons.forEach(function (btn) {
-            btn.classList.remove("active");
-        });
-
-        button.classList.add("active");
-
-        selectedCategory =
-            button.getAttribute("data-category") || "all";
-
-        filterPosts();
-
-        // Close dropdown after selection
-        if (filterList) {
-            filterList.classList.remove("show");
-        }
-    });
+    //         filterList.classList.toggle("show");
+    //     });
+    // }
 
 
-    /* =========================
-       SEARCH
-    ========================= */
-    if (searchInput) {
+    // /* =========================
+    //    CATEGORY FILTER
+    // ========================= */
+    // document.addEventListener("click", function (e) {
 
-        searchInput.addEventListener("input", filterPosts);
-    }
+    //     const button =
+    //         e.target.closest(".blog-category-filter");
 
+    //     if (!button) {
+    //         return;
+    //     }
 
-    /* =========================
-       FILTER POSTS
-    ========================= */
-    function filterPosts() {
+    //     const filterButtons = getFilterButtons();
 
-        const search = searchInput
-            ? searchInput.value.toLowerCase().trim()
-            : "";
+    //     filterButtons.forEach(function (btn) {
+    //         btn.classList.remove("active");
+    //     });
 
-        const cards = getCards();
+    //     button.classList.add("active");
 
-        let visiblePosts = 0;
+    //     selectedCategory =
+    //         button.getAttribute("data-category") || "all";
 
+    //     filterPosts();
 
-        cards.forEach(function (card) {
-
-            const title =
-                (card.getAttribute("data-title") || "")
-                .toLowerCase();
-
-            const content =
-                (card.getAttribute("data-content") || "")
-                .toLowerCase();
-
-            const category =
-                card.getAttribute("data-category") || "";
+    //     // Close dropdown after selection
+    //     if (filterList) {
+    //         filterList.classList.remove("show");
+    //     }
+    // });
 
 
-            const searchMatch =
-                !search ||
-                title.includes(search) ||
-                content.includes(search);
+    // /* =========================
+    //    SEARCH
+    // ========================= */
+    // // if (searchInput) {
+
+    // //     searchInput.addEventListener("input", filterPosts);
+    // // }
 
 
-            const categoryMatch =
-                selectedCategory === "all" ||
-                category === selectedCategory;
+    // /* =========================
+    //    FILTER POSTS
+    // ========================= */
+    // function filterPosts() {
+
+    //     const search = searchInput
+    //         ? searchInput.value.toLowerCase().trim()
+    //         : "";
+
+    //     const cards = getCards();
+
+    //     let visiblePosts = 0;
 
 
-            const showCard =
-                searchMatch && categoryMatch;
+    //     cards.forEach(function (card) {
+
+    //         const title =
+    //             (card.getAttribute("data-title") || "")
+    //             .toLowerCase();
+
+    //         const content =
+    //             (card.getAttribute("data-content") || "")
+    //             .toLowerCase();
+
+    //         const category =
+    //             card.getAttribute("data-category") || "";
 
 
-            card.style.display =
-                showCard ? "" : "none";
+    //         const searchMatch =
+    //             !search ||
+    //             title.includes(search) ||
+    //             content.includes(search);
 
 
-            if (showCard) {
-                visiblePosts++;
-            }
-        });
+    //         const categoryMatch =
+    //             selectedCategory === "all" ||
+    //             category === selectedCategory;
 
 
-        /* =========================
-           NO RESULT
-        ========================= */
-        if (noResult) {
-
-            noResult.classList.toggle(
-                "show",
-                visiblePosts === 0
-            );
-        }
-    }
+    //         const showCard =
+    //             searchMatch && categoryMatch;
 
 
-    /* =========================
-       CLOSE FILTER OUTSIDE CLICK
-    ========================= */
-    document.addEventListener("click", function (e) {
+    //         card.style.display =
+    //             showCard ? "" : "none";
 
-        if (
-            filterList &&
-            filterBtn &&
-            filterList.classList.contains("show") &&
-            !filterList.contains(e.target) &&
-            !filterBtn.contains(e.target)
-        ) {
-            filterList.classList.remove("show");
-        }
-    });
+
+    //         if (showCard) {
+    //             visiblePosts++;
+    //         }
+    //     });
+
+
+    //     /* =========================
+    //        NO RESULT
+    //     ========================= */
+    //     if (noResult) {
+
+    //         noResult.classList.toggle(
+    //             "show",
+    //             visiblePosts === 0
+    //         );
+    //     }
+    // }
+
+
+    // /* =========================
+    //    CLOSE FILTER OUTSIDE CLICK
+    // ========================= */
+    // document.addEventListener("click", function (e) {
+
+    //     if (
+    //         filterList &&
+    //         filterBtn &&
+    //         filterList.classList.contains("show") &&
+    //         !filterList.contains(e.target) &&
+    //         !filterBtn.contains(e.target)
+    //     ) {
+    //         filterList.classList.remove("show");
+    //     }
+    // });
 });

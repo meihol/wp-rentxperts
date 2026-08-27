@@ -190,7 +190,7 @@ function custom_blog_posts_shortcode($atts) {
     <div class="custom-blog-wrapper">
 
         <!-- Search -->
-        <div class="custom-blog-search">
+        <!-- <div class="custom-blog-search">
 
             <div class="blog-search-left">
 
@@ -263,7 +263,7 @@ function custom_blog_posts_shortcode($atts) {
 
             </button>
 
-        </div>
+        </div> -->
 
 
         <!-- Category Filter -->
