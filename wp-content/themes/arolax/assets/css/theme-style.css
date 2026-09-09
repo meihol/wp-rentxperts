@@ -123,12 +123,24 @@ body #rentheadersicky {z-index: 9999;}
 }
 .rx-service ul {padding-inline-start: 20px;}
 .rx-service ul li {list-style: disc;}
-.rentexperts-text-slider .wcf__slider-wrapper .ts-navigation {top: 0;}
+.rentexperts-text-slider .wcf__slider-wrapper .ts-navigation {top: auto;}
 .wcf__slider .wcf--image-box.style-1 {
 	padding-block: 15px 0;
 }
+.rentexperts-text-slider .wcf__slider-wrapper .ts-navigation .wcf-arrow.wcf-arrow.wcf-arrow-prev {
+	left: -15px;
+	right: auto;
+}
+.rentexperts-text-slider .wcf__slider-wrapper .ts-navigation .wcf-arrow.wcf-arrow.wcf-arrow-next {
+	left: auto;
+	right: -15px;
+}
 .rentexperts-text-slider .wcf__slider-wrapper .ts-navigation .wcf-arrow.wcf-arrow {
 	width: 40px;
+  position: absolute;
+  top: auto;
+  bottom: 68px;
+  margin: auto;
 }
 .wcf__slider-wrapper .ts-pagination {
 	margin-block-start: 30px;
