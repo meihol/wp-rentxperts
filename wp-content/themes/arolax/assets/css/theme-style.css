@@ -123,7 +123,7 @@ body #rentheadersicky {z-index: 9999;}
 }
 .rx-service ul {padding-inline-start: 20px;}
 .rx-service ul li {list-style: disc;}
-.rentexperts-text-slider .wcf__slider-wrapper .ts-navigation {top: auto;}
+.rentexperts-text-slider .wcf__slider-wrapper .ts-navigation {top: auto;z-index: 99;}
 .wcf__slider .wcf--image-box.style-1 {
 	padding-block: 15px 0;
 }
