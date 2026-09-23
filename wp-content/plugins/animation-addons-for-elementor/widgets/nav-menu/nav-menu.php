@@ -1876,7 +1876,9 @@ class Nav_Menu extends Widget_Base {
 		?>
         <div class="mobile-sub-back" style="display: none">
 			<?php Icons_Manager::render_icon( $settings['back_icon'], [ 'aria-hidden' => 'true' ] ); ?>
-			<?php esc_html_e( 'Back', 'animation-addons-for-elementor' ) ?>
+			<?php 
+			print_r($active_menu_class);
+			esc_html_e( 'Back', 'animation-addons-for-elementor' ) ?>
         </div>
         <div <?php $this->print_render_attribute_string( 'wrapper' ); ?>>
             <button class="wcf-menu-hamburger" type="button" aria-label="hamburger-icon">
